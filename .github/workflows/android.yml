@@ -104,7 +104,7 @@ jobs:
           msbuild -v:m -restore -p:AndroidBuildApplicationPackage=True -p:Configuration=Release "ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj"
           
 
-      - name: Sign AAB
+      - name: Sign APK
         if: ${{ github.event_name == 'push' }}
         id: sign
         uses: r0adkll/sign-android-release@v1
