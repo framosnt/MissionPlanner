@@ -86,6 +86,8 @@ jobs:
           nuget locals all -clear
           $current = Get-Location
           
+          del ExtLibs\Xamarin\Xamarin.Android\bin\Release\com.michaeloborne.MissionPlanner.aab
+          
           $days = [int]((New-TimeSpan -Start 2020-01-01 -End (Get-Date)).totaldays * 100)
           
           $manifest = [xml](Get-Content -Path ExtLibs\Xamarin\Xamarin.Android\Properties\AndroidManifest.xml -Raw)
@@ -99,8 +101,19 @@ jobs:
 
           Set-Content -Path ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj -Value (Get-Content -Path ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj -Raw).Replace("<AotAssemblies>true</AotAssemblies>","<AotAssemblies>false</AotAssemblies>")
           
-          msbuild -v:m -restore -t:SignAndroidPackage -p:Configuration=Release "ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj"
+          msbuild -v:m -restore -p:AndroidBuildApplicationPackage=True -p:Configuration=Release "ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj"
           
+
+      - name: Sign AAB
+        if: ${{ github.event_name == 'push' }}
+        id: sign
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: ExtLibs\Xamarin\Xamarin.Android\bin\Release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
 
       - uses: actions/upload-artifact@v2
         with:
