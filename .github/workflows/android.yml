@@ -106,7 +106,7 @@ jobs:
 
       - name: Sign APK
         if: ${{ github.event_name == 'push' }}
-        id: sign
+        id: sign2
         uses: r0adkll/sign-android-release@v1
         with:
           releaseDirectory: ExtLibs\Xamarin\Xamarin.Android\bin\Release
