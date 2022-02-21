@@ -103,6 +103,7 @@ jobs:
           
           msbuild -v:m -restore -p:AndroidBuildApplicationPackage=True -p:Configuration=Release "ExtLibs\Xamarin\Xamarin.Android\Xamarin.Android.csproj"
           
+          del ExtLibs\Xamarin\Xamarin.Android\bin\Release\*-Signed.apk
 
       - name: Sign APK
         if: ${{ github.event_name == 'push' }}
