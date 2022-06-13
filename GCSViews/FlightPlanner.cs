@@ -1707,6 +1707,40 @@ namespace MissionPlanner.GCSViews
             }
         }
 
+        public void BV_addPolygonPointTool_GPS_Followme(object sender, EventArgs e)
+        {
+            // fernando ramos - 10-06-2022 - inclusão de PONTO POLIGNO PARA A POSIÇÃO DO GPS LOCAL
+            if (polygongridmode == false)
+            {
+                polygongridmode = true;
+                return;
+            }
+
+            List<PointLatLng> polygonPoints = new List<PointLatLng>();
+            if (drawnpolygonsoverlay.Polygons.Count == 0)
+            {
+                drawnpolygon.Points.Clear();
+                drawnpolygonsoverlay.Polygons.Add(drawnpolygon);
+            }
+
+            drawnpolygon.Fill = Brushes.Transparent;
+
+            // remove full loop is exists
+            if (drawnpolygon.Points.Count > 1 &&
+                drawnpolygon.Points[0] == drawnpolygon.Points[drawnpolygon.Points.Count - 1])
+                drawnpolygon.Points.RemoveAt(drawnpolygon.Points.Count - 1); // unmake a full loop
+
+            // FERNANDO INCLUSÃO DE POLYGONO POR CLIQUE DO MOUSE
+            //drawnpolygon.Points.Add(new PointLatLng( CurrentRallyPt(0).Position.Lat  , CurrentRallyPt.Position.Lng ));
+            //drawnpolygon.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
+            drawnpolygon.Points.Add(new PointLatLng(FollowMe.gotolocation.Lat, FollowMe.gotolocation.Lng));
+            redrawPolygonSurvey(drawnpolygon.Points.Select(a => new PointLatLngAlt(a)).ToList());
+
+            MainMap.Invalidate();
+        }
+
+
+
         public void addPolygonPointToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (polygongridmode == false)
@@ -1729,8 +1763,10 @@ namespace MissionPlanner.GCSViews
                 drawnpolygon.Points[0] == drawnpolygon.Points[drawnpolygon.Points.Count - 1])
                 drawnpolygon.Points.RemoveAt(drawnpolygon.Points.Count - 1); // unmake a full loop
 
+            // FERNANDO INCLUSÃO DE POLYGONO POR CLIQUE DO MOUSE
+            //drawnpolygon.Points.Add(new PointLatLng( CurrentRallyPt(0).Position.Lat  , CurrentRallyPt.Position.Lng ));
             drawnpolygon.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
-
+            //drawnpolygon.Points.Add(new PointLatLng(FollowMe.gotolocation.Lat, FollowMe.gotolocation.Lng));
             redrawPolygonSurvey(drawnpolygon.Points.Select(a => new PointLatLngAlt(a)).ToList());
 
             MainMap.Invalidate();
@@ -3385,6 +3421,7 @@ namespace MissionPlanner.GCSViews
 
             quickadd = false;
 
+            //FERNANDO - POI modificado somente quando está carregando o plano (drone conectado) 
             POI.POIModified += POI_POIModified;
 
             if (Settings.Instance["WMSserver"] != null)
@@ -7866,6 +7903,40 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             MainMap.Position = MainV2.comPort.MAV.cs.HomeLocation;
             if (MainMap.Zoom < 17)
                 MainMap.Zoom = 17;
+        }
+
+        private void pontoPolígonoGPSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // fernando lançar ponto de poligono do gps followme (tem que estar ativado)
+            
+                if (polygongridmode == false)
+                {
+                    polygongridmode = true;
+                    return;
+                }
+
+                List<PointLatLng> polygonPoints = new List<PointLatLng>();
+                if (drawnpolygonsoverlay.Polygons.Count == 0)
+                {
+                    drawnpolygon.Points.Clear();
+                    drawnpolygonsoverlay.Polygons.Add(drawnpolygon);
+                }
+
+                drawnpolygon.Fill = Brushes.Transparent;
+
+                // remove full loop is exists
+                if (drawnpolygon.Points.Count > 1 &&
+                    drawnpolygon.Points[0] == drawnpolygon.Points[drawnpolygon.Points.Count - 1])
+                    drawnpolygon.Points.RemoveAt(drawnpolygon.Points.Count - 1); // unmake a full loop
+
+                // FERNANDO INCLUSÃO DE POLYGONO POR CLIQUE DO MOUSE
+                //drawnpolygon.Points.Add(new PointLatLng( CurrentRallyPt(0).Position.Lat  , CurrentRallyPt.Position.Lng ));
+                //drawnpolygon.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
+                drawnpolygon.Points.Add(new PointLatLng(FollowMe.gotolocation.Lat, FollowMe.gotolocation.Lng));
+                redrawPolygonSurvey(drawnpolygon.Points.Select(a => new PointLatLngAlt(a)).ToList());
+
+                MainMap.Invalidate();
+            
         }
     }
 }

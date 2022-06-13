@@ -3445,14 +3445,14 @@ namespace MissionPlanner.GCSViews
 
                         //updateClearRoutesMarkers();
 
-                        // add this after the mav icons are drawn
+                        // add this after the mav icons are drawn - FERNANDO AQUI ESCREVE MOVING BASE
                         if (MainV2.comPort.MAV.cs.MovingBase != null &&
                             MainV2.comPort.MAV.cs.MovingBase != PointLatLngAlt.Zero)
                         {
                             addMissionRouteMarker(new GMarkerGoogle(currentloc, GMarkerGoogleType.blue_dot)
                             {
                                 Position = MainV2.comPort.MAV.cs.MovingBase,
-                                ToolTipText = "Moving Base",
+                                ToolTipText = "Moving Base t",
                                 ToolTipMode = MarkerTooltipMode.OnMouseOver
                             });
                         }

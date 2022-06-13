@@ -220,6 +220,7 @@ namespace MissionPlanner.GCSViews
             this.zoomToVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pontoPolígonoGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelWaypoints.SuspendLayout();
@@ -831,6 +832,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteWPToolStripMenuItem,
             this.insertWpToolStripMenuItem,
@@ -979,7 +981,8 @@ namespace MissionPlanner.GCSViews
             this.fromSHPToolStripMenuItem2,
             this.fromCurrentWaypointsToolStripMenuItem,
             this.offsetPolygonToolStripMenuItem2,
-            this.areaToolStripMenuItem2});
+            this.areaToolStripMenuItem2,
+            this.pontoPolígonoGPSToolStripMenuItem});
             this.polygonToolStripMenuItem.Name = "polygonToolStripMenuItem";
             resources.ApplyResources(this.polygonToolStripMenuItem, "polygonToolStripMenuItem");
             // 
@@ -1400,6 +1403,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripPoly
             // 
+            this.contextMenuStripPoly.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripPoly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addPolygonPointToolStripMenuItem,
             this.clearPolygonToolStripMenuItem,
@@ -1445,6 +1449,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripZoom
             // 
+            this.contextMenuStripZoom.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripZoom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.zoomToVehicleToolStripMenuItem,
             this.zoomToMissionToolStripMenuItem,
@@ -1469,6 +1474,12 @@ namespace MissionPlanner.GCSViews
             this.zoomToHomeToolStripMenuItem.Name = "zoomToHomeToolStripMenuItem";
             resources.ApplyResources(this.zoomToHomeToolStripMenuItem, "zoomToHomeToolStripMenuItem");
             this.zoomToHomeToolStripMenuItem.Click += new System.EventHandler(this.zoomToHomeToolStripMenuItem_Click);
+            // 
+            // pontoPolígonoGPSToolStripMenuItem
+            // 
+            this.pontoPolígonoGPSToolStripMenuItem.Name = "pontoPolígonoGPSToolStripMenuItem";
+            resources.ApplyResources(this.pontoPolígonoGPSToolStripMenuItem, "pontoPolígonoGPSToolStripMenuItem");
+            this.pontoPolígonoGPSToolStripMenuItem.Click += new System.EventHandler(this.pontoPolígonoGPSToolStripMenuItem_Click);
             // 
             // FlightPlanner
             // 
@@ -1672,5 +1683,6 @@ namespace MissionPlanner.GCSViews
         private ToolStripMenuItem fromCurrentWaypointsToolStripMenuItem;
         private ToolStripMenuItem offsetPolygonToolStripMenuItem;
         private ToolStripMenuItem offsetPolygonToolStripMenuItem2;
+        private ToolStripMenuItem pontoPolígonoGPSToolStripMenuItem;
     }
 }
