@@ -154,6 +154,7 @@ namespace MissionPlanner.GCSViews
             this.fromCurrentWaypointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.offsetPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pontoPolígonoGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geoFenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GeoFenceuploadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GeoFencedownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -220,7 +221,7 @@ namespace MissionPlanner.GCSViews
             this.zoomToVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pontoPolígonoGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.escolherGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelWaypoints.SuspendLayout();
@@ -982,7 +983,8 @@ namespace MissionPlanner.GCSViews
             this.fromCurrentWaypointsToolStripMenuItem,
             this.offsetPolygonToolStripMenuItem2,
             this.areaToolStripMenuItem2,
-            this.pontoPolígonoGPSToolStripMenuItem});
+            this.pontoPolígonoGPSToolStripMenuItem,
+            this.escolherGPSToolStripMenuItem});
             this.polygonToolStripMenuItem.Name = "polygonToolStripMenuItem";
             resources.ApplyResources(this.polygonToolStripMenuItem, "polygonToolStripMenuItem");
             // 
@@ -1033,6 +1035,12 @@ namespace MissionPlanner.GCSViews
             this.areaToolStripMenuItem2.Name = "areaToolStripMenuItem2";
             resources.ApplyResources(this.areaToolStripMenuItem2, "areaToolStripMenuItem2");
             this.areaToolStripMenuItem2.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
+            // 
+            // pontoPolígonoGPSToolStripMenuItem
+            // 
+            this.pontoPolígonoGPSToolStripMenuItem.Name = "pontoPolígonoGPSToolStripMenuItem";
+            resources.ApplyResources(this.pontoPolígonoGPSToolStripMenuItem, "pontoPolígonoGPSToolStripMenuItem");
+            this.pontoPolígonoGPSToolStripMenuItem.Click += new System.EventHandler(this.pontoPolígonoGPSToolStripMenuItem_Click);
             // 
             // geoFenceToolStripMenuItem
             // 
@@ -1475,11 +1483,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.zoomToHomeToolStripMenuItem, "zoomToHomeToolStripMenuItem");
             this.zoomToHomeToolStripMenuItem.Click += new System.EventHandler(this.zoomToHomeToolStripMenuItem_Click);
             // 
-            // pontoPolígonoGPSToolStripMenuItem
+            // escolherGPSToolStripMenuItem
             // 
-            this.pontoPolígonoGPSToolStripMenuItem.Name = "pontoPolígonoGPSToolStripMenuItem";
-            resources.ApplyResources(this.pontoPolígonoGPSToolStripMenuItem, "pontoPolígonoGPSToolStripMenuItem");
-            this.pontoPolígonoGPSToolStripMenuItem.Click += new System.EventHandler(this.pontoPolígonoGPSToolStripMenuItem_Click);
+            this.escolherGPSToolStripMenuItem.Name = "escolherGPSToolStripMenuItem";
+            resources.ApplyResources(this.escolherGPSToolStripMenuItem, "escolherGPSToolStripMenuItem");
+            this.escolherGPSToolStripMenuItem.Click += new System.EventHandler(this.escolherGPSToolStripMenuItem_Click);
             // 
             // FlightPlanner
             // 
@@ -1684,5 +1692,6 @@ namespace MissionPlanner.GCSViews
         private ToolStripMenuItem offsetPolygonToolStripMenuItem;
         private ToolStripMenuItem offsetPolygonToolStripMenuItem2;
         private ToolStripMenuItem pontoPolígonoGPSToolStripMenuItem;
+        private ToolStripMenuItem escolherGPSToolStripMenuItem;
     }
 }

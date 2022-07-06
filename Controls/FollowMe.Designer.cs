@@ -45,8 +45,9 @@
             this.CMB_serialport.FormattingEnabled = true;
             this.CMB_serialport.Location = new System.Drawing.Point(13, 23);
             this.CMB_serialport.Name = "CMB_serialport";
-            this.CMB_serialport.Size = new System.Drawing.Size(121, 21);
+            this.CMB_serialport.Size = new System.Drawing.Size(121, 24);
             this.CMB_serialport.TabIndex = 0;
+            this.CMB_serialport.SelectedIndexChanged += new System.EventHandler(this.CMB_serialport_SelectedIndexChanged);
             // 
             // CMB_baudrate
             // 
@@ -63,7 +64,7 @@
             "115200"});
             this.CMB_baudrate.Location = new System.Drawing.Point(140, 22);
             this.CMB_baudrate.Name = "CMB_baudrate";
-            this.CMB_baudrate.Size = new System.Drawing.Size(97, 21);
+            this.CMB_baudrate.Size = new System.Drawing.Size(97, 24);
             this.CMB_baudrate.TabIndex = 2;
             // 
             // label1
@@ -71,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 13);
+            this.label1.Size = new System.Drawing.Size(232, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Pick the Nmea gps port and baud rate\r\n";
             // 
@@ -83,6 +84,7 @@
             this.LBL_location.Size = new System.Drawing.Size(425, 59);
             this.LBL_location.TabIndex = 4;
             this.LBL_location.Text = "0,0,0";
+            this.LBL_location.Click += new System.EventHandler(this.LBL_location_Click);
             // 
             // textBox1
             // 
@@ -105,7 +107,7 @@
             "0.25hz"});
             this.CMB_updaterate.Location = new System.Drawing.Point(279, 23);
             this.CMB_updaterate.Name = "CMB_updaterate";
-            this.CMB_updaterate.Size = new System.Drawing.Size(75, 21);
+            this.CMB_updaterate.Size = new System.Drawing.Size(75, 24);
             this.CMB_updaterate.TabIndex = 6;
             this.CMB_updaterate.SelectedIndexChanged += new System.EventHandler(this.CMB_updaterate_SelectedIndexChanged);
             // 
@@ -114,7 +116,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(252, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 13);
+            this.label2.Size = new System.Drawing.Size(145, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Select your update rate\r\n";
             // 
@@ -124,14 +126,12 @@
             this.BUT_connect.Name = "BUT_connect";
             this.BUT_connect.Size = new System.Drawing.Size(75, 23);
             this.BUT_connect.TabIndex = 1;
-            this.BUT_connect.Text = global::MissionPlanner.Strings.Connect;
+            this.BUT_connect.Text = "Connect";
             this.BUT_connect.UseVisualStyleBackColor = true;
             this.BUT_connect.Click += new System.EventHandler(this.BUT_connect_Click);
             // 
             // FollowMe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            
             this.ClientSize = new System.Drawing.Size(440, 300);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CMB_updaterate);

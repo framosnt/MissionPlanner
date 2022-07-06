@@ -417,7 +417,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Antenna\TrackerGeneric.cs" />
+    <Compile Include="BonsVoosGPS\BV_GPSLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonsVoosGPS\BV_GPSLocal.Designer.cs">
+      <DependentUpon>BV_GPSLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BonsVoosSpray\BonsVoosGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonsVoosSpray\BonsVoosGrid.designer.cs">
+      <DependentUpon>BonsVoosGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BonsVoosSpray\SprayerInfo.cs" />
+    <Compile Include="BonsVoosSpray\SprayingMissionData.cs" />
+    <Compile Include="BonsVoosSpray\SprayingMissionPlugin.cs" />
     <Compile Include="Common.cs" />
+    <Compile Include="Controls\BonsVoosGPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BonsVoosGPS.Designer.cs">
+      <DependentUpon>BonsVoosGPS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DroneCANSubscriber.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -824,8 +845,17 @@
     <Compile Include="Log\LogStrings.Designer.cs">
       <DependentUpon>LogStrings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BonsVoosGPS\BV_GPSLocal.resx">
+      <DependentUpon>BV_GPSLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonsVoosSpray\BonsVoosGrid.resx">
+      <DependentUpon>BonsVoosGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AuthKeys.ko-KR.resx">
       <DependentUpon>AuthKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BonsVoosGPS.resx">
+      <DependentUpon>BonsVoosGPS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ControlSensorsStatus.resx">
       <DependentUpon>ControlSensorsStatus.cs</DependentUpon>
@@ -4600,6 +4630,7 @@
     <Content Include="quaternion.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\LOGOBONSVOOS.jpg" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -274,5 +274,15 @@ namespace MissionPlanner.Controls
                 CustomMessageBox.Show(Strings.InvalidUpdateRate, Strings.ERROR);
             }
         }
+
+        private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LBL_location_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

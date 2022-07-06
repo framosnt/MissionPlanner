@@ -175,6 +175,7 @@ namespace MissionPlanner
             var si = new FollowMe();
             ThemeManager.ApplyThemeTo(si);
             si.Show();
+
         }
 
         private void BUT_paramgen_Click(object sender, EventArgs e)

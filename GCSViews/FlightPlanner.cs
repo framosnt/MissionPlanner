@@ -7932,11 +7932,19 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 // FERNANDO INCLUSÃO DE POLYGONO POR CLIQUE DO MOUSE
                 //drawnpolygon.Points.Add(new PointLatLng( CurrentRallyPt(0).Position.Lat  , CurrentRallyPt.Position.Lng ));
                 //drawnpolygon.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
-                drawnpolygon.Points.Add(new PointLatLng(FollowMe.gotolocation.Lat, FollowMe.gotolocation.Lng));
+                drawnpolygon.Points.Add(new PointLatLng(MissionPlanner.Controls.BonsVoosGPS.gotolocation.Lat, MissionPlanner.Controls.BonsVoosGPS.gotolocation.Lng));
                 redrawPolygonSurvey(drawnpolygon.Points.Select(a => new PointLatLngAlt(a)).ToList());
 
                 MainMap.Invalidate();
             
+            
+        }
+
+        private void escolherGPSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var si1 = new MissionPlanner.Controls.BonsVoosGPS();
+            ThemeManager.ApplyThemeTo(si1);
+            si1.Show();
         }
     }
 }
