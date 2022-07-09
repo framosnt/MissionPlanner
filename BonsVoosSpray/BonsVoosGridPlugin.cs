@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MissionPlanner.SprayingMission
+namespace MissionPlanner.BonsVoosGrid
 {
-    public class SprayingMissionPlugin : MissionPlanner.Plugin.Plugin
+    public class BonsVoosGridPlugin : MissionPlanner.Plugin.Plugin
     {
 
 
@@ -12,7 +12,7 @@ namespace MissionPlanner.SprayingMission
 
         public override string Name
         {
-            get { return "Spraying"; }
+            get { return "BonsVoosGrid"; }
         }
 
         public override string Version
@@ -32,7 +32,7 @@ namespace MissionPlanner.SprayingMission
 
         public override bool Loaded()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SprayingMissionUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGridUI));
             var temp = (string)(resources.GetObject("$this.Text"));
 
             but = new ToolStripMenuItem(temp);
@@ -60,7 +60,7 @@ namespace MissionPlanner.SprayingMission
 
         public void but_Click(object sender, EventArgs e)
         {
-            using (var gridui = new SprayingMissionUI(this))
+            using (var gridui = new BonsVoosGridUI(this))
             {
                 MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
@@ -74,7 +74,7 @@ namespace MissionPlanner.SprayingMission
                         CustomMessageBox.Show("No polygon defined. Load a file?", "Load File", MessageBoxButtons.YesNo) ==
                         (int)DialogResult.Yes)
                     {
-                        gridui.LoadSprayingMission() ;
+                        gridui.LoadBonsVoosGrid() ;
                         gridui.ShowDialog();
                     }
                     else

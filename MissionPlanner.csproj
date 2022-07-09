@@ -429,9 +429,10 @@
     <Compile Include="BonsVoosSpray\BonsVoosGrid.designer.cs">
       <DependentUpon>BonsVoosGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="BonsVoosSpray\BonsVoosGridData.cs" />
+    <Compile Include="BonsVoosSpray\BonsVoosGridPlugin.cs" />
     <Compile Include="BonsVoosSpray\SprayerInfo.cs" />
     <Compile Include="BonsVoosSpray\SprayingMissionData.cs" />
-    <Compile Include="BonsVoosSpray\SprayingMissionPlugin.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Controls\BonsVoosGPS.cs">
       <SubType>Form</SubType>

@@ -1179,7 +1179,7 @@
     <value>Commands</value>
   </data>
   <data name="&gt;&gt;Commands.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyDataGridView, MissionPlanner, Version=1.3.8219.39569, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MyDataGridView, MissionPlanner, Version=1.3.8224.33763, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Commands.Parent" xml:space="preserve">
     <value>panelWaypoints</value>
@@ -2034,40 +2034,46 @@
     <value>Rally Points</value>
   </data>
   <data name="createWpCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="createWpCircleToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Wp Circle</value>
   </data>
   <data name="createSplineCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="createSplineCircleToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Spline Circle</value>
   </data>
   <data name="areaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="areaToolStripMenuItem1.Text" xml:space="preserve">
     <value>Area</value>
   </data>
   <data name="textToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="textToolStripMenuItem.Text" xml:space="preserve">
     <value>Text</value>
   </data>
   <data name="createCircleSurveyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="createCircleSurveyToolStripMenuItem.Text" xml:space="preserve">
     <value>Create Circle Survey</value>
   </data>
   <data name="surveyGridToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 26</value>
+    <value>242, 26</value>
   </data>
   <data name="surveyGridToolStripMenuItem.Text" xml:space="preserve">
     <value>Survey (Grid)</value>
+  </data>
+  <data name="bonsVoosPulverizadorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 26</value>
+  </data>
+  <data name="bonsVoosPulverizadorToolStripMenuItem.Text" xml:space="preserve">
+    <value>BonsVoos Pulverizador</value>
   </data>
   <data name="autoWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 24</value>
@@ -2738,6 +2744,12 @@
   <data name="&gt;&gt;pontoPolígonoGPSToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;escolherGPSToolStripMenuItem.Name" xml:space="preserve">
+    <value>escolherGPSToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;escolherGPSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;geoFenceToolStripMenuItem.Name" xml:space="preserve">
     <value>geoFenceToolStripMenuItem</value>
   </data>
@@ -3116,10 +3128,10 @@
   <data name="&gt;&gt;zoomToHomeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;escolherGPSToolStripMenuItem.Name" xml:space="preserve">
-    <value>escolherGPSToolStripMenuItem</value>
+  <data name="&gt;&gt;bonsVoosPulverizadorToolStripMenuItem.Name" xml:space="preserve">
+    <value>bonsVoosPulverizadorToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;escolherGPSToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;bonsVoosPulverizadorToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

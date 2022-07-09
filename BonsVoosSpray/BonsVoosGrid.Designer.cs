@@ -1,6 +1,6 @@
-﻿namespace MissionPlanner.SprayingMission
+﻿namespace MissionPlanner.BonsVoosGrid
 {
-    partial class BonsVoosGrid
+    partial class BonsVoosGridUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGrid));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGridUI));
             this.CMB_camera = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.num_setservono = new System.Windows.Forms.NumericUpDown();
@@ -123,6 +123,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.tabGrid = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.NUM_leadin2 = new System.Windows.Forms.NumericUpDown();
             this.chk_spiral = new System.Windows.Forms.CheckBox();
             this.chk_Corridor = new System.Windows.Forms.CheckBox();
             this.label43 = new System.Windows.Forms.Label();
@@ -192,6 +193,7 @@
             this.groupBox5.SuspendLayout();
             this.tabGrid.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).BeginInit();
@@ -217,7 +219,7 @@
             // 
             this.CMB_camera.FormattingEnabled = true;
             this.CMB_camera.Location = new System.Drawing.Point(7, 263);
-            this.CMB_camera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CMB_camera.Margin = new System.Windows.Forms.Padding(4);
             this.CMB_camera.Name = "CMB_camera";
             this.CMB_camera.Size = new System.Drawing.Size(155, 24);
             this.CMB_camera.TabIndex = 70;
@@ -237,7 +239,7 @@
             // num_setservono
             // 
             this.num_setservono.Location = new System.Drawing.Point(12, 202);
-            this.num_setservono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_setservono.Margin = new System.Windows.Forms.Padding(4);
             this.num_setservono.Maximum = new decimal(new int[] {
             12,
             0,
@@ -282,7 +284,7 @@
             // num_setservolow
             // 
             this.num_setservolow.Location = new System.Drawing.Point(88, 202);
-            this.num_setservolow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_setservolow.Margin = new System.Windows.Forms.Padding(4);
             this.num_setservolow.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -300,7 +302,7 @@
             // num_setservohigh
             // 
             this.num_setservohigh.Location = new System.Drawing.Point(164, 202);
-            this.num_setservohigh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_setservohigh.Margin = new System.Windows.Forms.Padding(4);
             this.num_setservohigh.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -320,7 +322,7 @@
             this.rad_do_set_servo.AutoSize = true;
             this.rad_do_set_servo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rad_do_set_servo.Location = new System.Drawing.Point(12, 156);
-            this.rad_do_set_servo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rad_do_set_servo.Margin = new System.Windows.Forms.Padding(4);
             this.rad_do_set_servo.Name = "rad_do_set_servo";
             this.rad_do_set_servo.Size = new System.Drawing.Size(267, 20);
             this.rad_do_set_servo.TabIndex = 39;
@@ -335,7 +337,7 @@
             this.chk_stopstart.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_stopstart.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chk_stopstart.Location = new System.Drawing.Point(192, 23);
-            this.chk_stopstart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chk_stopstart.Margin = new System.Windows.Forms.Padding(4);
             this.chk_stopstart.Name = "chk_stopstart";
             this.chk_stopstart.Size = new System.Drawing.Size(115, 20);
             this.chk_stopstart.TabIndex = 38;
@@ -374,9 +376,9 @@
             this.groupBox3.Controls.Add(this.rad_repeatservo);
             this.groupBox3.Controls.Add(this.rad_trigdist);
             this.groupBox3.Location = new System.Drawing.Point(9, 353);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(308, 240);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
@@ -407,7 +409,7 @@
             // NUM_repttime
             // 
             this.NUM_repttime.Location = new System.Drawing.Point(164, 124);
-            this.NUM_repttime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_repttime.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_repttime.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -430,7 +432,7 @@
             // num_reptpwm
             // 
             this.num_reptpwm.Location = new System.Drawing.Point(88, 124);
-            this.num_reptpwm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_reptpwm.Margin = new System.Windows.Forms.Padding(4);
             this.num_reptpwm.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -448,7 +450,7 @@
             // NUM_reptservo
             // 
             this.NUM_reptservo.Location = new System.Drawing.Point(12, 124);
-            this.NUM_reptservo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_reptservo.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_reptservo.Maximum = new decimal(new int[] {
             12,
             0,
@@ -473,7 +475,7 @@
             this.rad_digicam.AutoSize = true;
             this.rad_digicam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rad_digicam.Location = new System.Drawing.Point(12, 52);
-            this.rad_digicam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rad_digicam.Margin = new System.Windows.Forms.Padding(4);
             this.rad_digicam.Name = "rad_digicam";
             this.rad_digicam.Size = new System.Drawing.Size(268, 20);
             this.rad_digicam.TabIndex = 29;
@@ -486,7 +488,7 @@
             this.rad_repeatservo.AutoSize = true;
             this.rad_repeatservo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rad_repeatservo.Location = new System.Drawing.Point(12, 80);
-            this.rad_repeatservo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rad_repeatservo.Margin = new System.Windows.Forms.Padding(4);
             this.rad_repeatservo.Name = "rad_repeatservo";
             this.rad_repeatservo.Size = new System.Drawing.Size(263, 20);
             this.rad_repeatservo.TabIndex = 27;
@@ -501,7 +503,7 @@
             this.rad_trigdist.Checked = true;
             this.rad_trigdist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rad_trigdist.Location = new System.Drawing.Point(12, 23);
-            this.rad_trigdist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rad_trigdist.Margin = new System.Windows.Forms.Padding(4);
             this.rad_trigdist.Name = "rad_trigdist";
             this.rad_trigdist.Size = new System.Drawing.Size(165, 20);
             this.rad_trigdist.TabIndex = 26;
@@ -515,10 +517,10 @@
             this.tabCamera.Controls.Add(this.groupBox3);
             this.tabCamera.Controls.Add(this.groupBox2);
             this.tabCamera.Location = new System.Drawing.Point(4, 25);
-            this.tabCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCamera.Margin = new System.Windows.Forms.Padding(4);
             this.tabCamera.Name = "tabCamera";
-            this.tabCamera.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabCamera.Size = new System.Drawing.Size(329, 525);
+            this.tabCamera.Padding = new System.Windows.Forms.Padding(4);
+            this.tabCamera.Size = new System.Drawing.Size(329, 490);
             this.tabCamera.TabIndex = 1;
             this.tabCamera.Text = "Pulverizador Config";
             this.tabCamera.UseVisualStyleBackColor = true;
@@ -546,9 +548,9 @@
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.BUT_save);
             this.groupBox2.Location = new System.Drawing.Point(8, 7);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(308, 340);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
@@ -558,7 +560,7 @@
             // 
             this.BUT_samplephoto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BUT_samplephoto.Location = new System.Drawing.Point(13, 183);
-            this.BUT_samplephoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BUT_samplephoto.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_samplephoto.Name = "BUT_samplephoto";
             this.BUT_samplephoto.Size = new System.Drawing.Size(147, 28);
             this.BUT_samplephoto.TabIndex = 70;
@@ -602,7 +604,7 @@
             // TXT_fovV
             // 
             this.TXT_fovV.Location = new System.Drawing.Point(191, 300);
-            this.TXT_fovV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_fovV.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_fovV.Name = "TXT_fovV";
             this.TXT_fovV.Size = new System.Drawing.Size(67, 22);
             this.TXT_fovV.TabIndex = 64;
@@ -610,7 +612,7 @@
             // TXT_fovH
             // 
             this.TXT_fovH.Location = new System.Drawing.Point(191, 267);
-            this.TXT_fovH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_fovH.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_fovH.Name = "TXT_fovH";
             this.TXT_fovH.Size = new System.Drawing.Size(67, 22);
             this.TXT_fovH.TabIndex = 63;
@@ -629,7 +631,7 @@
             // TXT_cmpixel
             // 
             this.TXT_cmpixel.Location = new System.Drawing.Point(191, 235);
-            this.TXT_cmpixel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_cmpixel.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_cmpixel.Name = "TXT_cmpixel";
             this.TXT_cmpixel.Size = new System.Drawing.Size(67, 22);
             this.TXT_cmpixel.TabIndex = 61;
@@ -637,7 +639,7 @@
             // TXT_sensheight
             // 
             this.TXT_sensheight.Location = new System.Drawing.Point(191, 151);
-            this.TXT_sensheight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_sensheight.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_sensheight.Name = "TXT_sensheight";
             this.TXT_sensheight.Size = new System.Drawing.Size(67, 22);
             this.TXT_sensheight.TabIndex = 57;
@@ -646,7 +648,7 @@
             // TXT_senswidth
             // 
             this.TXT_senswidth.Location = new System.Drawing.Point(191, 119);
-            this.TXT_senswidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_senswidth.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_senswidth.Name = "TXT_senswidth";
             this.TXT_senswidth.Size = new System.Drawing.Size(67, 22);
             this.TXT_senswidth.TabIndex = 56;
@@ -655,7 +657,7 @@
             // TXT_imgheight
             // 
             this.TXT_imgheight.Location = new System.Drawing.Point(191, 87);
-            this.TXT_imgheight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_imgheight.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_imgheight.Name = "TXT_imgheight";
             this.TXT_imgheight.Size = new System.Drawing.Size(67, 22);
             this.TXT_imgheight.TabIndex = 55;
@@ -664,7 +666,7 @@
             // TXT_imgwidth
             // 
             this.TXT_imgwidth.Location = new System.Drawing.Point(191, 55);
-            this.TXT_imgwidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_imgwidth.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_imgwidth.Name = "TXT_imgwidth";
             this.TXT_imgwidth.Size = new System.Drawing.Size(67, 22);
             this.TXT_imgwidth.TabIndex = 54;
@@ -679,7 +681,7 @@
             0,
             65536});
             this.NUM_focallength.Location = new System.Drawing.Point(191, 23);
-            this.NUM_focallength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_focallength.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_focallength.Maximum = new decimal(new int[] {
             500,
             0,
@@ -758,7 +760,7 @@
             // 
             this.BUT_save.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BUT_save.Location = new System.Drawing.Point(191, 183);
-            this.BUT_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BUT_save.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_save.Name = "BUT_save";
             this.BUT_save.Size = new System.Drawing.Size(85, 28);
             this.BUT_save.TabIndex = 45;
@@ -774,10 +776,10 @@
             this.groupBox7.Controls.Add(this.NUM_Lane_Dist);
             this.groupBox7.Controls.Add(this.label28);
             this.groupBox7.Location = new System.Drawing.Point(8, 501);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox7.Size = new System.Drawing.Size(311, 165);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Size = new System.Drawing.Size(311, 130);
             this.groupBox7.TabIndex = 63;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Plane Options";
@@ -809,7 +811,7 @@
             // NUM_Lane_Dist
             // 
             this.NUM_Lane_Dist.Location = new System.Drawing.Point(191, 58);
-            this.NUM_Lane_Dist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_Lane_Dist.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_Lane_Dist.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -837,7 +839,7 @@
             this.CHK_copter_headingline.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_copter_headingline.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_copter_headingline.Location = new System.Drawing.Point(12, 144);
-            this.CHK_copter_headingline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_copter_headingline.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_copter_headingline.Name = "CHK_copter_headingline";
             this.CHK_copter_headingline.Size = new System.Drawing.Size(162, 20);
             this.CHK_copter_headingline.TabIndex = 64;
@@ -849,7 +851,7 @@
             this.chk_spline.AutoSize = true;
             this.chk_spline.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chk_spline.Location = new System.Drawing.Point(12, 116);
-            this.chk_spline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chk_spline.Margin = new System.Windows.Forms.Padding(4);
             this.chk_spline.Name = "chk_spline";
             this.chk_spline.Size = new System.Drawing.Size(132, 20);
             this.chk_spline.TabIndex = 63;
@@ -870,10 +872,10 @@
             this.groupBox_copter.Controls.Add(this.LBL_copter_delay);
             this.groupBox_copter.Controls.Add(this.NUM_copter_delay);
             this.groupBox_copter.Location = new System.Drawing.Point(8, 319);
-            this.groupBox_copter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_copter.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_copter.Name = "groupBox_copter";
-            this.groupBox_copter.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox_copter.Size = new System.Drawing.Size(311, 250);
+            this.groupBox_copter.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox_copter.Size = new System.Drawing.Size(311, 215);
             this.groupBox_copter.TabIndex = 2;
             this.groupBox_copter.TabStop = false;
             this.groupBox_copter.Text = "Copter Options";
@@ -882,7 +884,7 @@
             // 
             this.TXT_headinghold.Enabled = false;
             this.TXT_headinghold.Location = new System.Drawing.Point(191, 59);
-            this.TXT_headinghold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_headinghold.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_headinghold.Name = "TXT_headinghold";
             this.TXT_headinghold.ReadOnly = true;
             this.TXT_headinghold.Size = new System.Drawing.Size(40, 22);
@@ -894,7 +896,7 @@
             this.BUT_headingholdminus.Enabled = false;
             this.BUT_headingholdminus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BUT_headingholdminus.Location = new System.Drawing.Point(272, 57);
-            this.BUT_headingholdminus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BUT_headingholdminus.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_headingholdminus.Name = "BUT_headingholdminus";
             this.BUT_headingholdminus.Size = new System.Drawing.Size(31, 28);
             this.BUT_headingholdminus.TabIndex = 10;
@@ -906,7 +908,7 @@
             this.BUT_headingholdplus.Enabled = false;
             this.BUT_headingholdplus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BUT_headingholdplus.Location = new System.Drawing.Point(240, 57);
-            this.BUT_headingholdplus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BUT_headingholdplus.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_headingholdplus.Name = "BUT_headingholdplus";
             this.BUT_headingholdplus.Size = new System.Drawing.Size(31, 28);
             this.BUT_headingholdplus.TabIndex = 9;
@@ -919,7 +921,7 @@
             this.CHK_copter_headingholdlock.Enabled = false;
             this.CHK_copter_headingholdlock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_copter_headingholdlock.Location = new System.Drawing.Point(43, 90);
-            this.CHK_copter_headingholdlock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_copter_headingholdlock.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_copter_headingholdlock.Name = "CHK_copter_headingholdlock";
             this.CHK_copter_headingholdlock.Size = new System.Drawing.Size(126, 20);
             this.CHK_copter_headingholdlock.TabIndex = 8;
@@ -931,7 +933,7 @@
             this.CHK_copter_headinghold.AutoSize = true;
             this.CHK_copter_headinghold.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_copter_headinghold.Location = new System.Drawing.Point(12, 62);
-            this.CHK_copter_headinghold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_copter_headinghold.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_copter_headinghold.Name = "CHK_copter_headinghold";
             this.CHK_copter_headinghold.Size = new System.Drawing.Size(152, 20);
             this.CHK_copter_headinghold.TabIndex = 6;
@@ -958,7 +960,7 @@
             0,
             65536});
             this.NUM_copter_delay.Location = new System.Drawing.Point(191, 26);
-            this.NUM_copter_delay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_copter_delay.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_copter_delay.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -975,7 +977,7 @@
             this.myButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.myButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.myButton3.Location = new System.Drawing.Point(171, 273);
-            this.myButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.myButton3.Margin = new System.Windows.Forms.Padding(4);
             this.myButton3.Name = "myButton3";
             this.myButton3.Size = new System.Drawing.Size(128, 39);
             this.myButton3.TabIndex = 80;
@@ -990,7 +992,7 @@
             this.myButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.myButton2.Location = new System.Drawing.Point(152, 318);
-            this.myButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.myButton2.Margin = new System.Windows.Forms.Padding(4);
             this.myButton2.Name = "myButton2";
             this.myButton2.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.myButton2.Size = new System.Drawing.Size(152, 28);
@@ -1005,7 +1007,7 @@
             this.myButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.myButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.myButton1.Location = new System.Drawing.Point(13, 273);
-            this.myButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.myButton1.Margin = new System.Windows.Forms.Padding(4);
             this.myButton1.Name = "myButton1";
             this.myButton1.Size = new System.Drawing.Size(131, 28);
             this.myButton1.TabIndex = 78;
@@ -1015,7 +1017,7 @@
             // TXT_Nozzler_FlowRates
             // 
             this.TXT_Nozzler_FlowRates.Location = new System.Drawing.Point(191, 240);
-            this.TXT_Nozzler_FlowRates.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_Nozzler_FlowRates.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_Nozzler_FlowRates.Name = "TXT_Nozzler_FlowRates";
             this.TXT_Nozzler_FlowRates.Size = new System.Drawing.Size(67, 22);
             this.TXT_Nozzler_FlowRates.TabIndex = 77;
@@ -1051,7 +1053,7 @@
             0,
             0});
             this.NUM_takeoff.Location = new System.Drawing.Point(241, 58);
-            this.NUM_takeoff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_takeoff.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_takeoff.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1085,7 +1087,7 @@
             // NUM_split
             // 
             this.NUM_split.Location = new System.Drawing.Point(21, 277);
-            this.NUM_split.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_split.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_split.Maximum = new decimal(new int[] {
             300,
             0,
@@ -1146,14 +1148,15 @@
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Controls.Add(this.label22);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox5.Location = new System.Drawing.Point(0, 511);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Location = new System.Drawing.Point(0, 664);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox5.Size = new System.Drawing.Size(669, 98);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(1006, 98);
             this.groupBox5.TabIndex = 54;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Stats";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // lbl_minshutter
             // 
@@ -1449,10 +1452,10 @@
             this.tabGrid.Controls.Add(this.label3);
             this.tabGrid.Controls.Add(this.NUM_spacing);
             this.tabGrid.Location = new System.Drawing.Point(4, 25);
-            this.tabGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabGrid.Margin = new System.Windows.Forms.Padding(4);
             this.tabGrid.Name = "tabGrid";
-            this.tabGrid.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabGrid.Size = new System.Drawing.Size(329, 525);
+            this.tabGrid.Padding = new System.Windows.Forms.Padding(4);
+            this.tabGrid.Size = new System.Drawing.Size(329, 490);
             this.tabGrid.TabIndex = 0;
             this.tabGrid.Text = "Missão";
             this.tabGrid.UseVisualStyleBackColor = true;
@@ -1461,6 +1464,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.NUM_leadin2);
             this.groupBox1.Controls.Add(this.chk_spiral);
             this.groupBox1.Controls.Add(this.chk_Corridor);
             this.groupBox1.Controls.Add(this.label43);
@@ -1481,20 +1485,37 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.NUM_Distance);
             this.groupBox1.Location = new System.Drawing.Point(8, 7);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(311, 402);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(311, 367);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grid Options";
+            // 
+            // NUM_leadin2
+            // 
+            this.NUM_leadin2.Location = new System.Drawing.Point(220, 111);
+            this.NUM_leadin2.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.NUM_leadin2.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.NUM_leadin2.Name = "NUM_leadin2";
+            this.NUM_leadin2.Size = new System.Drawing.Size(72, 22);
+            this.NUM_leadin2.TabIndex = 68;
             // 
             // chk_spiral
             // 
             this.chk_spiral.AutoSize = true;
             this.chk_spiral.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chk_spiral.Location = new System.Drawing.Point(228, 242);
-            this.chk_spiral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chk_spiral.Margin = new System.Windows.Forms.Padding(4);
             this.chk_spiral.Name = "chk_spiral";
             this.chk_spiral.Size = new System.Drawing.Size(64, 20);
             this.chk_spiral.TabIndex = 66;
@@ -1506,7 +1527,7 @@
             this.chk_Corridor.AutoSize = true;
             this.chk_Corridor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chk_Corridor.Location = new System.Drawing.Point(120, 242);
-            this.chk_Corridor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chk_Corridor.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Corridor.Name = "chk_Corridor";
             this.chk_Corridor.Size = new System.Drawing.Size(77, 20);
             this.chk_Corridor.TabIndex = 65;
@@ -1528,7 +1549,7 @@
             // 
             this.num_corridorwidth.DecimalPlaces = 1;
             this.num_corridorwidth.Location = new System.Drawing.Point(191, 272);
-            this.num_corridorwidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_corridorwidth.Margin = new System.Windows.Forms.Padding(4);
             this.num_corridorwidth.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -1553,7 +1574,7 @@
             this.chk_crossgrid.AutoSize = true;
             this.chk_crossgrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chk_crossgrid.Location = new System.Drawing.Point(13, 242);
-            this.chk_crossgrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chk_crossgrid.Margin = new System.Windows.Forms.Padding(4);
             this.chk_crossgrid.Name = "chk_crossgrid";
             this.chk_crossgrid.Size = new System.Drawing.Size(92, 20);
             this.chk_crossgrid.TabIndex = 62;
@@ -1573,8 +1594,8 @@
             // 
             // NUM_leadin
             // 
-            this.NUM_leadin.Location = new System.Drawing.Point(191, 113);
-            this.NUM_leadin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_leadin.Location = new System.Drawing.Point(137, 111);
+            this.NUM_leadin.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_leadin.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1598,7 +1619,7 @@
             // NUM_overshoot2
             // 
             this.NUM_overshoot2.Location = new System.Drawing.Point(191, 81);
-            this.NUM_overshoot2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_overshoot2.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_overshoot2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1645,7 +1666,7 @@
             // 
             this.CMB_startfrom.FormattingEnabled = true;
             this.CMB_startfrom.Location = new System.Drawing.Point(137, 145);
-            this.CMB_startfrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CMB_startfrom.Margin = new System.Windows.Forms.Padding(4);
             this.CMB_startfrom.Name = "CMB_startfrom";
             this.CMB_startfrom.Size = new System.Drawing.Size(121, 24);
             this.CMB_startfrom.TabIndex = 14;
@@ -1654,7 +1675,7 @@
             // 
             this.num_overlap.DecimalPlaces = 1;
             this.num_overlap.Location = new System.Drawing.Point(191, 178);
-            this.num_overlap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_overlap.Margin = new System.Windows.Forms.Padding(4);
             this.num_overlap.Name = "num_overlap";
             this.num_overlap.Size = new System.Drawing.Size(68, 22);
             this.num_overlap.TabIndex = 58;
@@ -1668,7 +1689,7 @@
             // 
             this.num_sidelap.DecimalPlaces = 1;
             this.num_sidelap.Location = new System.Drawing.Point(191, 210);
-            this.num_sidelap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.num_sidelap.Margin = new System.Windows.Forms.Padding(4);
             this.num_sidelap.Name = "num_sidelap";
             this.num_sidelap.Size = new System.Drawing.Size(68, 22);
             this.num_sidelap.TabIndex = 59;
@@ -1687,7 +1708,7 @@
             // NUM_overshoot
             // 
             this.NUM_overshoot.Location = new System.Drawing.Point(191, 49);
-            this.NUM_overshoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_overshoot.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_overshoot.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1712,7 +1733,7 @@
             // 
             this.NUM_Distance.DecimalPlaces = 2;
             this.NUM_Distance.Location = new System.Drawing.Point(191, 17);
-            this.NUM_Distance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_Distance.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_Distance.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1747,7 +1768,7 @@
             // NUM_spacing
             // 
             this.NUM_spacing.Location = new System.Drawing.Point(200, 599);
-            this.NUM_spacing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_spacing.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_spacing.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -1764,12 +1785,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TRK_zoom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TRK_zoom.LargeChange = 0.005F;
-            this.TRK_zoom.Location = new System.Drawing.Point(718, 0);
+            this.TRK_zoom.Location = new System.Drawing.Point(716, 0);
             this.TRK_zoom.Maximum = 22F;
             this.TRK_zoom.Minimum = 2F;
             this.TRK_zoom.Name = "TRK_zoom";
             this.TRK_zoom.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.TRK_zoom.Size = new System.Drawing.Size(56, 777);
+            this.TRK_zoom.Size = new System.Drawing.Size(56, 922);
             this.TRK_zoom.SmallChange = 0.001F;
             this.TRK_zoom.TabIndex = 55;
             this.TRK_zoom.TickFrequency = 1F;
@@ -1779,7 +1800,7 @@
             // NUM_UpDownNozzlerWidth
             // 
             this.NUM_UpDownNozzlerWidth.Location = new System.Drawing.Point(191, 210);
-            this.NUM_UpDownNozzlerWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_UpDownNozzlerWidth.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownNozzlerWidth.Maximum = new decimal(new int[] {
             360,
             0,
@@ -1819,7 +1840,7 @@
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(712, 531);
+            this.map.Size = new System.Drawing.Size(673, 676);
             this.map.TabIndex = 52;
             this.map.Zoom = 3D;
             // 
@@ -1831,10 +1852,10 @@
             this.tabSimple.Controls.Add(this.groupBox4);
             this.tabSimple.Controls.Add(this.BUT_Accept);
             this.tabSimple.Location = new System.Drawing.Point(4, 25);
-            this.tabSimple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabSimple.Margin = new System.Windows.Forms.Padding(4);
             this.tabSimple.Name = "tabSimple";
-            this.tabSimple.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabSimple.Size = new System.Drawing.Size(329, 580);
+            this.tabSimple.Padding = new System.Windows.Forms.Padding(4);
+            this.tabSimple.Size = new System.Drawing.Size(329, 635);
             this.tabSimple.TabIndex = 3;
             this.tabSimple.Text = "Pulverização";
             this.tabSimple.UseVisualStyleBackColor = true;
@@ -1843,7 +1864,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(7, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 82);
             this.pictureBox1.TabIndex = 62;
@@ -1888,9 +1909,9 @@
             this.groupBox6.Controls.Add(this.NUM_altitude);
             this.groupBox6.Controls.Add(this.label1);
             this.groupBox6.Location = new System.Drawing.Point(8, 84);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(315, 353);
             this.groupBox6.TabIndex = 61;
             this.groupBox6.TabStop = false;
@@ -1932,7 +1953,7 @@
             // NUM_UpDownFlyFlowRate
             // 
             this.NUM_UpDownFlyFlowRate.Location = new System.Drawing.Point(189, 180);
-            this.NUM_UpDownFlyFlowRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_UpDownFlyFlowRate.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownFlyFlowRate.Maximum = new decimal(new int[] {
             360,
             0,
@@ -1972,7 +1993,7 @@
             // NUM_UpDownFlySpeed
             // 
             this.NUM_UpDownFlySpeed.Location = new System.Drawing.Point(189, 149);
-            this.NUM_UpDownFlySpeed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_UpDownFlySpeed.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownFlySpeed.Maximum = new decimal(new int[] {
             360,
             0,
@@ -2012,7 +2033,7 @@
             // NUM_angle
             // 
             this.NUM_angle.Location = new System.Drawing.Point(95, 89);
-            this.NUM_angle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_angle.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_angle.Maximum = new decimal(new int[] {
             360,
             0,
@@ -2029,7 +2050,7 @@
             this.CHK_camdirection.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_camdirection.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_camdirection.Location = new System.Drawing.Point(57, 121);
-            this.CHK_camdirection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_camdirection.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_camdirection.Name = "CHK_camdirection";
             this.CHK_camdirection.Size = new System.Drawing.Size(159, 20);
             this.CHK_camdirection.TabIndex = 60;
@@ -2044,7 +2065,7 @@
             0,
             0});
             this.NUM_altitude.Location = new System.Drawing.Point(95, 57);
-            this.NUM_altitude.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUM_altitude.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -2063,6 +2084,7 @@
             0,
             0,
             0});
+            this.NUM_altitude.ValueChanged += new System.EventHandler(this.NUM_altitude_ValueChanged_1);
             // 
             // label1
             // 
@@ -2084,9 +2106,9 @@
             this.groupBox4.Controls.Add(this.CHK_markers);
             this.groupBox4.Controls.Add(this.CHK_boundary);
             this.groupBox4.Location = new System.Drawing.Point(8, 438);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(315, 113);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
@@ -2097,7 +2119,7 @@
             this.CHK_footprints.AutoSize = true;
             this.CHK_footprints.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_footprints.Location = new System.Drawing.Point(12, 81);
-            this.CHK_footprints.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_footprints.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_footprints.Name = "CHK_footprints";
             this.CHK_footprints.Size = new System.Drawing.Size(109, 20);
             this.CHK_footprints.TabIndex = 6;
@@ -2109,7 +2131,7 @@
             this.CHK_advanced.AutoSize = true;
             this.CHK_advanced.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_advanced.Location = new System.Drawing.Point(11, 166);
-            this.CHK_advanced.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_advanced.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_advanced.Name = "CHK_advanced";
             this.CHK_advanced.Size = new System.Drawing.Size(140, 20);
             this.CHK_advanced.TabIndex = 5;
@@ -2123,7 +2145,7 @@
             this.CHK_internals.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_internals.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_internals.Location = new System.Drawing.Point(123, 53);
-            this.CHK_internals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_internals.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_internals.Name = "CHK_internals";
             this.CHK_internals.Size = new System.Drawing.Size(121, 20);
             this.CHK_internals.TabIndex = 3;
@@ -2137,7 +2159,7 @@
             this.CHK_grid.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_grid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_grid.Location = new System.Drawing.Point(12, 53);
-            this.CHK_grid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_grid.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_grid.Name = "CHK_grid";
             this.CHK_grid.Size = new System.Drawing.Size(67, 20);
             this.CHK_grid.TabIndex = 2;
@@ -2151,7 +2173,7 @@
             this.CHK_markers.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_markers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_markers.Location = new System.Drawing.Point(123, 23);
-            this.CHK_markers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_markers.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_markers.Name = "CHK_markers";
             this.CHK_markers.Size = new System.Drawing.Size(74, 20);
             this.CHK_markers.TabIndex = 1;
@@ -2165,7 +2187,7 @@
             this.CHK_boundary.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_boundary.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_boundary.Location = new System.Drawing.Point(11, 25);
-            this.CHK_boundary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHK_boundary.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_boundary.Name = "CHK_boundary";
             this.CHK_boundary.Size = new System.Drawing.Size(82, 20);
             this.CHK_boundary.TabIndex = 0;
@@ -2176,13 +2198,14 @@
             // 
             this.BUT_Accept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BUT_Accept.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BUT_Accept.Location = new System.Drawing.Point(112, 537);
-            this.BUT_Accept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BUT_Accept.Location = new System.Drawing.Point(112, 592);
+            this.BUT_Accept.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_Accept.Name = "BUT_Accept";
             this.BUT_Accept.Size = new System.Drawing.Size(100, 28);
             this.BUT_Accept.TabIndex = 22;
             this.BUT_Accept.Text = "Criar Plano";
             this.BUT_Accept.UseVisualStyleBackColor = true;
+            this.BUT_Accept.Click += new System.EventHandler(this.BUT_Accept_Click);
             // 
             // tabControl1
             // 
@@ -2191,131 +2214,72 @@
             this.tabControl1.Controls.Add(this.tabCamera);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.tabControl1.Location = new System.Drawing.Point(669, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(337, 609);
+            this.tabControl1.Size = new System.Drawing.Size(337, 664);
             this.tabControl1.TabIndex = 53;
             // 
-            // BonsVoosGrid
+            // BonsVoosGridUI
             // 
-            //this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.ClientSize = new System.Drawing.Size(1006, 609);
-            //this.Controls.Add(this.groupBox5);
-            //this.Controls.Add(this.TRK_zoom);
-            //this.Controls.Add(this.map);
-            //this.Controls.Add(this.tabControl1);
-            //this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            //this.Name = "BonsVoosGrid";
-            //this.Text = "BonsVoosGrid";
-            //((System.ComponentModel.ISupportInitialize)(this.num_setservono)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).EndInit();
-            //this.groupBox3.ResumeLayout(false);
-            //this.groupBox3.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).EndInit();
-            //this.tabCamera.ResumeLayout(false);
-            //this.groupBox2.ResumeLayout(false);
-            //this.groupBox2.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).EndInit();
-            //this.groupBox7.ResumeLayout(false);
-            //this.groupBox7.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_Lane_Dist)).EndInit();
-            //this.groupBox_copter.ResumeLayout(false);
-            //this.groupBox_copter.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_takeoff)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_split)).EndInit();
-            //this.groupBox5.ResumeLayout(false);
-            //this.groupBox5.PerformLayout();
-            //this.tabGrid.ResumeLayout(false);
-            //this.tabGrid.PerformLayout();
-            //this.groupBox1.ResumeLayout(false);
-            //this.groupBox1.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.num_overlap)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.num_sidelap)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownNozzlerWidth)).EndInit();
-            //this.tabSimple.ResumeLayout(false);
-            //this.tabSimple.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            //this.groupBox6.ResumeLayout(false);
-            //this.groupBox6.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlyFlowRate)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).EndInit();
-            //this.groupBox4.ResumeLayout(false);
-            //this.groupBox4.PerformLayout();
-            //this.tabControl1.ResumeLayout(false);
-            //this.ResumeLayout(false);
-            //this.PerformLayout();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1008, 617);
+            this.ClientSize = new System.Drawing.Size(1006, 762);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.map);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.TRK_zoom);
-            this.Name = "BonsVoosGrid";
+            this.Name = "BonsVoosGridUI";
             this.Text = "Bons Voos - Pulverizador";
             this.Load += new System.EventHandler(this.BonsVoosGrid_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_overlap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_sidelap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).EndInit();
+            this.tabCamera.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabSimple.ResumeLayout(false);
-            this.tabSimple.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_takeoff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_split)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownNozzlerWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlyFlowRate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).EndInit();
-            this.tabGrid.ResumeLayout(false);
-            this.tabGrid.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Lane_Dist)).EndInit();
             this.groupBox_copter.ResumeLayout(false);
             this.groupBox_copter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
-            this.tabCamera.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_takeoff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_split)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.tabGrid.ResumeLayout(false);
+            this.tabGrid.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_overlap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_sidelap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownNozzlerWidth)).EndInit();
+            this.tabSimple.ResumeLayout(false);
+            this.tabSimple.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlyFlowRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2467,5 +2431,6 @@
         private System.Windows.Forms.CheckBox CHK_boundary;
         private Controls.MyButton BUT_Accept;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.NumericUpDown NUM_leadin2;
     }
 }

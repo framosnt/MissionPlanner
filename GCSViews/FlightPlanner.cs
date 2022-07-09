@@ -11,6 +11,7 @@ using log4net;
 using MissionPlanner.ArduPilot;
 using MissionPlanner.Controls;
 using MissionPlanner.Grid;
+using MissionPlanner.BonsVoosGrid;
 using MissionPlanner.Maps;
 using MissionPlanner.Plugin;
 using MissionPlanner.Properties;
@@ -7945,6 +7946,16 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             var si1 = new MissionPlanner.Controls.BonsVoosGPS();
             ThemeManager.ApplyThemeTo(si1);
             si1.Show();
+        }
+
+        private void bonsVoosPulverizadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BonsVoosGridPlugin grid = new BonsVoosGridPlugin();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+
+
+
         }
     }
 }

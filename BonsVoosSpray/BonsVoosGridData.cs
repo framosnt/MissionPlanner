@@ -1,48 +1,26 @@
 ﻿using MissionPlanner.Utilities;
 using System.Collections.Generic;
-namespace MissionPlanner.BonsVoosGrid
-{
-    public struct sprayerinfo
-    {
-        public string name;
-        public float tankvolume;
-        public float spraybarwidth;
-        public float spraybarheight;
-        public float linewidth;
-        public float pointheight;
-        public float sprayflowLM;
-        public float sprayflowLHA;
-        public float sprayspeedKM;
-        public float spacebetweennozzler;
-        public float nozzlerangle;
 
-    }
-    public struct camerainfo
-    {
-        public string name;
-        public float focallen;
-        public float sensorwidth;
-        public float sensorheight;
-        public float imagewidth;
-        public float imageheight;
-    }
-    public struct GridData
+namespace MissionPlanner.BonsVoosGrid 
+{
+    public struct BonsVoosGridData
     {
         public List<PointLatLngAlt> poly;
         //simple
-        public string camera;
+        public string sprayer;
         public decimal alt;
         public decimal angle;
-        public bool camdir;
+        //public bool camdir;
         public decimal speed;
         public bool usespeed;
         public bool autotakeoff;
         public bool autotakeoff_RTL;
+        public decimal autotakeoff_alt;
 
-        public decimal splitmission;
+        //public decimal splitmission;
 
         public bool internals;
-        public bool footprints;
+        //public bool footprints;
         public bool advanced;
 
         //options
@@ -50,6 +28,7 @@ namespace MissionPlanner.BonsVoosGrid
         public decimal overshoot1;
         public decimal overshoot2;
         public decimal leadin;
+        public decimal leadin2;
         public string startfrom;
         public decimal overlap;
         public decimal sidelap;
@@ -64,6 +43,10 @@ namespace MissionPlanner.BonsVoosGrid
         // plane settings
         public bool alternateLanes;
         public decimal minlaneseparation;
+        // spiral settings
+        public decimal clockwiseLaps;
+        public decimal laps;
+        public bool matchPerimeter;
 
         // camera config
         public bool trigdist;

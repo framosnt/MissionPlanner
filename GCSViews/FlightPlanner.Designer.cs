@@ -155,6 +155,7 @@ namespace MissionPlanner.GCSViews
             this.offsetPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pontoPolígonoGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.escolherGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geoFenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GeoFenceuploadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GeoFencedownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -221,7 +222,7 @@ namespace MissionPlanner.GCSViews
             this.zoomToVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.escolherGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bonsVoosPulverizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelWaypoints.SuspendLayout();
@@ -1042,6 +1043,12 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.pontoPolígonoGPSToolStripMenuItem, "pontoPolígonoGPSToolStripMenuItem");
             this.pontoPolígonoGPSToolStripMenuItem.Click += new System.EventHandler(this.pontoPolígonoGPSToolStripMenuItem_Click);
             // 
+            // escolherGPSToolStripMenuItem
+            // 
+            this.escolherGPSToolStripMenuItem.Name = "escolherGPSToolStripMenuItem";
+            resources.ApplyResources(this.escolherGPSToolStripMenuItem, "escolherGPSToolStripMenuItem");
+            this.escolherGPSToolStripMenuItem.Click += new System.EventHandler(this.escolherGPSToolStripMenuItem_Click);
+            // 
             // geoFenceToolStripMenuItem
             // 
             this.geoFenceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1146,7 +1153,8 @@ namespace MissionPlanner.GCSViews
             this.areaToolStripMenuItem1,
             this.textToolStripMenuItem,
             this.createCircleSurveyToolStripMenuItem,
-            this.surveyGridToolStripMenuItem});
+            this.surveyGridToolStripMenuItem,
+            this.bonsVoosPulverizadorToolStripMenuItem});
             this.autoWPToolStripMenuItem.Name = "autoWPToolStripMenuItem";
             resources.ApplyResources(this.autoWPToolStripMenuItem, "autoWPToolStripMenuItem");
             // 
@@ -1483,11 +1491,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.zoomToHomeToolStripMenuItem, "zoomToHomeToolStripMenuItem");
             this.zoomToHomeToolStripMenuItem.Click += new System.EventHandler(this.zoomToHomeToolStripMenuItem_Click);
             // 
-            // escolherGPSToolStripMenuItem
+            // bonsVoosPulverizadorToolStripMenuItem
             // 
-            this.escolherGPSToolStripMenuItem.Name = "escolherGPSToolStripMenuItem";
-            resources.ApplyResources(this.escolherGPSToolStripMenuItem, "escolherGPSToolStripMenuItem");
-            this.escolherGPSToolStripMenuItem.Click += new System.EventHandler(this.escolherGPSToolStripMenuItem_Click);
+            this.bonsVoosPulverizadorToolStripMenuItem.Name = "bonsVoosPulverizadorToolStripMenuItem";
+            resources.ApplyResources(this.bonsVoosPulverizadorToolStripMenuItem, "bonsVoosPulverizadorToolStripMenuItem");
+            this.bonsVoosPulverizadorToolStripMenuItem.Click += new System.EventHandler(this.bonsVoosPulverizadorToolStripMenuItem_Click);
             // 
             // FlightPlanner
             // 
@@ -1693,5 +1701,6 @@ namespace MissionPlanner.GCSViews
         private ToolStripMenuItem offsetPolygonToolStripMenuItem2;
         private ToolStripMenuItem pontoPolígonoGPSToolStripMenuItem;
         private ToolStripMenuItem escolherGPSToolStripMenuItem;
+        private ToolStripMenuItem bonsVoosPulverizadorToolStripMenuItem;
     }
 }

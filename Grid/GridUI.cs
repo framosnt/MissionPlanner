@@ -318,6 +318,7 @@ namespace MissionPlanner.Grid
             return griddata;
         }
 
+
         void loadsettings()
         {
             if (plugin.Host.config.ContainsKey("grid_camera"))
