@@ -520,7 +520,7 @@
             this.tabCamera.Margin = new System.Windows.Forms.Padding(4);
             this.tabCamera.Name = "tabCamera";
             this.tabCamera.Padding = new System.Windows.Forms.Padding(4);
-            this.tabCamera.Size = new System.Drawing.Size(329, 490);
+            this.tabCamera.Size = new System.Drawing.Size(329, 635);
             this.tabCamera.TabIndex = 1;
             this.tabCamera.Text = "Pulverizador Config";
             this.tabCamera.UseVisualStyleBackColor = true;
@@ -779,7 +779,7 @@
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(311, 130);
+            this.groupBox7.Size = new System.Drawing.Size(311, 275);
             this.groupBox7.TabIndex = 63;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Plane Options";
@@ -875,7 +875,7 @@
             this.groupBox_copter.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_copter.Name = "groupBox_copter";
             this.groupBox_copter.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_copter.Size = new System.Drawing.Size(311, 215);
+            this.groupBox_copter.Size = new System.Drawing.Size(311, 360);
             this.groupBox_copter.TabIndex = 2;
             this.groupBox_copter.TabStop = false;
             this.groupBox_copter.Text = "Copter Options";
@@ -983,6 +983,7 @@
             this.myButton3.TabIndex = 80;
             this.myButton3.Text = "Calcular Velocidade";
             this.myButton3.UseVisualStyleBackColor = true;
+            this.myButton3.Click += new System.EventHandler(this.myButton3_Click_1);
             // 
             // myButton2
             // 
@@ -1013,6 +1014,7 @@
             this.myButton1.TabIndex = 78;
             this.myButton1.Text = "Calcular Fluxo";
             this.myButton1.UseVisualStyleBackColor = true;
+            this.myButton1.Click += new System.EventHandler(this.myButton1_Click_1);
             // 
             // TXT_Nozzler_FlowRates
             // 
@@ -1455,7 +1457,7 @@
             this.tabGrid.Margin = new System.Windows.Forms.Padding(4);
             this.tabGrid.Name = "tabGrid";
             this.tabGrid.Padding = new System.Windows.Forms.Padding(4);
-            this.tabGrid.Size = new System.Drawing.Size(329, 490);
+            this.tabGrid.Size = new System.Drawing.Size(329, 635);
             this.tabGrid.TabIndex = 0;
             this.tabGrid.Text = "Missão";
             this.tabGrid.UseVisualStyleBackColor = true;
@@ -1488,7 +1490,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(311, 367);
+            this.groupBox1.Size = new System.Drawing.Size(311, 512);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grid Options";
@@ -1843,6 +1845,7 @@
             this.map.Size = new System.Drawing.Size(673, 676);
             this.map.TabIndex = 52;
             this.map.Zoom = 3D;
+            this.map.Load += new System.EventHandler(this.map_Load_1);
             // 
             // tabSimple
             // 

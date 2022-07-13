@@ -62,10 +62,210 @@ namespace MissionPlanner.BonsVoosGrid
         int CurrentGMapMarkerIndex = 0;
         bool isMouseDown = false;
         bool isMouseDraging = false;
-        public BonsVoosGridUI(BonsVoosGridPlugin Plugin )
+        
+        public BonsVoosGridUI(BonsVoosGridPlugin plugin )
         {
+
+
+            this.plugin = plugin;
+
             InitializeComponent();
+            loading = true;
+
+            map.MapProvider = plugin.Host.FDMapType;
+            map.MaxZoom = plugin.Host.FDGMapControl.MaxZoom;
+            TRK_zoom.Maximum = map.MaxZoom;
+
+            kmlpolygonsoverlay = new GMapOverlay("kmlpolygons");
+            map.Overlays.Add(kmlpolygonsoverlay);
+
+            routesOverlay = new GMapOverlay("routes");
+            map.Overlays.Add(routesOverlay);
+
+            // Map Events
+            map.OnMapZoomChanged += new MapZoomChanged(map_OnMapZoomChanged);
+            map.OnMarkerEnter += new MarkerEnter(map_OnMarkerEnter);
+            map.OnMarkerLeave += new MarkerLeave(map_OnMarkerLeave);
+            map.MouseUp += new MouseEventHandler(map_MouseUp);
+
+            map.OnRouteEnter += new RouteEnter(map_OnRouteEnter);
+            map.OnRouteLeave += new RouteLeave(map_OnRouteLeave);
+
+            var points = plugin.Host.FPDrawnPolygon;
+            points.Points.ForEach(x => { list.Add(x); });
+            points.Dispose();
+            if (plugin.Host.config["distunits"] != null)
+                DistUnits = plugin.Host.config["distunits"].ToString();
+
+            CMB_startfrom.DataSource = Enum.GetNames(typeof(Utilities.Grid.StartPosition));
+            CMB_startfrom.SelectedIndex = 0;
+
+            // set and angle that is good
+            NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
+            TXT_headinghold.Text = (Math.Round(NUM_angle.Value)).ToString();
+
+            if (plugin.Host.cs.firmware == Firmwares.ArduPlane)
+                NUM_UpDownFlySpeed.Value = (decimal)(12 * CurrentState.multiplierspeed);
+
+            map.MapScaleInfoEnabled = true;
+            map.ScalePen = new Pen(Color.Orange);
+
+            foreach (var temp in FlightData.kmlpolygons.Polygons)
+            {
+                kmlpolygonsoverlay.Polygons.Add(new GMapPolygon(temp.Points, "") { Fill = Brushes.Transparent });
+            }
+            foreach (var temp in FlightData.kmlpolygons.Routes)
+            {
+                kmlpolygonsoverlay.Routes.Add(new GMapRoute(temp.Points, ""));
+            }
+
+            xmlcamera(false, Settings.GetRunningDirectory() + "camerasBuiltin.xml");
+
+            xmlcamera(false, Settings.GetUserDataDirectory() + "cameras.xml");
+
+            loading = false;
         }
+
+        private void xmlcamera(bool write, string filename)
+        {
+            bool exists = File.Exists(filename);
+
+            if (write || !exists)
+            {
+                try
+                {
+                    XmlTextWriter xmlwriter = new XmlTextWriter(filename, Encoding.ASCII);
+                    xmlwriter.Formatting = Formatting.Indented;
+
+                    xmlwriter.WriteStartDocument();
+
+                    xmlwriter.WriteStartElement("Cameras");
+
+                    foreach (string key in cameras.Keys)
+                    {
+                        try
+                        {
+                            if (key == "")
+                                continue;
+                            xmlwriter.WriteStartElement("Camera");
+                            xmlwriter.WriteElementString("name", cameras[key].name);
+                            xmlwriter.WriteElementString("flen", cameras[key].focallen.ToString(new System.Globalization.CultureInfo("en-US")));
+                            xmlwriter.WriteElementString("imgh", cameras[key].imageheight.ToString(new System.Globalization.CultureInfo("en-US")));
+                            xmlwriter.WriteElementString("imgw", cameras[key].imagewidth.ToString(new System.Globalization.CultureInfo("en-US")));
+                            xmlwriter.WriteElementString("senh", cameras[key].sensorheight.ToString(new System.Globalization.CultureInfo("en-US")));
+                            xmlwriter.WriteElementString("senw", cameras[key].sensorwidth.ToString(new System.Globalization.CultureInfo("en-US")));
+                            xmlwriter.WriteEndElement();
+                        }
+                        catch { }
+                    }
+
+                    xmlwriter.WriteEndElement();
+
+                    xmlwriter.WriteEndDocument();
+                    xmlwriter.Close();
+
+                }
+                catch (Exception ex) { CustomMessageBox.Show(ex.ToString()); }
+            }
+            else
+            {
+                try
+                {
+                    using (XmlTextReader xmlreader = new XmlTextReader(filename))
+                    {
+                        while (xmlreader.Read())
+                        {
+                            xmlreader.MoveToElement();
+                            try
+                            {
+                                switch (xmlreader.Name)
+                                {
+                                    case "Camera":
+                                        {
+                                            camerainfo camera = new camerainfo();
+
+                                            while (xmlreader.Read())
+                                            {
+                                                bool dobreak = false;
+                                                xmlreader.MoveToElement();
+                                                switch (xmlreader.Name)
+                                                {
+                                                    case "name":
+                                                        camera.name = xmlreader.ReadString();
+                                                        break;
+                                                    case "imgw":
+                                                        camera.imagewidth = float.Parse(xmlreader.ReadString(), new System.Globalization.CultureInfo("en-US"));
+                                                        break;
+                                                    case "imgh":
+                                                        camera.imageheight = float.Parse(xmlreader.ReadString(), new System.Globalization.CultureInfo("en-US"));
+                                                        break;
+                                                    case "senw":
+                                                        camera.sensorwidth = float.Parse(xmlreader.ReadString(), new System.Globalization.CultureInfo("en-US"));
+                                                        break;
+                                                    case "senh":
+                                                        camera.sensorheight = float.Parse(xmlreader.ReadString(), new System.Globalization.CultureInfo("en-US"));
+                                                        break;
+                                                    case "flen":
+                                                        camera.focallen = float.Parse(xmlreader.ReadString(), new System.Globalization.CultureInfo("en-US"));
+                                                        break;
+                                                    case "Camera":
+                                                        cameras[camera.name] = camera;
+                                                        dobreak = true;
+                                                        break;
+                                                }
+                                                if (dobreak)
+                                                    break;
+                                            }
+                                            string temp = xmlreader.ReadString();
+                                        }
+                                        break;
+                                    case "Config":
+                                        break;
+                                    case "xml":
+                                        break;
+                                    default:
+                                        if (xmlreader.Name == "") // line feeds
+                                            break;
+                                        //config[xmlreader.Name] = xmlreader.ReadString();
+                                        break;
+                                }
+                            }
+                            catch (Exception ee) { Console.WriteLine(ee.Message); } // silent fail on bad entry
+                        }
+                    }
+                }
+                catch (Exception ex) { Console.WriteLine("Bad Camera File: " + ex.ToString()); } // bad config file
+
+                // populate list
+                foreach (var camera in cameras.Values)
+                {
+                    if (!CMB_camera.Items.Contains(camera.name))
+                        CMB_camera.Items.Add(camera.name);
+                }
+            }
+        }
+
+
+        double getAngleOfLongestSide(List<PointLatLngAlt> list)
+        {
+            if (list.Count == 0)
+                return 0;
+            double angle = 0;
+            double maxdist = 0;
+            PointLatLngAlt last = list[list.Count - 1];
+            foreach (var item in list)
+            {
+                if (item.GetDistance(last) > maxdist)
+                {
+                    angle = item.GetBearing(last);
+                    maxdist = item.GetDistance(last);
+                }
+                last = item;
+            }
+
+            return (angle + 360) % 360;
+        }
+
         private void BonsVoosGrid_Load_1(object sender, EventArgs e)
         {
             domainUpDown1_ValueChanged(this, null);
@@ -160,14 +360,22 @@ namespace MissionPlanner.BonsVoosGrid
                 //    (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value, MainV2.comPort.MAV.cs.PlannedHomeLocation).ConfigureAwait(true);
 
                 
-                    grid = await Utilities.Grid.CreateGridAsync(list,
-                        CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value),
-                        (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value,
-                        (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value,
-                       (Utilities.Grid.StartPosition)Enum.Parse(typeof(Utilities.Grid.StartPosition), CMB_startfrom.Text),
-                        false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value, (float)NUM_leadin2.Value,
-                        MainV2.comPort.MAV.cs.PlannedHomeLocation, false).ConfigureAwait(true);
-                
+                    //grid = await Utilities.Grid.CreateGridAsync(list,
+                    //    CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value),
+                    //    (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value,
+                    //    (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value,
+                    //   (Utilities.Grid.StartPosition)Enum.Parse(typeof(Utilities.Grid.StartPosition), CMB_startfrom.Text),
+                    //    false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value, (float)NUM_leadin2.Value,
+                    //    MainV2.comPort.MAV.cs.PlannedHomeLocation,  false).ConfigureAwait(true);
+
+                grid = await Utilities.Grid.CreateGridAsync(list,
+                 CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value),
+                 (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value,
+                 (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value,
+                 (Utilities.Grid.StartPosition)Enum.Parse(typeof(Utilities.Grid.StartPosition), CMB_startfrom.Text),
+                 false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value, (float)NUM_leadin2.Value,
+                 MainV2.comPort.MAV.cs.PlannedHomeLocation, false).ConfigureAwait(true);
+
 
             }
 
@@ -1780,6 +1988,22 @@ namespace MissionPlanner.BonsVoosGrid
             domainUpDown1_ValueChanged(sender, e);
         }
 
+        private void myButton1_Click_1(object sender, EventArgs e)
+        {
+            CalcularRate();
+            domainUpDown1_ValueChanged(sender, e);
+        }
 
+        private void myButton3_Click_1(object sender, EventArgs e)
+        {
+            CalcularSpeed();
+            domainUpDown1_ValueChanged(sender, e);
+
+        }
+
+        private void map_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

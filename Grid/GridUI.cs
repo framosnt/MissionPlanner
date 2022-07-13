@@ -1912,5 +1912,10 @@ namespace MissionPlanner.Grid
 
             domainUpDown1_ValueChanged(sender, e);
         }
+
+        private void map_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
