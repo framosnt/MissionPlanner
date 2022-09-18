@@ -462,10 +462,11 @@ namespace MissionPlanner.Controls
 
         private void BonsVoosGPS_Load(object sender, EventArgs e)
         {
+            //fernando 28-07-2022 - não iniciar com ele ligado.
             CMB_baudrateGPS.Text = "9600";
             CMB_updaterateGPS.Text = "2hz";
             CMB_serialportGPS.Text = "GPS";
-            BUT_connect_Click_1( sender, e);
+            //BUT_connect_Click_1( sender, e);
 
         }
 

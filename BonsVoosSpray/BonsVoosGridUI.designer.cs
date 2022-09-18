@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGridUI));
             this.CMB_camera = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.num_setservono = new System.Windows.Forms.NumericUpDown();
@@ -84,9 +83,6 @@
             this.CHK_copter_headinghold = new System.Windows.Forms.CheckBox();
             this.LBL_copter_delay = new System.Windows.Forms.Label();
             this.NUM_copter_delay = new System.Windows.Forms.NumericUpDown();
-            this.myButton3 = new MissionPlanner.Controls.MyButton();
-            this.myButton2 = new MissionPlanner.Controls.MyButton();
-            this.myButton1 = new MissionPlanner.Controls.MyButton();
             this.TXT_Nozzler_FlowRates = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
@@ -145,13 +141,14 @@
             this.NUM_Distance = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.NUM_spacing = new System.Windows.Forms.NumericUpDown();
-            this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             this.NUM_UpDownNozzlerWidth = new System.Windows.Forms.NumericUpDown();
-            this.map = new MissionPlanner.Controls.myGMAP();
             this.tabSimple = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.myButton3 = new MissionPlanner.Controls.MyButton();
+            this.myButton2 = new MissionPlanner.Controls.MyButton();
+            this.myButton1 = new MissionPlanner.Controls.MyButton();
             this.label48 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -159,7 +156,6 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.NUM_UpDownFlySpeed = new System.Windows.Forms.NumericUpDown();
-            this.label26 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NUM_angle = new System.Windows.Forms.NumericUpDown();
             this.CHK_camdirection = new System.Windows.Forms.CheckBox();
@@ -174,6 +170,8 @@
             this.CHK_boundary = new System.Windows.Forms.CheckBox();
             this.BUT_Accept = new MissionPlanner.Controls.MyButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.map = new MissionPlanner.Controls.myGMAP();
+            this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).BeginInit();
@@ -202,7 +200,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownNozzlerWidth)).BeginInit();
             this.tabSimple.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -213,15 +210,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.SuspendLayout();
             // 
             // CMB_camera
             // 
             this.CMB_camera.FormattingEnabled = true;
-            this.CMB_camera.Location = new System.Drawing.Point(7, 263);
+            this.CMB_camera.Location = new System.Drawing.Point(163, 287);
             this.CMB_camera.Margin = new System.Windows.Forms.Padding(4);
             this.CMB_camera.Name = "CMB_camera";
-            this.CMB_camera.Size = new System.Drawing.Size(155, 24);
+            this.CMB_camera.Size = new System.Drawing.Size(144, 24);
             this.CMB_camera.TabIndex = 70;
             this.CMB_camera.Visible = false;
             // 
@@ -970,55 +968,9 @@
             this.NUM_copter_delay.Size = new System.Drawing.Size(68, 22);
             this.NUM_copter_delay.TabIndex = 2;
             // 
-            // myButton3
-            // 
-            this.myButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.myButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.myButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton3.Location = new System.Drawing.Point(171, 273);
-            this.myButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.myButton3.Name = "myButton3";
-            this.myButton3.Size = new System.Drawing.Size(128, 39);
-            this.myButton3.TabIndex = 80;
-            this.myButton3.Text = "Calcular Velocidade";
-            this.myButton3.UseVisualStyleBackColor = true;
-            this.myButton3.Click += new System.EventHandler(this.myButton3_Click_1);
-            // 
-            // myButton2
-            // 
-            this.myButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.myButton2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.myButton2.BGGradTop = System.Drawing.Color.Teal;
-            this.myButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton2.Location = new System.Drawing.Point(152, 318);
-            this.myButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.myButton2.Name = "myButton2";
-            this.myButton2.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.myButton2.Size = new System.Drawing.Size(152, 28);
-            this.myButton2.TabIndex = 79;
-            this.myButton2.Text = "Gravar Taxa Drone";
-            this.myButton2.UseVisualStyleBackColor = true;
-            // 
-            // myButton1
-            // 
-            this.myButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.myButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.myButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myButton1.Location = new System.Drawing.Point(13, 273);
-            this.myButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.myButton1.Name = "myButton1";
-            this.myButton1.Size = new System.Drawing.Size(131, 28);
-            this.myButton1.TabIndex = 78;
-            this.myButton1.Text = "Calcular Fluxo";
-            this.myButton1.UseVisualStyleBackColor = true;
-            this.myButton1.Click += new System.EventHandler(this.myButton1_Click_1);
-            // 
             // TXT_Nozzler_FlowRates
             // 
-            this.TXT_Nozzler_FlowRates.Location = new System.Drawing.Point(191, 240);
+            this.TXT_Nozzler_FlowRates.Location = new System.Drawing.Point(166, 178);
             this.TXT_Nozzler_FlowRates.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_Nozzler_FlowRates.Name = "TXT_Nozzler_FlowRates";
             this.TXT_Nozzler_FlowRates.Size = new System.Drawing.Size(67, 22);
@@ -1029,7 +981,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label50.Location = new System.Drawing.Point(264, 244);
+            this.label50.Location = new System.Drawing.Point(233, 181);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(46, 16);
@@ -1040,7 +992,7 @@
             // 
             this.label51.AutoSize = true;
             this.label51.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label51.Location = new System.Drawing.Point(64, 244);
+            this.label51.Location = new System.Drawing.Point(59, 182);
             this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(98, 16);
@@ -1049,12 +1001,8 @@
             // 
             // NUM_takeoff
             // 
-            this.NUM_takeoff.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.NUM_takeoff.Location = new System.Drawing.Point(241, 58);
+            this.NUM_takeoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_takeoff.Location = new System.Drawing.Point(185, 35);
             this.NUM_takeoff.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_takeoff.Maximum = new decimal(new int[] {
             9999,
@@ -1067,7 +1015,7 @@
             0,
             0});
             this.NUM_takeoff.Name = "NUM_takeoff";
-            this.NUM_takeoff.Size = new System.Drawing.Size(68, 22);
+            this.NUM_takeoff.Size = new System.Drawing.Size(68, 30);
             this.NUM_takeoff.TabIndex = 72;
             this.NUM_takeoff.Value = new decimal(new int[] {
             6,
@@ -1079,7 +1027,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label49.Location = new System.Drawing.Point(172, 60);
+            this.label49.Location = new System.Drawing.Point(182, 18);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(55, 16);
@@ -1114,7 +1062,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(265, 213);
+            this.label47.Location = new System.Drawing.Point(236, 151);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(27, 16);
@@ -1288,9 +1236,9 @@
             this.label25.Location = new System.Drawing.Point(263, 73);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(118, 16);
+            this.label25.Size = new System.Drawing.Size(111, 16);
             this.label25.TabIndex = 14;
-            this.label25.Text = "Dist between lines:";
+            this.label25.Text = "Dist. entre Linhas:";
             // 
             // lbl_footprint
             // 
@@ -1310,9 +1258,9 @@
             this.label30.Location = new System.Drawing.Point(263, 57);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(62, 16);
+            this.label30.Size = new System.Drawing.Size(135, 16);
             this.label30.TabIndex = 12;
-            this.label30.Text = "Footprint:";
+            this.label30.Text = "largura de Aplicação:";
             // 
             // lbl_strips
             // 
@@ -1781,27 +1729,10 @@
             this.NUM_spacing.TabIndex = 27;
             this.NUM_spacing.Visible = false;
             // 
-            // TRK_zoom
-            // 
-            this.TRK_zoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TRK_zoom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TRK_zoom.LargeChange = 0.005F;
-            this.TRK_zoom.Location = new System.Drawing.Point(716, 0);
-            this.TRK_zoom.Maximum = 22F;
-            this.TRK_zoom.Minimum = 2F;
-            this.TRK_zoom.Name = "TRK_zoom";
-            this.TRK_zoom.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.TRK_zoom.Size = new System.Drawing.Size(56, 922);
-            this.TRK_zoom.SmallChange = 0.001F;
-            this.TRK_zoom.TabIndex = 55;
-            this.TRK_zoom.TickFrequency = 1F;
-            this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.TRK_zoom.Value = 2F;
-            // 
             // NUM_UpDownNozzlerWidth
             // 
-            this.NUM_UpDownNozzlerWidth.Location = new System.Drawing.Point(191, 210);
+            this.NUM_UpDownNozzlerWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_UpDownNozzlerWidth.Location = new System.Drawing.Point(166, 148);
             this.NUM_UpDownNozzlerWidth.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownNozzlerWidth.Maximum = new decimal(new int[] {
             360,
@@ -1809,7 +1740,7 @@
             0,
             0});
             this.NUM_UpDownNozzlerWidth.Name = "NUM_UpDownNozzlerWidth";
-            this.NUM_UpDownNozzlerWidth.Size = new System.Drawing.Size(68, 22);
+            this.NUM_UpDownNozzlerWidth.Size = new System.Drawing.Size(68, 27);
             this.NUM_UpDownNozzlerWidth.TabIndex = 68;
             this.NUM_UpDownNozzlerWidth.Value = new decimal(new int[] {
             150,
@@ -1817,59 +1748,29 @@
             0,
             0});
             // 
-            // map
-            // 
-            this.map.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.map.Bearing = 0F;
-            this.map.CanDragMap = true;
-            this.map.EmptyTileColor = System.Drawing.Color.Gray;
-            this.map.GrayScaleMode = false;
-            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.map.HoldInvalidation = false;
-            this.map.LevelsKeepInMemmory = 5;
-            this.map.Location = new System.Drawing.Point(0, 0);
-            this.map.MarkersEnabled = true;
-            this.map.MaxZoom = 19;
-            this.map.MinZoom = 2;
-            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
-            this.map.Name = "map";
-            this.map.NegativeMode = false;
-            this.map.PolygonsEnabled = true;
-            this.map.RetryLoadTile = 0;
-            this.map.RoutesEnabled = true;
-            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
-            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(673, 676);
-            this.map.TabIndex = 52;
-            this.map.Zoom = 3D;
-            this.map.Load += new System.EventHandler(this.map_Load_1);
-            // 
             // tabSimple
             // 
             this.tabSimple.Controls.Add(this.pictureBox1);
             this.tabSimple.Controls.Add(this.label38);
             this.tabSimple.Controls.Add(this.groupBox6);
             this.tabSimple.Controls.Add(this.groupBox4);
-            this.tabSimple.Controls.Add(this.BUT_Accept);
             this.tabSimple.Location = new System.Drawing.Point(4, 25);
             this.tabSimple.Margin = new System.Windows.Forms.Padding(4);
             this.tabSimple.Name = "tabSimple";
             this.tabSimple.Padding = new System.Windows.Forms.Padding(4);
-            this.tabSimple.Size = new System.Drawing.Size(329, 635);
+            this.tabSimple.Size = new System.Drawing.Size(318, 635);
             this.tabSimple.TabIndex = 3;
             this.tabSimple.Text = "Pulverização";
             this.tabSimple.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox1.Image = global::MissionPlanner.Properties.Resources.BonsVoos_pictureBox2_Image;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(323, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
@@ -1877,7 +1778,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label38.Location = new System.Drawing.Point(8, 553);
+            this.label38.Location = new System.Drawing.Point(47, 506);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(199, 32);
@@ -1892,6 +1793,7 @@
             this.groupBox6.Controls.Add(this.TXT_Nozzler_FlowRates);
             this.groupBox6.Controls.Add(this.label50);
             this.groupBox6.Controls.Add(this.label51);
+            this.groupBox6.Controls.Add(this.BUT_Accept);
             this.groupBox6.Controls.Add(this.NUM_takeoff);
             this.groupBox6.Controls.Add(this.label49);
             this.groupBox6.Controls.Add(this.NUM_split);
@@ -1905,26 +1807,71 @@
             this.groupBox6.Controls.Add(this.label37);
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.NUM_UpDownFlySpeed);
-            this.groupBox6.Controls.Add(this.label26);
             this.groupBox6.Controls.Add(this.label4);
             this.groupBox6.Controls.Add(this.NUM_angle);
             this.groupBox6.Controls.Add(this.CHK_camdirection);
             this.groupBox6.Controls.Add(this.NUM_altitude);
             this.groupBox6.Controls.Add(this.label1);
-            this.groupBox6.Location = new System.Drawing.Point(8, 84);
+            this.groupBox6.Location = new System.Drawing.Point(15, 73);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(315, 353);
+            this.groupBox6.Size = new System.Drawing.Size(308, 292);
             this.groupBox6.TabIndex = 61;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Configuração Básica";
+            // 
+            // myButton3
+            // 
+            this.myButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.myButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.myButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.myButton3.Location = new System.Drawing.Point(105, 213);
+            this.myButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.myButton3.Name = "myButton3";
+            this.myButton3.Size = new System.Drawing.Size(86, 39);
+            this.myButton3.TabIndex = 80;
+            this.myButton3.Text = "Calcular Velocidade";
+            this.myButton3.UseVisualStyleBackColor = true;
+            this.myButton3.Click += new System.EventHandler(this.myButton3_Click_1);
+            // 
+            // myButton2
+            // 
+            this.myButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.myButton2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.myButton2.BGGradTop = System.Drawing.Color.Teal;
+            this.myButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.myButton2.Location = new System.Drawing.Point(92, 253);
+            this.myButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.myButton2.Name = "myButton2";
+            this.myButton2.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.myButton2.Size = new System.Drawing.Size(105, 28);
+            this.myButton2.TabIndex = 79;
+            this.myButton2.Text = "Gravar Parâmetros";
+            this.myButton2.UseVisualStyleBackColor = true;
+            this.myButton2.Visible = false;
+            // 
+            // myButton1
+            // 
+            this.myButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.myButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.myButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.myButton1.Location = new System.Drawing.Point(21, 213);
+            this.myButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.myButton1.Name = "myButton1";
+            this.myButton1.Size = new System.Drawing.Size(73, 39);
+            this.myButton1.TabIndex = 78;
+            this.myButton1.Text = "Calcular Fluxo";
+            this.myButton1.UseVisualStyleBackColor = true;
+            this.myButton1.Click += new System.EventHandler(this.myButton1_Click_1);
             // 
             // label48
             // 
             this.label48.AutoSize = true;
             this.label48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label48.Location = new System.Drawing.Point(65, 213);
+            this.label48.Location = new System.Drawing.Point(50, 151);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(110, 16);
@@ -1935,7 +1882,7 @@
             // 
             this.label46.AutoSize = true;
             this.label46.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label46.Location = new System.Drawing.Point(264, 182);
+            this.label46.Location = new System.Drawing.Point(233, 122);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(33, 16);
@@ -1946,7 +1893,7 @@
             // 
             this.label45.AutoSize = true;
             this.label45.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label45.Location = new System.Drawing.Point(264, 151);
+            this.label45.Location = new System.Drawing.Point(233, 91);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(36, 16);
@@ -1955,7 +1902,8 @@
             // 
             // NUM_UpDownFlyFlowRate
             // 
-            this.NUM_UpDownFlyFlowRate.Location = new System.Drawing.Point(189, 180);
+            this.NUM_UpDownFlyFlowRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_UpDownFlyFlowRate.Location = new System.Drawing.Point(164, 118);
             this.NUM_UpDownFlyFlowRate.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownFlyFlowRate.Maximum = new decimal(new int[] {
             360,
@@ -1963,7 +1911,7 @@
             0,
             0});
             this.NUM_UpDownFlyFlowRate.Name = "NUM_UpDownFlyFlowRate";
-            this.NUM_UpDownFlyFlowRate.Size = new System.Drawing.Size(68, 22);
+            this.NUM_UpDownFlyFlowRate.Size = new System.Drawing.Size(68, 27);
             this.NUM_UpDownFlyFlowRate.TabIndex = 64;
             this.NUM_UpDownFlyFlowRate.Value = new decimal(new int[] {
             10,
@@ -1975,7 +1923,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label37.Location = new System.Drawing.Point(64, 182);
+            this.label37.Location = new System.Drawing.Point(62, 120);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(95, 16);
@@ -1986,7 +1934,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(8, 151);
+            this.label24.Location = new System.Drawing.Point(4, 88);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(153, 16);
@@ -1995,7 +1943,8 @@
             // 
             // NUM_UpDownFlySpeed
             // 
-            this.NUM_UpDownFlySpeed.Location = new System.Drawing.Point(189, 149);
+            this.NUM_UpDownFlySpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_UpDownFlySpeed.Location = new System.Drawing.Point(164, 86);
             this.NUM_UpDownFlySpeed.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_UpDownFlySpeed.Maximum = new decimal(new int[] {
             360,
@@ -2003,7 +1952,7 @@
             0,
             0});
             this.NUM_UpDownFlySpeed.Name = "NUM_UpDownFlySpeed";
-            this.NUM_UpDownFlySpeed.Size = new System.Drawing.Size(68, 22);
+            this.NUM_UpDownFlySpeed.Size = new System.Drawing.Size(68, 27);
             this.NUM_UpDownFlySpeed.TabIndex = 61;
             this.NUM_UpDownFlySpeed.Value = new decimal(new int[] {
             18,
@@ -2011,22 +1960,11 @@
             0,
             0});
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label26.Location = new System.Drawing.Point(100, 20);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 16);
-            this.label26.TabIndex = 45;
-            this.label26.Text = "Pulverizador G10";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(8, 91);
+            this.label4.Location = new System.Drawing.Point(23, 49);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 16);
@@ -2035,7 +1973,8 @@
             // 
             // NUM_angle
             // 
-            this.NUM_angle.Location = new System.Drawing.Point(95, 89);
+            this.NUM_angle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_angle.Location = new System.Drawing.Point(107, 47);
             this.NUM_angle.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_angle.Maximum = new decimal(new int[] {
             360,
@@ -2043,8 +1982,9 @@
             0,
             0});
             this.NUM_angle.Name = "NUM_angle";
-            this.NUM_angle.Size = new System.Drawing.Size(68, 22);
+            this.NUM_angle.Size = new System.Drawing.Size(68, 30);
             this.NUM_angle.TabIndex = 6;
+            this.NUM_angle.ValueChanged += new System.EventHandler(this.NUM_angle_ValueChanged_1);
             // 
             // CHK_camdirection
             // 
@@ -2052,22 +1992,19 @@
             this.CHK_camdirection.Checked = true;
             this.CHK_camdirection.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_camdirection.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CHK_camdirection.Location = new System.Drawing.Point(57, 121);
+            this.CHK_camdirection.Location = new System.Drawing.Point(12, 287);
             this.CHK_camdirection.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_camdirection.Name = "CHK_camdirection";
             this.CHK_camdirection.Size = new System.Drawing.Size(159, 20);
             this.CHK_camdirection.TabIndex = 60;
             this.CHK_camdirection.Text = "Pulverizador de frente";
             this.CHK_camdirection.UseVisualStyleBackColor = true;
+            this.CHK_camdirection.Visible = false;
             // 
             // NUM_altitude
             // 
-            this.NUM_altitude.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.NUM_altitude.Location = new System.Drawing.Point(95, 57);
+            this.NUM_altitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUM_altitude.Location = new System.Drawing.Point(107, 15);
             this.NUM_altitude.Margin = new System.Windows.Forms.Padding(4);
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
@@ -2080,7 +2017,7 @@
             0,
             0});
             this.NUM_altitude.Name = "NUM_altitude";
-            this.NUM_altitude.Size = new System.Drawing.Size(68, 22);
+            this.NUM_altitude.Size = new System.Drawing.Size(68, 30);
             this.NUM_altitude.TabIndex = 0;
             this.NUM_altitude.Value = new decimal(new int[] {
             6,
@@ -2093,7 +2030,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(8, 59);
+            this.label1.Location = new System.Drawing.Point(45, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 16);
@@ -2108,11 +2045,11 @@
             this.groupBox4.Controls.Add(this.CHK_grid);
             this.groupBox4.Controls.Add(this.CHK_markers);
             this.groupBox4.Controls.Add(this.CHK_boundary);
-            this.groupBox4.Location = new System.Drawing.Point(8, 438);
+            this.groupBox4.Location = new System.Drawing.Point(15, 373);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(315, 113);
+            this.groupBox4.Size = new System.Drawing.Size(308, 124);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Display";
@@ -2133,7 +2070,7 @@
             // 
             this.CHK_advanced.AutoSize = true;
             this.CHK_advanced.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CHK_advanced.Location = new System.Drawing.Point(11, 166);
+            this.CHK_advanced.Location = new System.Drawing.Point(123, 81);
             this.CHK_advanced.Margin = new System.Windows.Forms.Padding(4);
             this.CHK_advanced.Name = "CHK_advanced";
             this.CHK_advanced.Size = new System.Drawing.Size(140, 20);
@@ -2144,8 +2081,6 @@
             // CHK_internals
             // 
             this.CHK_internals.AutoSize = true;
-            this.CHK_internals.Checked = true;
-            this.CHK_internals.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_internals.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CHK_internals.Location = new System.Drawing.Point(123, 53);
             this.CHK_internals.Margin = new System.Windows.Forms.Padding(4);
@@ -2200,11 +2135,13 @@
             // BUT_Accept
             // 
             this.BUT_Accept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BUT_Accept.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BUT_Accept.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUT_Accept.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BUT_Accept.Location = new System.Drawing.Point(112, 592);
+            this.BUT_Accept.Location = new System.Drawing.Point(199, 212);
             this.BUT_Accept.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_Accept.Name = "BUT_Accept";
-            this.BUT_Accept.Size = new System.Drawing.Size(100, 28);
+            this.BUT_Accept.Size = new System.Drawing.Size(90, 40);
             this.BUT_Accept.TabIndex = 22;
             this.BUT_Accept.Text = "Criar Plano";
             this.BUT_Accept.UseVisualStyleBackColor = true;
@@ -2216,12 +2153,60 @@
             this.tabControl1.Controls.Add(this.tabGrid);
             this.tabControl1.Controls.Add(this.tabCamera);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tabControl1.Location = new System.Drawing.Point(669, 0);
+            this.tabControl1.Location = new System.Drawing.Point(680, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(337, 664);
+            this.tabControl1.Size = new System.Drawing.Size(326, 664);
             this.tabControl1.TabIndex = 53;
+            // 
+            // map
+            // 
+            this.map.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.map.Bearing = 0F;
+            this.map.CanDragMap = true;
+            this.map.EmptyTileColor = System.Drawing.Color.Gray;
+            this.map.GrayScaleMode = false;
+            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.map.HoldInvalidation = false;
+            this.map.LevelsKeepInMemmory = 5;
+            this.map.Location = new System.Drawing.Point(0, 0);
+            this.map.MarkersEnabled = true;
+            this.map.MaxZoom = 19;
+            this.map.MinZoom = 2;
+            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
+            this.map.Name = "map";
+            this.map.NegativeMode = false;
+            this.map.PolygonsEnabled = true;
+            this.map.RetryLoadTile = 0;
+            this.map.RoutesEnabled = true;
+            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
+            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.map.ShowTileGridLines = false;
+            this.map.Size = new System.Drawing.Size(673, 676);
+            this.map.TabIndex = 52;
+            this.map.Zoom = 3D;
+            this.map.Load += new System.EventHandler(this.map_Load_1);
+            // 
+            // TRK_zoom
+            // 
+            this.TRK_zoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TRK_zoom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TRK_zoom.LargeChange = 0.005F;
+            this.TRK_zoom.Location = new System.Drawing.Point(716, 0);
+            this.TRK_zoom.Maximum = 22F;
+            this.TRK_zoom.Minimum = 2F;
+            this.TRK_zoom.Name = "TRK_zoom";
+            this.TRK_zoom.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.TRK_zoom.Size = new System.Drawing.Size(56, 922);
+            this.TRK_zoom.SmallChange = 0.001F;
+            this.TRK_zoom.TabIndex = 55;
+            this.TRK_zoom.TickFrequency = 1F;
+            this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.TRK_zoom.Value = 2F;
             // 
             // BonsVoosGridUI
             // 
@@ -2269,7 +2254,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownNozzlerWidth)).EndInit();
             this.tabSimple.ResumeLayout(false);
             this.tabSimple.PerformLayout();
@@ -2283,6 +2267,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2419,7 +2404,6 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.NumericUpDown NUM_UpDownFlySpeed;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown NUM_angle;
         private System.Windows.Forms.CheckBox CHK_camdirection;

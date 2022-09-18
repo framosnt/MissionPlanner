@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MissionPlanner.BonsVoosGrid
+namespace MissionPlanner.BonsVoosGrid 
 {
     public class BonsVoosGridPlugin : MissionPlanner.Plugin.Plugin
     {
@@ -32,54 +32,55 @@ namespace MissionPlanner.BonsVoosGrid
 
         public override bool Loaded()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGridUI));
-            var temp = (string)(resources.GetObject("$this.Text"));
+            //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonsVoosGridUI));
+            //var temp = (string)(resources.GetObject("$this.Text"));
 
-            but = new ToolStripMenuItem(temp);
-            but.Click += but_Click;
+            //but = new ToolStripMenuItem(temp);
+            //but.Click += but_Click;
 
-            bool hit = false;
-            ToolStripItemCollection col = Host.FPMenuMap.Items;
-            int index = col.Count;
-            foreach (ToolStripItem item in col)
-            {
-                if (item.Text.Equals(Strings.AutoWP))
-                {
-                    index = col.IndexOf(item);
-                    ((ToolStripMenuItem)item).DropDownItems.Add(but);
-                    hit = true;
-                    break;
-                }
-            }
+            //bool hit = false;
+            //ToolStripItemCollection col = Host.FPMenuMap.Items;
+            //int index = col.Count;
+            //foreach (ToolStripItem item in col)
+            //{
+            //    if (item.Text.Equals(Strings.AutoWP))
+            //    {
+            //        index = col.IndexOf(item);
+            //        ((ToolStripMenuItem)item).DropDownItems.Add(but);
+            //        hit = true;
+            //        break;
+            //    }
+            //}
 
-            if (hit == false)
-                col.Add(but);
+            //if (hit == false)
+            //    col.Add(but);
 
             return true;
         }
 
         public void but_Click(object sender, EventArgs e)
         {
-            using (var gridui = new BonsVoosGridUI(this))
+            using (var BVgridui = new BonsVoosGridUI(this))
             {
-                MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
+                //fernando 27-07-2022 - sem aplicar tema
+                MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(BVgridui);
 
                 if (Host.FPDrawnPolygon != null && Host.FPDrawnPolygon.Points.Count > 2)
                 {
-                    gridui.ShowDialog();
+                    BVgridui.ShowDialog();
                 }
                 else
                 {
                     if (
-                        CustomMessageBox.Show("No polygon defined. Load a file?", "Load File", MessageBoxButtons.YesNo) ==
+                        CustomMessageBox.Show("Nenhum polígono definido. Carregar arquivo ?", "Load File", MessageBoxButtons.YesNo) ==
                         (int)DialogResult.Yes)
                     {
-                        gridui.LoadBonsVoosGrid() ;
-                        gridui.ShowDialog();
+                        BVgridui.LoadBonsVoosGrid() ;
+                        BVgridui.ShowDialog();
                     }
                     else
                     {
-                        CustomMessageBox.Show("Please define a polygon.", "Error");
+                        CustomMessageBox.Show("Defina um polígono.", "Error");
                     }
                 }
             }

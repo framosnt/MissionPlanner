@@ -313,6 +313,36 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BonsVoos_DronesPulverizadores {
+            get {
+                object obj = ResourceManager.GetObject("BonsVoos-DronesPulverizadores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BonsVoos_DronesPulverizadores2 {
+            get {
+                object obj = ResourceManager.GetObject("BonsVoos-DronesPulverizadores2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BonsVoos_pictureBox2_Image {
+            get {
+                object obj = ResourceManager.GetObject("BonsVoos.pictureBox2.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BR_APMPWRDEAN_2 {
             get {
                 object obj = ResourceManager.GetObject("BR-APMPWRDEAN-2", resourceCulture);
@@ -1282,6 +1312,16 @@ namespace MissionPlanner.Properties {
         public static System.Drawing.Bitmap Parachute {
             get {
                 object obj = ResourceManager.GetObject("Parachute", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pictureBox1_Image {
+            get {
+                object obj = ResourceManager.GetObject("pictureBox1.Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

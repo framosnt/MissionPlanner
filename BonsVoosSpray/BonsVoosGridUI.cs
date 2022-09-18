@@ -24,7 +24,7 @@ using GeoAPI.CoordinateSystems;
 using GeoAPI.CoordinateSystems.Transformations;
 using MissionPlanner.Controls;
 
-namespace MissionPlanner.BonsVoosGrid
+namespace MissionPlanner.BonsVoosGrid 
 {
     public partial class BonsVoosGridUI : Form
     {
@@ -126,6 +126,29 @@ namespace MissionPlanner.BonsVoosGrid
             loading = false;
         }
 
+        private void BonsVoosGridUI_Load(object sender, EventArgs e)
+        {
+            loading = true;
+            if (!loadedfromfile)
+              //  loadsettings();
+
+            // setup state before settings load
+            CHK_advanced_CheckedChanged(null, null);
+
+            TRK_zoom.Value = (float)map.Zoom;
+
+            //label1.Text += " (" + CurrentState.DistanceUnit + ")";
+            //label24.Text += " (" + CurrentState.SpeedUnit + ")";
+
+            loading = false;
+
+            domainUpDown1_ValueChanged(this, null);
+        }
+
+        private void GridUI_Resize(object sender, EventArgs e)
+        {
+            map.ZoomAndCenterMarkers("polygons");
+        }
         private void xmlcamera(bool write, string filename)
         {
             bool exists = File.Exists(filename);
@@ -328,10 +351,10 @@ namespace MissionPlanner.BonsVoosGrid
             if (loading)
                 return;
 
-            if (CMB_camera.Text != "")
-            {
+           // if (CMB_camera.Text != "")
+           // {
                 doCalc();
-            }
+           // }
 
             // new grid system test
 
@@ -369,7 +392,7 @@ namespace MissionPlanner.BonsVoosGrid
                     //    MainV2.comPort.MAV.cs.PlannedHomeLocation,  false).ConfigureAwait(true);
 
                 grid = await Utilities.Grid.CreateGridAsync(list,
-                 CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value),
+                 CurrentState.fromDistDisplayUnit((double) NUM_altitude.Value),
                  (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value,
                  (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value,
                  (Utilities.Grid.StartPosition)Enum.Parse(typeof(Utilities.Grid.StartPosition), CMB_startfrom.Text),
@@ -404,7 +427,7 @@ namespace MissionPlanner.BonsVoosGrid
                 //    Utilities.Grid.StartPosition.Point, false,
                 //    (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value, MainV2.comPort.MAV.cs.PlannedHomeLocation).ConfigureAwait(true));
                 grid.AddRange(await Utilities.Grid.CreateGridAsync(list,
-                   CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value),
+                   CurrentState.fromDistDisplayUnit((double) NUM_altitude.Value),
                    (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value + 90.0,
                    (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value,
                    Utilities.Grid.StartPosition.Point, false,
@@ -706,11 +729,12 @@ namespace MissionPlanner.BonsVoosGrid
             //      plugin.Host.AddWPtoList(MAVLink.MAV_CMD.CONDITION_YAW, Convert.ToInt32(TXT_headinghold.Text), 0, 0, 0, 0, 0, 0, gridobject);
             //  }
 
-            if (CHK_copter_headingline.Checked)
-            {
+            //fernando 28-07-2022 sem headingline:
+                //if (CHK_copter_headingline.Checked)
+                //{
 
-                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.CONDITION_YAW, Convert.ToInt32(TXT_headinghold.Text), 0, 0, 0, 0, 0, 0, gridobject);
-            }
+                //    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.CONDITION_YAW, Convert.ToInt32(TXT_headinghold.Text), 0, 0, 0, 0, 0, 0, gridobject);
+                //}
             //  fernando
 
             if (CHK_copter_headinghold.Checked)
@@ -1326,11 +1350,12 @@ namespace MissionPlanner.BonsVoosGrid
                     else
                     {
                         var wpno = plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 20, 0, 0, 0, 0, 0,
-                            (int)(numaltitude * (Decimal)CurrentState.multiplierdist), gridobject);
+                                 (int)(numaltitude * (Decimal)CurrentState.multiplierdist), gridobject);
 
                         wpsplitstart.Add(wpno);
                     }
 
+                    
 
                     //correção retirado o inteiro para velocidade correta
                     plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0,
@@ -1386,7 +1411,10 @@ namespace MissionPlanner.BonsVoosGrid
 
                                     // to get around the copter leash length issue, add this here instead of ME
                                     if (chk_stopstart.Checked && plla.Tag == "E")
-                                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 1, 0,
+                      //fernando 14-07-2022 - alterar set-cam zero para desligar o spray
+                                        //plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 1, 0,
+                                        //    0, 0, 0, gridobject);
+                                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SPRAYER, 0, 0, 0, 0,
                                             0, 0, 0, gridobject);
                                 }
 
@@ -1402,10 +1430,12 @@ namespace MissionPlanner.BonsVoosGrid
                                             if (plla.Lat != lastplla.Lat || plla.Lng != lastplla.Lng ||
                                                 plla.Alt != lastplla.Alt)
                                                 AddWP(plla.Lng, plla.Lat, plla.Alt, plla.Tag);
-
-                                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST,
-                                                (float)NUM_spacing.Value,
-                                                0, 1, 0, 0, 0, 0, gridobject);
+                     //fernando 14-07-2022 - alterar set-cam ligar para Ligar o spray
+                                         //   plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST,
+                                         //       (float)NUM_spacing.Value,
+                                         //       0, 1, 0, 0, 0, 0, gridobject);
+                                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SPRAYER, 1, 0, 0, 0,
+                         0, 0, 0, gridobject);
                                         }
                                         else if (plla.Tag == "ME")
                                         {
@@ -1420,9 +1450,13 @@ namespace MissionPlanner.BonsVoosGrid
                                         // add single start trigger
                                         if (!startedtrigdist)
                                         {
-                                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST,
-                                                (float)NUM_spacing.Value,
-                                                0, 1, 0, 0, 0, 0, gridobject);
+                     //fernando 14-07-2022 - alterar set-cam ligar para Ligar o spray
+                                            //plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST,
+                                            //    (float)NUM_spacing.Value,
+                                            //    0, 1, 0, 0, 0, 0, gridobject);
+                                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SPRAYER, 1, 0, 0, 0,
+                                                  0, 0, 0, gridobject);
+
                                             startedtrigdist = true;
                                         }
                                         else if (plla.Tag == "ME")
@@ -1492,10 +1526,11 @@ namespace MissionPlanner.BonsVoosGrid
 
                     // fernando - retirar código de disparo
 
-                    //                    if (rad_trigdist.Checked)
-                    //                    {
-                    //                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 1, 0, 0, 0, 0, gridobject);
-                    //                    }
+                                        if (rad_trigdist.Checked)
+                                        {
+                        //                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 1, 0, 0, 0, 0, gridobject);
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SPRAYER , 0, 0, 0, 0, 0, 0, 0, gridobject);
+                    }
 
 
 
@@ -1507,7 +1542,7 @@ namespace MissionPlanner.BonsVoosGrid
                     }
 
                     plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, 0, gridobject);
-
+                    //fernando - incluir comandos para a missão de rtl  
                 }
 
 
@@ -1899,7 +1934,7 @@ namespace MissionPlanner.BonsVoosGrid
         private void myButton1_Click(object sender, EventArgs e)
         {
             CalcularRate();
-            domainUpDown1_ValueChanged(sender, e);
+            domainUpDown1_ValueChanged(null, null);
 
         }
 
@@ -1912,7 +1947,7 @@ namespace MissionPlanner.BonsVoosGrid
         private void myButton3_Click(object sender, EventArgs e)
         {
             CalcularSpeed();
-            domainUpDown1_ValueChanged(sender, e);
+            domainUpDown1_ValueChanged(null, null);
         }
 
         private void NUM_UpDownNozzlerWidth_ValueChanged(object sender, EventArgs e)
@@ -1985,25 +2020,31 @@ namespace MissionPlanner.BonsVoosGrid
 
         private void NUM_altitude_ValueChanged_1(object sender, EventArgs e)
         {
-            domainUpDown1_ValueChanged(sender, e);
+            
+            domainUpDown1_ValueChanged(null, null);
         }
 
         private void myButton1_Click_1(object sender, EventArgs e)
         {
             CalcularRate();
-            domainUpDown1_ValueChanged(sender, e);
+            domainUpDown1_ValueChanged(null, null);
         }
 
         private void myButton3_Click_1(object sender, EventArgs e)
         {
             CalcularSpeed();
-            domainUpDown1_ValueChanged(sender, e);
+            domainUpDown1_ValueChanged(null, null);
 
         }
 
         private void map_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void NUM_angle_ValueChanged_1(object sender, EventArgs e)
+        {
+            domainUpDown1_ValueChanged(null, null);
         }
     }
 }

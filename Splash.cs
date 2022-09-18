@@ -25,5 +25,10 @@ namespace MissionPlanner
 
             Console.WriteLine("Splash .ctor");
         }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

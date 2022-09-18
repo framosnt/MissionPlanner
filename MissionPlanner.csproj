@@ -417,22 +417,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Antenna\TrackerGeneric.cs" />
-    <Compile Include="BonsVoosGPS\BV_GPSLocal.cs">
+    <Compile Include="BonsVoosSpray\BonsVoosGridUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BonsVoosGPS\BV_GPSLocal.Designer.cs">
-      <DependentUpon>BV_GPSLocal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BonsVoosSpray\BonsVoosGrid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BonsVoosSpray\BonsVoosGrid.designer.cs">
-      <DependentUpon>BonsVoosGrid.cs</DependentUpon>
+    <Compile Include="BonsVoosSpray\BonsVoosGridUI.designer.cs">
+      <DependentUpon>BonsVoosGridUI.cs</DependentUpon>
     </Compile>
     <Compile Include="BonsVoosSpray\BonsVoosGridData.cs" />
     <Compile Include="BonsVoosSpray\BonsVoosGridPlugin.cs" />
     <Compile Include="BonsVoosSpray\SprayerInfo.cs" />
-    <Compile Include="BonsVoosSpray\SprayingMissionData.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Controls\BonsVoosGPS.cs">
       <SubType>Form</SubType>
@@ -846,11 +839,8 @@
     <Compile Include="Log\LogStrings.Designer.cs">
       <DependentUpon>LogStrings.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BonsVoosGPS\BV_GPSLocal.resx">
-      <DependentUpon>BV_GPSLocal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BonsVoosSpray\BonsVoosGrid.resx">
-      <DependentUpon>BonsVoosGrid.cs</DependentUpon>
+    <EmbeddedResource Include="BonsVoosSpray\BonsVoosGridUI.resx">
+      <DependentUpon>BonsVoosGridUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\AuthKeys.ko-KR.resx">
       <DependentUpon>AuthKeys.cs</DependentUpon>
@@ -4622,6 +4612,8 @@
     <Content Include="aircraft.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="BonsVoosSpray\pictureBox1.Image.bmp" />
+    <None Include="BonsVoosSpray\BonsVoos.pictureBox2.Image.bmp" />
     <Content Include="Drivers\CubeOrangePlus.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -4632,6 +4624,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\LOGOBONSVOOS.jpg" />
+    <None Include="Resources\%24this.Text.bmp" />
+    <None Include="Resources\BonsVoos-DronesPulverizadores.png" />
+    <None Include="Resources\BonsVoos-DronesPulverizadores2.png" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -4996,7 +4991,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

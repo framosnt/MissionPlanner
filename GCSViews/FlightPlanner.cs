@@ -7950,12 +7950,19 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void bonsVoosPulverizadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BonsVoosGridPlugin grid = new BonsVoosGridPlugin();
-            grid.Host = new PluginHost();
-            grid.but_Click(sender, e);
+            BonsVoosGridPlugin BVgrid = new BonsVoosGridPlugin();
+            BVgrid.Host = new PluginHost();
+            BVgrid.but_Click(sender, e);
 
+            //var BVGrid = new   plugin.BonsVoosGridUI();
+            //ThemeManager.ApplyThemeTo(BVGrid);
+            //BonsVoosGridUI.ActiveForm.Show();
 
+        }
 
+        private void testeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+    
         }
     }
 }

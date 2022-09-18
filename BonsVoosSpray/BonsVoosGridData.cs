@@ -1,7 +1,7 @@
 ﻿using MissionPlanner.Utilities;
 using System.Collections.Generic;
 
-namespace MissionPlanner.BonsVoosGrid 
+namespace MissionPlanner.BonsVoosGrid
 {
     public struct BonsVoosGridData
     {

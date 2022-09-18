@@ -1,0 +1,2854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Bons Voos Pulverização</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BonsVoosGridUI</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BUT_Accept.Name" xml:space="preserve">
+    <value>BUT_Accept</value>
+  </data>
+  <data name="&gt;&gt;BUT_Accept.Parent" xml:space="preserve">
+    <value>tabSimple</value>
+  </data>
+  <data name="&gt;&gt;BUT_Accept.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_Accept.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdminus.Name" xml:space="preserve">
+    <value>BUT_headingholdminus</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdminus.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdminus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdminus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdplus.Name" xml:space="preserve">
+    <value>BUT_headingholdplus</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdplus.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdplus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BUT_headingholdplus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BUT_samplephoto.Name" xml:space="preserve">
+    <value>BUT_samplephoto</value>
+  </data>
+  <data name="&gt;&gt;BUT_samplephoto.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;BUT_samplephoto.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_samplephoto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Name" xml:space="preserve">
+    <value>BUT_save</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CHK_advanced.Name" xml:space="preserve">
+    <value>CHK_advanced</value>
+  </data>
+  <data name="&gt;&gt;CHK_advanced.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_advanced.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_advanced.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CHK_boundary.Name" xml:space="preserve">
+    <value>CHK_boundary</value>
+  </data>
+  <data name="&gt;&gt;CHK_boundary.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_boundary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_boundary.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CHK_camdirection.Name" xml:space="preserve">
+    <value>CHK_camdirection</value>
+  </data>
+  <data name="&gt;&gt;CHK_camdirection.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;CHK_camdirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_camdirection.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headinghold.Name" xml:space="preserve">
+    <value>CHK_copter_headinghold</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headinghold.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headinghold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headinghold.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headingholdlock.Name" xml:space="preserve">
+    <value>CHK_copter_headingholdlock</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headingholdlock.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headingholdlock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_copter_headingholdlock.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chk_Corridor.Name" xml:space="preserve">
+    <value>chk_Corridor</value>
+  </data>
+  <data name="&gt;&gt;chk_Corridor.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chk_Corridor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_Corridor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chk_crossgrid.Name" xml:space="preserve">
+    <value>chk_crossgrid</value>
+  </data>
+  <data name="&gt;&gt;chk_crossgrid.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chk_crossgrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_crossgrid.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CHK_footprints.Name" xml:space="preserve">
+    <value>CHK_footprints</value>
+  </data>
+  <data name="&gt;&gt;CHK_footprints.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_footprints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_footprints.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CHK_grid.Name" xml:space="preserve">
+    <value>CHK_grid</value>
+  </data>
+  <data name="&gt;&gt;CHK_grid.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_grid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_grid.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CHK_internals.Name" xml:space="preserve">
+    <value>CHK_internals</value>
+  </data>
+  <data name="&gt;&gt;CHK_internals.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_internals.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_internals.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CHK_markers.Name" xml:space="preserve">
+    <value>CHK_markers</value>
+  </data>
+  <data name="&gt;&gt;CHK_markers.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;CHK_markers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_markers.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CHK_match_spiral_perimeter.Name" xml:space="preserve">
+    <value>CHK_match_spiral_perimeter</value>
+  </data>
+  <data name="&gt;&gt;CHK_match_spiral_perimeter.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;CHK_match_spiral_perimeter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_match_spiral_perimeter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chk_optimize_for_distance.Name" xml:space="preserve">
+    <value>chk_optimize_for_distance</value>
+  </data>
+  <data name="&gt;&gt;chk_optimize_for_distance.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;chk_optimize_for_distance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_optimize_for_distance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chk_spiral.Name" xml:space="preserve">
+    <value>chk_spiral</value>
+  </data>
+  <data name="&gt;&gt;chk_spiral.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chk_spiral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_spiral.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chk_spline.Name" xml:space="preserve">
+    <value>chk_spline</value>
+  </data>
+  <data name="&gt;&gt;chk_spline.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;chk_spline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_spline.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chk_stopstart.Name" xml:space="preserve">
+    <value>chk_stopstart</value>
+  </data>
+  <data name="&gt;&gt;chk_stopstart.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;chk_stopstart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_stopstart.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland.Name" xml:space="preserve">
+    <value>CHK_toandland</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland_RTL.Name" xml:space="preserve">
+    <value>CHK_toandland_RTL</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland_RTL.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland_RTL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_toandland_RTL.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CHK_usespeed.Name" xml:space="preserve">
+    <value>CHK_usespeed</value>
+  </data>
+  <data name="&gt;&gt;CHK_usespeed.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;CHK_usespeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_usespeed.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CMB_camera.Name" xml:space="preserve">
+    <value>CMB_camera</value>
+  </data>
+  <data name="&gt;&gt;CMB_camera.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;CMB_camera.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_camera.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;CMB_startfrom.Name" xml:space="preserve">
+    <value>CMB_startfrom</value>
+  </data>
+  <data name="&gt;&gt;CMB_startfrom.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CMB_startfrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_startfrom.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>tabCamera</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>tabCamera</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>tabSimple</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>tabSimple</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSpiral.Name" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSpiral.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSpiral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSpiral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_copter.Name" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;groupBox_copter.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;groupBox_copter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_copter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>tabSimple</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label42.Name" xml:space="preserve">
+    <value>label42</value>
+  </data>
+  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label43.Name" xml:space="preserve">
+    <value>label43</value>
+  </data>
+  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label44.Name" xml:space="preserve">
+    <value>label44</value>
+  </data>
+  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label44.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label46.Name" xml:space="preserve">
+    <value>label46</value>
+  </data>
+  <data name="&gt;&gt;label46.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;label46.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;LBL_Alternating_lanes.Name" xml:space="preserve">
+    <value>LBL_Alternating_lanes</value>
+  </data>
+  <data name="&gt;&gt;LBL_Alternating_lanes.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;LBL_Alternating_lanes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_Alternating_lanes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_area.Name" xml:space="preserve">
+    <value>lbl_area</value>
+  </data>
+  <data name="&gt;&gt;lbl_area.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_area.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_area.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps.Name" xml:space="preserve">
+    <value>LBL_clockwise_laps</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps1.Name" xml:space="preserve">
+    <value>LBL_clockwise_laps1</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps1.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_clockwise_laps1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LBL_copter_delay.Name" xml:space="preserve">
+    <value>LBL_copter_delay</value>
+  </data>
+  <data name="&gt;&gt;LBL_copter_delay.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;LBL_copter_delay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_copter_delay.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Name" xml:space="preserve">
+    <value>lbl_distance</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;lbl_distbetweenlines.Name" xml:space="preserve">
+    <value>lbl_distbetweenlines</value>
+  </data>
+  <data name="&gt;&gt;lbl_distbetweenlines.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_distbetweenlines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_distbetweenlines.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lbl_flighttime.Name" xml:space="preserve">
+    <value>lbl_flighttime</value>
+  </data>
+  <data name="&gt;&gt;lbl_flighttime.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_flighttime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_flighttime.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Name" xml:space="preserve">
+    <value>lbl_footprint</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lbl_gndelev.Name" xml:space="preserve">
+    <value>lbl_gndelev</value>
+  </data>
+  <data name="&gt;&gt;lbl_gndelev.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_gndelev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_gndelev.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbl_grndres.Name" xml:space="preserve">
+    <value>lbl_grndres</value>
+  </data>
+  <data name="&gt;&gt;lbl_grndres.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_grndres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_grndres.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;LBL_Lane_Dist.Name" xml:space="preserve">
+    <value>LBL_Lane_Dist</value>
+  </data>
+  <data name="&gt;&gt;LBL_Lane_Dist.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;LBL_Lane_Dist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_Lane_Dist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LBL_laps.Name" xml:space="preserve">
+    <value>LBL_laps</value>
+  </data>
+  <data name="&gt;&gt;LBL_laps.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;LBL_laps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_laps.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_minshutter.Name" xml:space="preserve">
+    <value>lbl_minshutter</value>
+  </data>
+  <data name="&gt;&gt;lbl_minshutter.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_minshutter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_minshutter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_photoevery.Name" xml:space="preserve">
+    <value>lbl_photoevery</value>
+  </data>
+  <data name="&gt;&gt;lbl_photoevery.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_photoevery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_photoevery.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbl_pictures.Name" xml:space="preserve">
+    <value>lbl_pictures</value>
+  </data>
+  <data name="&gt;&gt;lbl_pictures.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_pictures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_pictures.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lbl_spacing.Name" xml:space="preserve">
+    <value>lbl_spacing</value>
+  </data>
+  <data name="&gt;&gt;lbl_spacing.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_spacing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_spacing.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;lbl_strips.Name" xml:space="preserve">
+    <value>lbl_strips</value>
+  </data>
+  <data name="&gt;&gt;lbl_strips.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_strips.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_strips.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Name" xml:space="preserve">
+    <value>lbl_turnrad</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;map.Name" xml:space="preserve">
+    <value>map</value>
+  </data>
+  <data name="&gt;&gt;map.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;map.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.myGMAP, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;map.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;NUM_altitude.Name" xml:space="preserve">
+    <value>NUM_altitude</value>
+  </data>
+  <data name="&gt;&gt;NUM_altitude.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;NUM_altitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_altitude.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;NUM_angle.Name" xml:space="preserve">
+    <value>NUM_angle</value>
+  </data>
+  <data name="&gt;&gt;NUM_angle.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;NUM_angle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_angle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;NUM_clockwise_laps.Name" xml:space="preserve">
+    <value>NUM_clockwise_laps</value>
+  </data>
+  <data name="&gt;&gt;NUM_clockwise_laps.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;NUM_clockwise_laps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_clockwise_laps.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;NUM_copter_delay.Name" xml:space="preserve">
+    <value>NUM_copter_delay</value>
+  </data>
+  <data name="&gt;&gt;NUM_copter_delay.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;NUM_copter_delay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_copter_delay.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;num_corridorwidth.Name" xml:space="preserve">
+    <value>num_corridorwidth</value>
+  </data>
+  <data name="&gt;&gt;num_corridorwidth.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;num_corridorwidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_corridorwidth.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;NUM_Distance.Name" xml:space="preserve">
+    <value>NUM_Distance</value>
+  </data>
+  <data name="&gt;&gt;NUM_Distance.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NUM_Distance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_Distance.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;NUM_focallength.Name" xml:space="preserve">
+    <value>NUM_focallength</value>
+  </data>
+  <data name="&gt;&gt;NUM_focallength.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;NUM_focallength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_focallength.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;NUM_Lane_Dist.Name" xml:space="preserve">
+    <value>NUM_Lane_Dist</value>
+  </data>
+  <data name="&gt;&gt;NUM_Lane_Dist.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;NUM_Lane_Dist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_Lane_Dist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;NUM_laps.Name" xml:space="preserve">
+    <value>NUM_laps</value>
+  </data>
+  <data name="&gt;&gt;NUM_laps.Parent" xml:space="preserve">
+    <value>groupBoxSpiral</value>
+  </data>
+  <data name="&gt;&gt;NUM_laps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_laps.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin.Name" xml:space="preserve">
+    <value>NUM_leadin</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin2.Name" xml:space="preserve">
+    <value>NUM_leadin2</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_leadin2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;num_overlap.Name" xml:space="preserve">
+    <value>num_overlap</value>
+  </data>
+  <data name="&gt;&gt;num_overlap.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;num_overlap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_overlap.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot.Name" xml:space="preserve">
+    <value>NUM_overshoot</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot2.Name" xml:space="preserve">
+    <value>NUM_overshoot2</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_overshoot2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;num_reptpwm.Name" xml:space="preserve">
+    <value>num_reptpwm</value>
+  </data>
+  <data name="&gt;&gt;num_reptpwm.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;num_reptpwm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_reptpwm.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;NUM_reptservo.Name" xml:space="preserve">
+    <value>NUM_reptservo</value>
+  </data>
+  <data name="&gt;&gt;NUM_reptservo.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;NUM_reptservo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_reptservo.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;NUM_repttime.Name" xml:space="preserve">
+    <value>NUM_repttime</value>
+  </data>
+  <data name="&gt;&gt;NUM_repttime.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;NUM_repttime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_repttime.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;num_setservohigh.Name" xml:space="preserve">
+    <value>num_setservohigh</value>
+  </data>
+  <data name="&gt;&gt;num_setservohigh.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;num_setservohigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_setservohigh.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;num_setservolow.Name" xml:space="preserve">
+    <value>num_setservolow</value>
+  </data>
+  <data name="&gt;&gt;num_setservolow.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;num_setservolow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_setservolow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;num_setservono.Name" xml:space="preserve">
+    <value>num_setservono</value>
+  </data>
+  <data name="&gt;&gt;num_setservono.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;num_setservono.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_setservono.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;num_sidelap.Name" xml:space="preserve">
+    <value>num_sidelap</value>
+  </data>
+  <data name="&gt;&gt;num_sidelap.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;num_sidelap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_sidelap.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;NUM_spacing.Name" xml:space="preserve">
+    <value>NUM_spacing</value>
+  </data>
+  <data name="&gt;&gt;NUM_spacing.Parent" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;NUM_spacing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_spacing.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;NUM_split.Name" xml:space="preserve">
+    <value>NUM_split</value>
+  </data>
+  <data name="&gt;&gt;NUM_split.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;NUM_split.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_split.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;NUM_UpDownFlySpeed.Name" xml:space="preserve">
+    <value>NUM_UpDownFlySpeed</value>
+  </data>
+  <data name="&gt;&gt;NUM_UpDownFlySpeed.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;NUM_UpDownFlySpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUM_UpDownFlySpeed.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;rad_digicam.Name" xml:space="preserve">
+    <value>rad_digicam</value>
+  </data>
+  <data name="&gt;&gt;rad_digicam.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rad_digicam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rad_digicam.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;rad_do_set_servo.Name" xml:space="preserve">
+    <value>rad_do_set_servo</value>
+  </data>
+  <data name="&gt;&gt;rad_do_set_servo.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rad_do_set_servo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rad_do_set_servo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;rad_repeatservo.Name" xml:space="preserve">
+    <value>rad_repeatservo</value>
+  </data>
+  <data name="&gt;&gt;rad_repeatservo.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rad_repeatservo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rad_repeatservo.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;rad_trigdist.Name" xml:space="preserve">
+    <value>rad_trigdist</value>
+  </data>
+  <data name="&gt;&gt;rad_trigdist.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rad_trigdist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rad_trigdist.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tabCamera.Name" xml:space="preserve">
+    <value>tabCamera</value>
+  </data>
+  <data name="&gt;&gt;tabCamera.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabCamera.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabCamera.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabGrid.Name" xml:space="preserve">
+    <value>tabGrid</value>
+  </data>
+  <data name="&gt;&gt;tabGrid.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGrid.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabSimple.Name" xml:space="preserve">
+    <value>tabSimple</value>
+  </data>
+  <data name="&gt;&gt;tabSimple.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabSimple.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabSimple.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TRK_zoom.Name" xml:space="preserve">
+    <value>TRK_zoom</value>
+  </data>
+  <data name="&gt;&gt;TRK_zoom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TRK_zoom.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyTrackBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TRK_zoom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TXT_cmpixel.Name" xml:space="preserve">
+    <value>TXT_cmpixel</value>
+  </data>
+  <data name="&gt;&gt;TXT_cmpixel.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_cmpixel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_cmpixel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovH.Name" xml:space="preserve">
+    <value>TXT_fovH</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovH.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovH.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovV.Name" xml:space="preserve">
+    <value>TXT_fovV</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovV.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_fovV.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TXT_headinghold.Name" xml:space="preserve">
+    <value>TXT_headinghold</value>
+  </data>
+  <data name="&gt;&gt;TXT_headinghold.Parent" xml:space="preserve">
+    <value>groupBox_copter</value>
+  </data>
+  <data name="&gt;&gt;TXT_headinghold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_headinghold.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgheight.Name" xml:space="preserve">
+    <value>TXT_imgheight</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgheight.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgheight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgheight.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgwidth.Name" xml:space="preserve">
+    <value>TXT_imgwidth</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgwidth.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgwidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_imgwidth.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TXT_sensheight.Name" xml:space="preserve">
+    <value>TXT_sensheight</value>
+  </data>
+  <data name="&gt;&gt;TXT_sensheight.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_sensheight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_sensheight.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TXT_senswidth.Name" xml:space="preserve">
+    <value>TXT_senswidth</value>
+  </data>
+  <data name="&gt;&gt;TXT_senswidth.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;TXT_senswidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_senswidth.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="BUT_Accept.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="BUT_headingholdminus.Text" xml:space="preserve">
+    <value>--</value>
+  </data>
+  <data name="BUT_headingholdplus.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="BUT_samplephoto.Text" xml:space="preserve">
+    <value>Load Sample Photo</value>
+  </data>
+  <data name="BUT_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CHK_advanced.Text" xml:space="preserve">
+    <value>Advanced Options</value>
+  </data>
+  <data name="CHK_boundary.Text" xml:space="preserve">
+    <value>Boundary</value>
+  </data>
+  <data name="CHK_camdirection.Text" xml:space="preserve">
+    <value>Camera top facing forward</value>
+  </data>
+  <data name="CHK_copter_headinghold.Text" xml:space="preserve">
+    <value>Heading Hold</value>
+  </data>
+  <data name="CHK_copter_headingholdlock.Text" xml:space="preserve">
+    <value>Unlock from grid</value>
+  </data>
+  <data name="chk_Corridor.Text" xml:space="preserve">
+    <value>Corridor</value>
+  </data>
+  <data name="chk_crossgrid.Text" xml:space="preserve">
+    <value>Cross Grid</value>
+  </data>
+  <data name="CHK_footprints.Text" xml:space="preserve">
+    <value>Footprints</value>
+  </data>
+  <data name="CHK_grid.Text" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="CHK_internals.Text" xml:space="preserve">
+    <value>Internals</value>
+  </data>
+  <data name="CHK_markers.Text" xml:space="preserve">
+    <value>Markers</value>
+  </data>
+  <data name="CHK_match_spiral_perimeter.Text" xml:space="preserve">
+    <value>Match Perimeter to Polygon</value>
+  </data>
+  <data name="chk_optimize_for_distance.Text" xml:space="preserve">
+    <value>Optimise for Distance</value>
+  </data>
+  <data name="chk_spiral.Text" xml:space="preserve">
+    <value>Spiral</value>
+  </data>
+  <data name="chk_spline.Text" xml:space="preserve">
+    <value>Spline Exit/Entrys</value>
+  </data>
+  <data name="chk_stopstart.Text" xml:space="preserve">
+    <value>Breakup starts</value>
+  </data>
+  <data name="CHK_toandland.Text" xml:space="preserve">
+    <value>Add Takeoff and Land WP's</value>
+  </data>
+  <data name="CHK_toandland_RTL.Text" xml:space="preserve">
+    <value>Use RTL</value>
+  </data>
+  <data name="CHK_usespeed.Text" xml:space="preserve">
+    <value>Use speed for this mission</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Grid Options</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Camera Options</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Trigger Method</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Simple Options</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Plane Options</value>
+  </data>
+  <data name="groupBoxSpiral.Text" xml:space="preserve">
+    <value>Spiral Options</value>
+  </data>
+  <data name="groupBox_copter.Text" xml:space="preserve">
+    <value>Copter Options</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Altitude</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Sensor Width [mm]</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Focal Length [mm]</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>cm/pixel</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Image Width [Pixels]</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Image Height [Pixels]</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Sidelap [%]</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Servo</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Cycle Time [s]</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>PWM</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Field of View Vertical [m]</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Distance between lines [m]</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Field of View Horizontal [m]</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Calculated Values</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Area: </value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Distance: </value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Flying Speed (est)</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Dist between lines:</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Dist between images: </value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Ground Resolution: </value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Take a picture every [m]</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Footprint:</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Flight Time (est):</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>LeadIn [m]</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>No of Strips:</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Pictures:</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Photo every (est):</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Turn Dia (at 45d):</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Split into x segments</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>Control-S to save to file
+Control-O to load form file</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>PWM L</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Angle [deg]</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>Ground Elevation:</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>PWM H</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>Servo</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Corridor Width [m]</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>Min Shutter Speed:</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>OverShoot [m]</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>StartFrom</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Overlap [%]</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Sensor Height [mm]</value>
+  </data>
+  <data name="LBL_Alternating_lanes.Text" xml:space="preserve">
+    <value>Alternate Lanes</value>
+  </data>
+  <data name="lbl_area.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="LBL_clockwise_laps.Text" xml:space="preserve">
+    <value>Number of Clockwise Laps</value>
+  </data>
+  <data name="LBL_clockwise_laps1.Text" xml:space="preserve">
+    <value>(-1 for Clockwise Spiral)</value>
+  </data>
+  <data name="LBL_copter_delay.Text" xml:space="preserve">
+    <value>Delay at WP (sec)</value>
+  </data>
+  <data name="lbl_distance.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_distbetweenlines.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_flighttime.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_footprint.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_gndelev.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_grndres.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="LBL_Lane_Dist.Text" xml:space="preserve">
+    <value>Min Lane separation</value>
+  </data>
+  <data name="LBL_laps.Text" xml:space="preserve">
+    <value>Number of Laps</value>
+  </data>
+  <data name="lbl_minshutter.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_photoevery.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_pictures.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_spacing.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_strips.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="lbl_turnrad.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk3qqAAAAAAAADYAAAAoAAAA7AAAAD0AAAABABgAAAAAAAAAAAAjLgAAIy4AAAAAAAAAAAAAa25xQENH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHRUdLTU9SU1VYVlhbXF5hYmRmZ2lrbW5xc3V3ent+gYOFioyOlZaY
+        lZaYlZaYhYeJWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWFpeeXt+QUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////+/v87+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/wzc7Q2NjZ7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/wz9DRWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////Pz8TlFUYmRoYWRnV1pd+Pj4////////////////////////////////////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofGB0hGB0hGB0hGB0hGB0hGB0hGB0hGB0hFxofFxofFxofFxofFxofFxsgFxsgFxofFxofFxsg
+        FxsgFxofFxofFxofFxofGBwgGBwgGB0hGB0hGB0hGB0hFxofFxofFxofFxofFxofFxsgGB0hFxofFxof
+        FxofFxofFxofFxofFxofGB0hFxofFxofFxofFxofFxofFxofGBwgFxofFxofFxofGB0hGB0hGB0hGB0h
+        GBwgFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////9fb2+Pj4////////
+        7u7vqaqs////////aWtuwcLE////////////////////////////////////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4csmqNlZOFxofICssX6SMeda0eda0YaePIS4vR3ZoS35uFxofFxofGBwg
+        XJ+IYaePW5yGfNu4fNu4fNu4fNu4Za+VHSYpFxofFxofFxofXJ2HfNu4O2BWFxofFxofFxofFxofN1dQ
+        b8OlfNu4dMusR3ZoFxofGR8jU457d9Gwe9m2abicK0A9ICssfNu4fNu4fNu4fNu4eNSyRXJkFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////4eLiNjg9////////////////////yMnKYGJl////nZ6gNDY7UlRYZmhrg4WI////p6iqQ0ZKUVNX
+        UlRYoaKk3d3eS01R////QkVJ5eXm////uru8bW9y////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4eNSzdtGwdtGwdtGwdtGw
+        dtGwdtGwe9m2ds+vHikqXqKLUId1Jzk4KDs5VI57YamQR3ZoS35uFxofFxofT4Z1cMWnYaePIS4vJjg2
+        Jjg2Jjg2Jjg2YaePO19VFxofFxofGyMmeNOyfNu4XqGKFxofFxofFxofJTU1csipNlZOJTU0MUxHbsKk
+        OFlRSnxsXqOLKj48Jjc2RXJkcMWnHCUnJjg2Jjg2Jjg2Jjg2L0hEds+vFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////4eLiNjg9////
+        ////////////////yMnKYGJl////OTxA3t7f////bnBzg4WI5eXmOTxA9fX1/Pz8UlRYl5mb3d3eS01R
+        ////QkVJ5eXm////uru8bW9y////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4PmRaFxofFxofFxofFxofFxofFxofPGFXfNu4
+        QGldb8KkFxsgFxofFxofGR4ic8qqUYl3S35uFxofQmxga7qeN1dQYaePFxofJDIyJjg2Jjg2Jjg2YaiP
+        NVRNFxofFxofOFpSfNu4e9m2edWzHSYpFxofFxofR3VnRnVnFxofFxofFxofOl1UXJ2Hbb+iHyosFxof
+        FxofFxofYaiPNFNMGiEkJjg2Jjg2Jjg2L0lEcMSmFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////4eLiNjg9////////////////////
+        yMnKYGJl////LjE29/f4////n6Cig4WItba3bnBz////////lZaYl5mb3d3eS01R////QkVJ5eXm////
+        uru8bW9y////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofMEpFfNu4PmRaFxofFxofFxofFxofFxofFxofJDMzfNu4T4V0ZbCWFxofFxof
+        FxofFxofa7ueV5WBS35uNFJLcsipJDMzMUxHYaePR3ZofNu4fNu4fNu4fNu4Y62TGiAkFxofFxofWZmE
+        fNu4Uox5fNu4PWNZFxofFxofTYJxPGBXFxofFxofFxofMEpFYqmRcceoFxsgFxofFxofFxofV5SAPWNY
+        b8KkfNu4fNu4fNu4eNOyQWtfFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////4eLiGh0iMDM3MDM3P0FFgYKF+vr6yMnKYGJl////LjE2
+        +fn5////pKWng4WIy8vMYWNm////////hYeJl5mb3d3eS01R////QkVJ1dbX////tLW2b3F0////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofMEpFfNu4R3ZoJjg2Jjg2Jjg2Jjg2Jjg2Jjg2TYFwfNu4NlZOcMWnJzo4FxofFxofK0E+dMusSnxs
+        XqKLc8urLUVBFxofMUxHYaePa7qeIS0uFxofFxofFxofFxofFxofFxofGiAkdtGwbLygICwtete1X6WN
+        FxofFxofOFpSX6OMGBwgFxofFxofVI98TYJyX6WNOVxTFxofFxofHykrcsmqQGldXJ2HFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////4eLiNjg9////////3d3eS01RnZ6gyMnKYGJl////LjE2+fn5////pKWng4WI
+        +fn5RkhMra6wu7y9LTA1l5mb3d3eS01R////QkVJZGZqvb6/XF5ik5SX////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4bsGjGR4iOl1UdMysXaCJXqGKds+vPWNZR3Zoe9m2Ol5VFxofFxof
+        MUxHYaePYKaOYaiPWpqFWpqFWpqFWpqFIi8wFxofNlVOfNu4S35uFxofYamQete1HykrFxofGBwgYaiP
+        armdWpqFZrKXbsKkHyosKj88c8urX6SMW52GcsipUIh2Jjc2dMusWpuFWpqFWpqFWpqFSnxsFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////4eLiNjg9////////////jpCSenx/yMnKYGJl////mpue/f39////09PUw8TF////6OjpkpOWjY+R
+        w8TFzc7P7+/wqKmr////pKWn1dXWgoSHnJ2f+/v7////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4cMSmaLaaaLaaaLaaaLaa
+        aLaaabice9m2bsCjFxsgFxofK0A9RHFkRXJkLEI/FxofLkZCOl1UFxofFxofFxofIzIyOl5VHSYpQ29j
+        SXprSXprSXprSXprHyosFxofVpR/fNu4Kj88FxofQGhdfNu4QGhdFxofFxofGR4iOl1UR3ZoPmZbHikq
+        FxofFxofJDMzQmxgRnVnNFFLFxofFxofLEM/SXlqSXprSXprSXprPWNYFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////p6iquLm7zM3O4+Tk////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////4eLiLC4zs7S1
+        s7S1oqSmMTQ4v7/ByMnKYGJl////////////////////////////////////////////////7u7vpaao
+        ////////////////////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4PmRaFxofFxofFxofFxofFxofFxofToRzfNu4
+        IzIyFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofGR4idc6tbsGjFxofFxofHykrete1YqmRFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofICwtM1BKM1FKHCQnFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////ysrLhIaISkxQ////
+        ////////////FxofFxofFxofFxofLTA1////////////////////////////////////////////////
+        ////////////////////////////////////////////////////7u7vfX+BfX+BfX+Bh4iLx8jJ////
+        4OHipqep////////////////////////////////////////////////7O3tmZud////////////////
+        ////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofMEpFfNu4PmRaFxofFxofFxofFxofFxofFxofVI57fNu4Ii8vFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofM1FKfNu4TYJy
+        FxofFxofFxofYKaOeti2ICwtFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofM1BKVZF+UId1M1BKFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////Pz8r7CySEpOFxofFxof////FxofFxofFxofFxofFxof
+        FxofFxofFxof////FxofFxofIyYrfX+B4eLi////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofMEpFfNu4dtGwc8urc8urc8urc8urc8urdM2tfNu4bLygFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofVI98fNu4LURAFxofFxofFxofPmZb
+        fNu4QmxgFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGBwgL0hEJDMzFxof
+        FxofFxofFxofM1FKXqOLUIh2M1FKFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////19jZRUhMFxof////////////FxofFxofFxofFxofFxofFxof////////////Fxof
+        FxofFxofFxofFxofHiEmlJWX////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFfNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4cMSmLURAFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofGB0hc8urcMWmFxofFxofFxofFxofHigqeda0ZK6UFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofHicpMk5IUId1csipfNu4MUtGFxofFxofFxofFxofICss
+        M1BKM1FKHCMmFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        S5kQY6cwe7RQlMNxzOK7/f78////////////////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////
+        ////////////////yOC2P5IAP5IAP5IAP5IAP5IAP5IAgrhZ////////////////////////////lpia
+        HSAlFxof////////////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof
+        Fxof////////////////////////////////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT////////////
+        ////////////wt2uQJMCP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAhLlb////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGB0hHSYoHSYoHSYoHSYoHSYoHSYo
+        HSYoHCUnFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxsgHikqHCQnFxofFxofFxofFxofFxofHSYpHigqFxofFxofFxofFxofFxofFxof
+        FxofFxofGiEkKT47VZF9e9m2fNu4fNu4fNu4armdGB0hFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAZKcx2erM////////////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////////////////9fnx
+        VZ8dP5IAP5IAP5IAP5IAP5IAS5kQ7fXn////////////////////////iYqNFxofFxofFxofFxof////
+        ////////FxofFxofFxofFxofFxofFxof////////////FxofFxofFxofFxofFxofFxofFxof////////
+        ////////////////////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT////////////////////3OvQR5cL
+        P5IAP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAhLlb////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofMEpFVJB8ds+vfNu4
+        fNu4fNu4fNu4fNu4bsKkJzk4FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////8PfrP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IASJcMzuS+
+        ////////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////////////////jb9oP5IAP5IAP5IAP5IA
+        P5IAP5IAsdOX////////////////////////i4yPFxofFxofFxofFxof////////////////FxofFxof
+        FxofFxofFxof////////////////FxofFxofFxofFxofFxofFxof////////////////5+fo////////
+        ////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT////////////////7/bpVp8fP5IAP5IAP5IAP5IAP5IA
+        P5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAhLlb////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofLEI/
+        UIh2WpqFY6uSarmdaLaaX6WNVZF+SHhqN1dQK0E+SXprbsGjfNu4fNu4fNu4fNu4fNu4fNu4fNu4ZK2U
+        HykrFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IA
+        P5IAP5IAP5IAP5IAP5IAcq9Ecq9EXaMoRZYIP5IAP5IAP5IAP5IAP5IAP5IAT5sV8Pfr////////////
+        mcV3P5IAP5IAP5IAP5IAP5IAibxi////////////z+S/QJMBP5IAP5IAP5IAP5IAP5IAaqs5/v/9////
+        ////////////////yMnKGBsgFxof////Fxof////////FxofFxofFxofFxofFxof////Fxof////////
+        FxofFxofFxofFxofFxof////Fxof////////////FxofFxofFxofWVtf////////////////7/bpP5IA
+        P5IAP5IAP5IAP5IAfbZT////////////+/35baw9P5IAP5IAP5IAP5IAP5IAP5IAP5IAWKEi////////
+        ////8ffsP5IAP5IAP5IAP5IAP5IAP5IAca9DdbFIdbFIdbFIdbFIdbFIdbFIdbFIdbFIdbFIps2J////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGyIlOFpSXJ+Iete1fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4bb+iHCUnFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IA
+        P5IA9vrz/////////v/90OTATJoSP5IAP5IAP5IAP5IAP5IAmcZ4////////////mcV3P5IAP5IAP5IA
+        P5IAP5IAibxi////////+Pv1WqIkP5IAP5IAP5IAP5IAP5IARJUH3ezS////////////////////9vb3
+        Nzo+Fxof////////////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof
+        ////////////////FxofFxofFxofFxofFxofFxof////////////////7/bpP5IAP5IAP5IAP5IAP5IA
+        fbZT////////////ir1jP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IA
+        P5IAP5IAP5IAP5IA8vjt////////////////////////////////////////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofJDIyUIh2d9GwfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4edWzKj88FxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IA9vrz////////
+        ////////sNKWP5IAP5IAP5IAP5IAP5IAXKMn////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////
+        ///+gbhYP5IAP5IAP5IAP5IAP5IAQJMBt9af////////////////////////o6SmFxofFxof////////
+        ////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof////////////////
+        FxofFxofFxofFxofFxofFxof////////////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT////////rNCR
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA
+        8vjt////////////////////////////////////////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        KDs5WJaBete1fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4SHhqFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IA9vrz////////////////5/LfP5IA
+        P5IAP5IAP5IAP5IAP5IA+vz4////////mcV3P5IAP5IAP5IAP5IAP5IAb65ArdGSdLBGP5IAP5IAP5IA
+        P5IAP5IAVZ8evtqo////////////////////////////SkxQFxofFxof////////////////FxofFxof
+        FxofFxofFxof////////////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxof
+        FxofFxof////////////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT////y+K6QpQEP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA6vPi9vrz9vrz9vrz
+        9vrz9vrz9vrz9vrz9vrz+vz4////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofHSYpU416ete1fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        WJeCFxsgFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////8PfrP5IAP5IAP5IAP5IAP5IAP5IA9vrz////////////////+fz2P5IAP5IAP5IAP5IAP5IA
+        P5IA7PTl////////mcV3P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAS5kQocqC4O3V
+        ////////////////////////////FxofFxof////FxofFxofFxofFxofFxofFxofFxofFxof////Fxof
+        FxofFxofFxofFxofFxofFxofFxof////FxofFxofFxofFxofFxofFxofFxofFxofFxof////FxofcnR3
+        ////////7/bpP5IAP5IAP5IAP5IAP5IAfbZT5PDaTJkRP5IAP5IAP5IAP5IAV6AgSpkPP5IAP5IAP5IA
+        P5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAjL5m////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofJzg3bb6hfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4Y6ySGR4iFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IA
+        P5IAP5IAP5IAP5IAP5IA9vrz////////////////+fz3P5IAP5IAP5IAP5IAP5IAP5IA5fDc////////
+        mcV3P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAQJMBjL5m/P36////////
+        ////////////////////FxofFxofFxofFxofFxofFxof////////////FxofFxofFxofFxofFxofFxof
+        ////////////FxofFxofFxofFxofFxofFxofFxof////////////FxofFxofTlFU////////7/bpP5IA
+        P5IAP5IAP5IAP5IAcq9EXqQpP5IAP5IAP5IAP5IASJcM3ezRUp0ZP5IAP5IAP5IAP5IAWKEi////////
+        ////8ffsP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAjL5m////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofIi8wccanfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4ete1JDIyFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IA
+        P5IA9vrz////////////////5PDaP5IAP5IAP5IAP5IAP5IAP5IA8/ju////////mcV3P5IAP5IAP5IA
+        P5IAP5IAUZwYb65Ab65AZ6k1S5kQP5IAP5IAP5IAP5IAP5IAP5IAjL5m////////////////////////
+        ////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof////////////////Fxof
+        FxofFxofFxofFxofFxof////////////////FxofFxofMjU5////////7/bpP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAQJMCwt2u////Up0ZP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAjL5m////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofHCMm
+        ababfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4e9m2Qm1hFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IA9vrz////////
+        ////////u9mlP5IAP5IAP5IAP5IAP5IAUp0a////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////
+        ///////////+uNehP5IAP5IAP5IAP5IAP5IAQZMD6PLg////////////////////////FxofFxofFxof
+        FxofFxofFxof////////////FxofFxofFxofFxofFxofFxof////////////FxofFxofFxofFxofFxof
+        FxofFxof////////////FxofFxofJyou////////7/bpP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAocqC////////Up0ZP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA
+        vdqnxt+zxt+zxt+zxt+zxt+zxt+zxt+zxt+z3ezS////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGBwgXqOLfNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        ete1PGFXFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IA9vrz////////////8vjtWaEjP5IA
+        P5IAP5IAP5IAP5IAh7tf////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi////////////////////
+        WKAhP5IAP5IAP5IAP5IAP5IAxd6x////////////////////////FxofFxofFxofFxofFxof////////
+        ////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxofFxof////////////
+        ////FxofFxofQ0ZK////////7/bpP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAgLdW///+////////
+        Up0ZP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA8vjt////////////
+        ////////////////////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofT4V0fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4csipWJeCeNSyfNu4edWzNldPFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////8PfrP5IAP5IAP5IAP5IAP5IAP5IAvdqnwtytr9KVk8JwSpkPP5IAP5IAP5IAP5IAP5IAQJMB
+        2urN////////////mcV3P5IAP5IAP5IAP5IAP5IAibxi/////////////P36u9ikQZMDP5IAP5IAP5IA
+        P5IAP5IAz+S/////////////////FxofFxofFxofFxof////Fxof////////FxofFxofFxofFxofFxof
+        ////Fxof////////FxofFxofFxofFxofFxof////Fxof////////////FxofFxofFxofFxofFxof////
+        ////////7/bpP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAZagy+Pv1////////////Up0ZP5IAP5IAP5IA
+        P5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA4e7X7fXn7fXn7fXn7fXn7fXn7fXn7fXn
+        7fXn7fXn+fz3////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofPmRafNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4ZbCWICwtFxofMUxHeNOyM1BKFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAl8R1////////////////
+        mcV3P5IAP5IAP5IAP5IAP5IARpYJUZwYUZwYTpsUQZMDP5IAP5IAP5IAP5IAP5IAP5IATJkR9Pnw////
+        ////////////Ky0yFxofFxof////////////////FxofFxofFxofFxofFxof////////////////Fxof
+        FxofFxofFxofFxof////////////////FxofFxofFxofFxofFxofFxof////////////////7/bpP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAUJwX6vPi////////////////Up0ZP5IAP5IAP5IAP5IAWKEi////////
+        ////8ffsP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAvdqn////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        MEtFedWzfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4csmqIS0uFxofFxofL0dDMEtFFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAk8Jw/f78////////////////mcV3P5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAQJMCttae////////////////////gIGE
+        FxofFxof////////////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof
+        ////////////////FxofFxofFxofFxofFxofFxof////////////////7/bpP5IAP5IAP5IAP5IAP5IA
+        P5IARJUH1OfF////////////////////Up0ZP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAvdqn////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofLEM/dtCvfNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4a7yfGB0hFxof
+        FxofFxsgFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////8PfrP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IARJUHdrFJ0eXB////////////////////////mcV3P5IAP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAZ6k1yOC1////////////////////////3d3eHB8kFxof////////
+        ////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof////////////////
+        FxofFxofFxofFxofFxofFxof////////////////7/bpP5IAP5IAP5IAP5IAP5IAP5IAt9af////////
+        ////////////////Up0ZP5IAP5IAP5IAP5IAWKEi////////////8ffsP5IAP5IAP5IAP5IAP5IAP5IA
+        P5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAP5IAvdqn////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofKT07dM2tfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4X6OMQmxgHCUnFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////+fz3sdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXt9afw92v1OfG+fz3
+        ////////////////////////////////1ujIsdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXstOYt9af
+        vtupzuS+7/bp////////////////////////////////////jI6Q////FxofFxofFxofFxofFxofFxof
+        FxofFxof////FxofFxofFxofFxofFxofFxofFxofFxof////FxofFxofFxofFxofFxofFxofFxofFxof
+        Fxof////7+/w////////////+fz2sdOXsdOXsdOXsdOXsdOXwdys////////////////////////////
+        udiisdOXsdOXsdOXsdOXu9ml////////////+fz3sdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOXsdOX
+        sdOXsdOXsdOXsdOXsdOXsdOX5PDb////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofMk5IdMusfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4eda0M09JFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////RkhMFxofFxofFxofFxofFxof////////////FxofFxof
+        FxofFxofFxofFxof////////////FxofFxofFxofFxofFxofFxofFxof////////////ubq8////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        R3Vnete1fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4bb+iU457KT07FxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////+Pv1
+        3OzQ1OfFzeO71ujH7vbo////////////////////////////0+fBzOO3zOO3zOO3zOO3/f77////////
+        ////////////////////////////9PnuzuW3zuW3zuW3zuW33u7N/////////f77z+a30Oe30Oe30Oe3
+        0Oe63+/R5PHZ0OfA0efBxNe5PkFEFxofFxofFxof////////////////FxofFxofFxofFxofFxof////
+        ////////////FxofFxofFxofFxofFxofFxof/////////////////////////v/+1e3W1e3W1u3X1u3X
+        2/Dd////////////4fPk1u7b1u7b1+7c1+/c+Pz5////////////////////////7Pjw2PHg2PHh2PHh
+        5Pbr/////////////////////////////////f/+6/ny3/Xr2vTp2vTp2vTp2/Xq+/79////////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGB0hWZiDfNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4ete1ZbCVFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////6PLgfbZRRJcGQZQAQpQAQpUAQpUA
+        RJcCjcBk8vjt////////////////////X6chSJoASJsASZwASZwA9Pnv////////////////////////
+        ////////////1enCUKIAUaIAUqMAUqMAiMBO////////4O/QVaYAVqcAVqcAV6cAWKgLsdeQvt6lWaoe
+        WqohWqolYaU4PUJCFxofFxofFxof////////////FxofFxofFxofFxofFxofFxof////////////Fxof
+        FxofFxofFxofFxofFxofFxof////////////////////+Pz4arxrar1ta71wa75xfMeD////////////
+        lNKebsJ9bsJ+b8OAb8SC4/Tn////////////////////+P35g9GcdMuRdMuSdMyVn9y3////////////
+        ////////////6vjxquPGgtetetWqetWretauetewe9ixe9mzleHE7vv2////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofGR4iXJ2HfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4OFlRFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////wtytQJMAQJQAQZQAQpQAQpUAQpUAQ5YARJcATp0Ow96t
+        ////////////////X6chSJoASJsASZwASZwA9Pnv////////////////////////////////////1enC
+        UKIAUaIAUqMAUqMAiMBO////////vNyaVaYAVqcAVqcAV6cAWakM6fTg7vfoWqsfWqohWqolW6sqXqkx
+        cHtwGRwh////////////////FxofFxofFxofFxofFxof////////////////FxofFxofFxofFxofFxof
+        Fxof////////////////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OA
+        b8SC4/Tn////////////////////qt65c8qPdMuRdMuSdMyVn9y3////////////////////venSe9Om
+        edOledSnetWqetWretauetewe9ixe9mzfNq2hd695Pjx////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofGR8jXaCJfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        dc6uN1hQFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////wtytQJMAQJQAQZQAQpQAQpUAQpUAQ5YARJcARJcASpoH1OfD////////////
+        X6chSJoASJsASZwASZwA9Pnv////////////////////////////////////1enCUKIAUaIAUqMAUqMA
+        iMBO////////l8lkVaYAVqcAVqcAV6cAe7o9////////ertLWqohWqolW6sqW6ssisRqy8vM////Fxof
+        FxofFxofFxofFxofFxofFxofFxof////FxofFxofFxofFxofFxofFxofFxofKCsvyubH////////////
+        ////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SC4/Tn////////
+        ////////1u/ec8mNc8qPdMuRdMuSdMyVn9y3////////////////sOTIeNGieNKkedOledSnetWqetWr
+        etauetewe9ixe9mzfNq2fNu4yvHi////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGiAj
+        XqOLfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4WJaBICss
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////wtytQJMAQJQAQZQAQpQAQpUAQpUAQ5YARJcARJcARZcAba42////////////X6chSJoASJsASZwA
+        SZwA9Pnv////////////////////////////////////1enCUKIAUaIAUqMAUqMAiMBO////////cbUs
+        VaYAVqcAVqcAV6cAs9iQ////////q9SNWqohWqolW6sqW6ssZ7I+v9+wwN+xqb+iZmxpKCswFxofFxof
+        ////Fxof////////FxofFxofFxofFxofGRwh3e/baohqa7lhl86R////////////////////////+Pz4
+        arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SC4/Tn////////////9vz4gM6Yc8mN
+        c8qPdMuRdMuSdMyVn9y3////////////r+TGd9CgeNGieNKkedOledSnetWqetWretauetewe9ixe9mz
+        fNq2fNu4yvHi////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGiAkX6WNfNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4ete1M1FKSHhqdtCvfNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4dc6tL0hEFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////wtytQJMAX6Yq
+        kMFqksJsksJsc7FCQ5YARJcARJcARZcARpgA6/Tj////////X6chSJoASJsASZwASZwA9Pnv////////
+        ////////////////////////////1enCUKIAUaIAUqMAUqMAiMBO////6/XhVaYBVaYAVqcAVqcAWqkF
+        7Pbk////////3O3QWqohWqolW6sqW6ssXKwwXK00Xa03Xa45Xq48X68/aaBWpNKUvN2xyOTA9vr0SEpO
+        WlxgbnBzhYeJpbCmbblfZbZYZbZaZbdbl86R////////////////////////+Pz4arxrar1ta71wa75x
+        fMeD////////////lNKebsJ9bsJ+b8OAb8SC4/Tn////////////pNy0csiMc8mNc8qPdMuRdMuSdMyV
+        n9y3////////5Pbrd9Ced9CgeNGieNKkedOlhdivpOPFr+bNs+jRld/Ae9ixe9mzfNq2fNu4yvHi////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofGiEkYaePfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4RHFkFxofFxofICssUYp4eda0fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4e9m2X6OMFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////4e7W0ubD////////////////+v34
+        YKYnRJcARJcARZcARpgA4O7U////////X6chSJoASJsASZwASZwA9Pnv////////////////////////
+        ////////////1enCUKIAUaIAUqMAUqMAiMBO///+kMVaVKUAVaYAVqcAVqcAoM1u/////////////v/+
+        abI1WqolW6sqW6ssXKwwXK00Xa03Xa45Xq48X68/X69AX7BDYLBGbbhW/v/+////////////////2e3V
+        ZLVWZbZYZbZaZbdbl86R////////////////////////+Pz4arxrar1ta71wa75xfMeD////////////
+        lNKebsJ9bsJ+b8OAb8SC4/Tn////////0+7acceKcsiMc8mNc8qPdMuRdMuSdMyVn9y3////////q+LC
+        d9Ced9CgeNGieNKkpOHC+/79////////////uuvWe9ixe9mzfNq2fNu4yvHi////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofGyIlYqmRfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        W52GFxofFxofFxofFxofFxofJzo4ZrKXfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4RHFkGyMmGyMm
+        GyMmGyMmGyMmGyMmGyMmGyMmGyMmGiAkFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj/////////////////////////////////////////////////f78Y6gsRJcARJcARZcA
+        RpgA6fPg////////X6chSJoASJsASZwASZwApM5/q9KItNeVzeS3+/34////////////////////1enC
+        UKIAUaIAUqMAUqMAbrIoicBPVKUAVKUAVaYAVqcAYa0R8/ns////////////////mct1WqolW6sqW6ss
+        XKwwXK00Xa03Xa45Xq48X68/X69AX7BDYLBGm86L////////////////////0urOZLVWZbZYZbZaZbdb
+        j8qI////////////////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OA
+        b8SC4/Tn////9Pv2fsyTcceKcsiMc8mNc8qPdMuRdMuSdMyVn9y3////////idapd9Ced9CgeNGietOl
+        7vrz2PPmwezXwezYwezZnOLEe9ixe9mzfNq2fNu4yvHi////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGyMm
+        Y6uSfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4Z7SZGyMmFxofFxofFxof
+        FxofFxofFxofGB0hR3dpedWzfNu4fNu4fNu4fNu4fNu4fNu4fNu4ZbCVJzo4FxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////////////////////6PLfg7pYQ5YARJcARJcARZcAZKkq/v/9////////
+        X6chSJoASJsASZwASZwASpwASp0AS50ATJ4Aa68r0+e/////////////////1enCUKIAUaIAUqMAUqMA
+        U6QAVKQAVKUAVKUAVaYAV6gBvt2c////////////////////yuS3WqolW6sqW6ssXKwwa7VHrtabrtec
+        brZQX68/X69AX7BDYLBGyuXB////////////////////ntGUZLVWZbZYZbZaZbdbaLhf6/bq////////
+        ////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SC4/Tn////odqw
+        cceIcceKcsiMc8mNc8qPdMuRdMuSdMyVn9y3////9/36d8+cd9Ced9CgeNGikdu1////q+TIetWqetWr
+        etauetewe9ixe9mzfNq2fNu4yvHi////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofL0hEaLWafNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4PGFXFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofKT07ababfNu4fNu4fNu4fNu4fNu4fNu4fNu4U457Mk5INFNMOFlRO19VP2ZbQGhdPGJYPWNYQmxg
+        R3VnTH9vUYp4VpN/SHhqFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        /////////////////f78t9eeTpwRQpUAQ5YARJcARJcASpoHy+K3////////////X6chSJoASJsASZwA
+        SZwASpwASp0AS50ATJ4ATZ4ATZ8AmMhs////////////1enCUKIAUaIAUqMAUqMAU6QAVKQAVKUAVKUA
+        V6cDmstn8Pfn////////////////////9/v0XqwqW6sqW6ssXKwwZ7NB////////brZPX68/X69AX7BD
+        Y7JJ9vv1////////////////9/v2ardbZLVWZbZYZbZaZbdbZrddptaj////////////////////+Pz4
+        arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SC4/Tnz+zWccaHcceIcceKcsiMd8uR
+        c8qPdMuRdMuSdMyVn9y3////7fnyd8+cd9Ced9CgeNGil925////q+TIetWqetWretauetewe9ixe9mz
+        fNq2fNu4yvHi////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofHSYpMEpFSnxtabebfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4b8OlGyMmFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGR4iSnxt
+        ete1fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4PWNZFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////4e/X
+        YqctQpQAQpUAQpUAQ5YARJcAVaEX1ujG////////////////X6chSJoASJsASZwASZwASpwASp0AS50A
+        TJ4ATZ4ATZ8ATZ8As9aR////////1enCUKIAUaIAUqMAUqMAU6QAVKQAVKUAVKUAVaYAVqcAX6wO2uzG
+        ////////////////////hsFfW6sqW6ssXKwwXK008Pjt+Pz3X689X68/X69AX7BDicR1////////////
+        ////////wOG5Y7RUZLVWZbZYZbZaZbdbZrddbLtm9Pr0////////////////+Pz4arxrar1ta71wa75x
+        fMeD////////////lNKebsJ9bsJ+b8OAb8SC2/Hge8qPccaHcceIcceKdsqPxenPc8qPdMuRdMuSdMyV
+        n9y3////6Pfud8+cd9Ced9CgeNGil925////q+TIetWqetWretauetewe9ixe9mzfNq2fNu4yvHi////
+        ////////////////7+/wWVteQUNHFxofFxofGiAjNFFLUot4abebbb6harmdZ7OYY62TYKaOXaCJXqOL
+        ZrGXcMSme9m2fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4eNOyK0E+FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofK0E+a7uefNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4abebUIh2UIh2UIh2UIh2UIh2UIh2UYl3VZF+XJ2HY6uSZrKXJDIyFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////4O7VT50UQZQAQpQAQpUAQpUA
+        RJcBir5g8Pfq////////////////////X6chSJoASJsASZwASZwArNKKoc17Y6oiTJ4ATZ4ATZ8ATZ8A
+        X6kY+/34////1enCUKIAUaIAUqMAUqMAcbQttdiRnsxuVaYCVaYAVqcAVqcAYKwO6fTf////////////
+        ////t9qfW6sqW6ssXKwwXK001+vN4vHbXq48X68/X69AX7BDuNys////////////////////g8R2Y7RU
+        ZLVWZbZYZbZaZbdbZrddZrhgtd2y////////////////+Pz4arxrar1ta71wa75xfMeD////////////
+        lNKebsJ9bsJ+b8OAb8SCptuycMWFccaHcceIcceKidGf3/Plc8qPdMuRdMuSdMyVn9y3////+/78edCe
+        d9Ced9CgeNGifNSn+/78q+TIetWqetWretauetewe9ixe9mzfNq2fNu4yvHi////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofGB0hJzo4LURAMEpFM1BKNlZOOVxTPGBXPmRaPWNZQ25hUot5
+        Z7SZe9m2fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4QGldFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGiAkT4V0eti2fNu4fNu4fNu4fNu4
+        fNu4fNu4edWzWJeCR3VnQGhdOl1UOl1UOVxTNlZOM1BKMEpFLEM/JTU0GiEkFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj///////////////////////////+a6w6QJQAQZQAQpQAQpUAkMFp1ejF////////////
+        ////////////////X6chSJoASJsASZwASZwA9Pnv////9frwX6gbTZ4ATZ8ATZ8ATqAA3OzM////1enC
+        UKIAUaIAUqMAUqMAiMBO////////n81wVaYAVqcAVqcAV6cAns1x////////////////6PPhW6sqW6ss
+        XKwwXK00vd6ty+W/Xq48X68/X69AX7BD5/Pj////////////////4vHfY7RSY7RUZLVWZbZYZbZaZbdb
+        ZrddZrhgdb9v+/37////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OA
+        b8SCdMaHcMWFccaHcceIcsiL3fLj3/Plc8qPdMuRdMuSdMyVn9y3////////jtetd9Ced9CgeNGieNKk
+        1PHi3vXqy+/ey+/ey+/gy/DgzPDhzPHizPHjzPHk6vr0////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofHicpNFNMWZmE
+        eNSzfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4a7ueGB0hFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofL0lEbsGjfNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4dMysUox5GiAjFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////5PDaQJMAQJQAQZQAQpQAf7dS////////////////////////////////////
+        X6chSJoASJsASZwASZwA9Pnv////////hb1RTZ4ATZ8ATZ8ATqAA1ejB////1enCUKIAUaIAUqMAUqMA
+        iMBO////////8fjpVaYAVqcAVqcAV6cAdLc0////////////////////dLhKW6ssXKwwXK00rNWYtNqk
+        Xq48X68/X69Adrtd////////////////////pdSbY7RSY7RUZLVWZbZYe8FxablfZrddZrhgZ7hhw+TB
+        ////////////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SCcMSDcMWFccaH
+        cceIrN+7////3/Plc8qPdMuRdMuSdMyVn9y3////////teXJd9Ced9CgeNGieNKkjNqy/P79////////
+        ////////////////////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofHyosS35uccanfNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4cceoKj48FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofHCMmVI57fNu4fNu4fNu4fNu4fNu4fNu4fNu4dc6tPGJYO19V
+        QmxgSXprT4V0VZF+XJ2HYqmRaLaabsKkdc6tNldPFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////yOC2QJMAQJQAQZQAQpQAbK05/f77/////////v/9yeG12OrJ////////////X6chSJoASJsASZwA
+        SZwA9Pnv////////d7Y+TZ4ATZ8ATZ8ATqAA0ue+////1enCUKIAUaIAUqMAUqMAiMBO////////8vjr
+        VaYAVqcAVqcAV6cAbbMp////////////////////pNGJW6ssXKwwXK00pdKQotGNXq48X68/X69ApdOV
+        ////////////////+/36bblcY7RSY7RUZLVWZbZY3/Dddb9sZrddZrhgZ7hhgMR7/v/+////////+Pz4
+        arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SCcMSDcMWFccaHgs6X+P36////3/Pl
+        c8qPdMuRdMuSdMyVn9y3////////9vz4gNOkd9CgeNGieNKkedOlsufN/v/+////////////////////
+        4vfv1vTp////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGB0hNVRNXJ+Ic8urfNu4fNu4
+        fNu4ete1W52GIzIyFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofNFFLcMWnfNu4fNu4fNu4fNu4fNu4fNu4eNSzX6WNT4V0QGhdMEpFIzEx
+        HicpGB0hFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////3ezSQJMAQJQA
+        QZQAQpQAQpUAa6w4erVLcbA+WaMdRZcAvNqi////////////X6chSJoASJsASZwASZwA9Pnv////stWS
+        TZ8CTZ4ATZ8ATZ8ATqAA5/Lc////1enCUKIAUaIAUqMAUqMAiMBO/////v/9erk5VaYAVqcAVqcAV6cA
+        cbYw////////////////////1urJW6ssXKwwXK00n8+JoNCLXq48X68/X69A1erN////////////////
+        yOTBYrNQY7RSY7RUZLVWdr5q////ndKXZrddZrhgZ7hhaLlj0erQ////////+Pz4arxrar1ta71wa75x
+        fMeD////////////lNKebsJ9bsJ+b8OAb8SCcMSDcMWFcseI2fDf////////3/Plc8qPdMuRdMuSdMyV
+        n9y3////////////wurUd9CgeNGieNKkedOledSnidq0m+DAouPHpOTJpeXKkN+/fNq2surW////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofHikqLUVBLUVBHicpFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofHCQnUId1ete1fNu4fNu4fNu4fNu4fNu4fNu4d9Gwd9GwfNu4fNu4fNu4fNu4d9Kxcsmq
+        bb+hZ7SZWJaBFxsgFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj///////////////////////////+X6UpQJQAQZQAQpQAQpUAQpUA
+        Q5YARJcARJcARZcAvNqi////////////X6chSJoASJsASZwASZwAfLhHc7M6Tp8FTJ4ATZ4ATZ8ATZ8A
+        cbMy////////1enCUKIAUaIAUqMAUqMAYqwXhb5JbrMnVKUAVaYAVqcAVqcAV6cAm8tt////////////
+        /////////P77ZbA4XKwwXK00cbdPcbhSXq48X68/Z7NK/P77////////////////i8Z8YrNQY7RSY7RU
+        ZLVWodOZ////yebFZrddZrhgZ7hhaLljjMuK////////+Pz4arxrar1ta71wa75xfMeD////////////
+        lNKebsJ9bsJ+b8OAb8SCcMSDcMWFqNy1////////////3/Plc8qPdMuRdMuSdMyVn9y3////////////
+        /P79i9eueNGieNKkedOledSnetWqetWretauetewe9ixe9mzfNq2surW////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofK0A9Z7OYfNu4fNu4fNu4fNu4fNu4a7ueHCUnHikqK0E+OFlRRHFkUIh2XaCJarmddtCvfNu4RHBj
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////1ejHQ5YEQZQAQpQAQpUAQpUAQ5YARJcARJcARZcA
+        vNqi////////////X6chSJoASJsASZwASZwASpwASp0AS50ATJ4ATZ4ATZ8AUqIH3e3O////////1enC
+        UKIAUaIAUqMAUqMAU6QAVKQAVKUAVKUAVaYAVqcAVqcAV6cA1erC////////////////////////ksdy
+        XKwwXK00Xa03Xa45Xq48X68/k8l+////////////////6vXnY7NPYrNQY7RSY7RUZLVWzefI////8/rz
+        Z7heZrhgZ7hhaLljaLpl3/He////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OA
+        b8SCcMSDf8uS9/z4////////////3/Plc8qPdMuRdMuSdMyVn9y3////////////////2vPle9KkeNKk
+        edOledSnetWqetWretauetewe9ixe9mzfNq2surW////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGBwgQWtf
+        dc6ufNu4fNu4fNu4fNu4eNOyZ7OYVI57QWtfL0hEHSYoFxofFxofFxofHSYoJjg2FxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////////wt2tU54YQpQAQpUAQpUAQ5YARJcARJcARZcAvNqi////////////
+        X6chSJoASJsASZwASZwASpwASp0AS50ATJ4ATZ4AUKEEwN2k////////////1enCUKIAUaIAUqMAUqMA
+        U6QAVKQAVKUAVKUAVaYAVqcAVqcAjMNR////////////////////////////w+CxXKwwXK00Xa03Xa45
+        Xq48X68/wuG3////////////////rdeiYrJOYrNQY7RSY7RUZrZY9vv1////////hsZ/ZrhgZ7hhaLlj
+        aLplmtGY////+Pz4arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SCcMSD1O7b////
+        ////////////3/Plc8qPdMuRdMuSdMyVn9y3////////////////////3/TphNasedOledSnetWqetWr
+        etauetewe9ixe9mzfNq2surW////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIS0uWZmEfNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4e9m2bsKkXJ2HSXprN1dQJTU0FxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////////////9PnvlsRxUJ0TQpUAQ5YARJcARJcAd7NF6vPh////////////X6chSJoASJsASZwA
+        SZwASpwASp0AS50AVKMMib9W4O7S////////////////1enCUKIAUaIAUqMAUqMAU6QAVKQAVKUAVKUA
+        VaYAWKkEhsBI7/fm////////////////////////////8vnuXa0xXK00Xa03Xa45Xq48YLBA8fju////
+        /////////f79c7pfYrJOYrNQY7RSY7RUiMZ9////////////sdutZrhgZ7hhaLljaLplarto6/br+Pz4
+        arxrar1ta71wa75xfMeD////////////lNKebsJ9bsJ+b8OAb8SCo9mv////////////////////3/Pl
+        c8qPdMuRdMuSdMyVn9y3////////////////////////8fv2subMhtivetWqetWretauetewe9ixgdu2
+        pObM5Pjx////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofM1BKbsCjfNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4ds+vY62TMUxHFxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////
+        /////////f787PXl3ezQ3OzP4e7V////////////////////4e/V3ezP3e3P3e3P3e3P3e3P3u3Q7PXj
+        /f77////////////////////////+Pv03u7P3+7P3+7P3+7P3+7P3+7P4fDS5/Pb7vbl+vz2////////
+        ////////////////////////////////5PHc4fDZ4fDa4fDa4fDb5PLe////////////////+/374vHe
+        4vHe4vHe4vHf4vHf7vfs////////////9vv14/Lh4/Li4/Li4/Li4/Lj9Pr0/v/+4/Pk4/Pk5PPk5PPl
+        5/Xo////////////7Pft5PTn5PTn5PTo5PTo+f36////////////////////+f375fXq5fbr5fbr5fbr
+        7vny////////////////////////////////////9fz57vr06Pjx7Pr08/z4/f/+////////////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofGiAkSXlqdtCvfNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4fNu4fNu4fNu4fNu4TH9vFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofHikqTYJyeNOyfNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4
+        fNu4fNu4Z7OYFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////7+/wWVteQUNHFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofIS4vUot5eda0fNu4fNu4fNu4fNu4fNu4fNu4fNu4fNu4eda0Fxof
+        FxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofJDMzS35ubsKkfNu4fNu4fNu4fNu4fNu4fNu4dtCvFxofFxofFxofFxofFxof
+        FxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofJzo4OFlRQ29jRHFkQ29iPGBXLEM/FxofFxofFxofFxofFxofFxofFxofFxofIiUq
+        Nzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRm
+        cnN1gYKDkJGSoqKjtLW2ycrK4uPj////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        7+/wWVteQUNHFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxof
+        FxofFxofFxofFxofFxofFxofFxofFxofFxofFxofFxofIiUqNzk9SUtOUlNWYmRmcnN1gYKDkJGSoqKj
+        tLW2ycrK4uPj////////////+/v87+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w
+        7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/w7+/wzs/QWVtebG5yQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNHQUNH
+        QUNHQUNHQUNHQUNHQUNHQUNHQUNHRUdLTU9SU1VYVlhbXF5hYmRmZ2lrbW5xc3V3ent+gYOFioyOlZaY
+        lZaYlZaYhYeJWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVte
+        WVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteWVteenx/
+</value>
+  </data>
+  <data name="rad_digicam.Text" xml:space="preserve">
+    <value>DO_DIGICAM_CONTROL</value>
+  </data>
+  <data name="rad_do_set_servo.Text" xml:space="preserve">
+    <value>DO_SET_SERVO</value>
+  </data>
+  <data name="rad_repeatservo.Text" xml:space="preserve">
+    <value>DO_REPEAT_SERVO</value>
+  </data>
+  <data name="rad_trigdist.Text" xml:space="preserve">
+    <value>CAM_TRIGG_DIST</value>
+  </data>
+  <data name="tabCamera.Text" xml:space="preserve">
+    <value>Camera Config</value>
+  </data>
+  <data name="tabGrid.Text" xml:space="preserve">
+    <value>Grid Options</value>
+  </data>
+  <data name="tabSimple.Text" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="TXT_headinghold.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TXT_imgheight.Text" xml:space="preserve">
+    <value>3456</value>
+  </data>
+  <data name="TXT_imgwidth.Text" xml:space="preserve">
+    <value>4608</value>
+  </data>
+  <data name="TXT_sensheight.Text" xml:space="preserve">
+    <value>4.62</value>
+  </data>
+  <data name="TXT_senswidth.Text" xml:space="preserve">
+    <value>6.16</value>
+  </data>
+</root>
