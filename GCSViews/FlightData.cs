@@ -45,6 +45,8 @@ namespace MissionPlanner.GCSViews
         public static myGMAP mymap;
         public static bool threadrun;
         public SplitContainer MainHcopy;
+        //fernando 09-10-2022 - inclusão do Overlay para a pulverização
+        internal static GMapOverlay pulverizandooverlay;
         internal static GMapOverlay geofence;
         internal static GMapOverlay photosoverlay;
         internal static GMapOverlay poioverlay = new GMapOverlay("POI");
@@ -113,7 +115,12 @@ namespace MissionPlanner.GCSViews
         private Propagation prop;
         
         GMapRoute route;
+        GMapRoute routePulverizando;
+
         GMapOverlay routes;
+
+        GMapOverlay routesPulverizando;
+
         GMapOverlay adsbais;
 
         Script script;
@@ -133,6 +140,8 @@ namespace MissionPlanner.GCSViews
         //      private DockStateSerializer _serializer = null;
 
         List<PointLatLng> trackPoints = new List<PointLatLng>();
+        List<PointLatLng> trackPointsPulverizando = new List<PointLatLng>();
+
         volatile int updateBindingSourcecount;
 
         object updateBindingSourcelock = new object();
@@ -339,6 +348,9 @@ namespace MissionPlanner.GCSViews
             routes = new GMapOverlay("routes");
             gMapControl1.Overlays.Add(routes);
 
+            pulverizandooverlay = new GMapOverlay("pulverizando");
+            gMapControl1.Overlays.Add(pulverizandooverlay);
+
             adsbais = new GMapOverlay("adsb/ais");
             gMapControl1.Overlays.Add(adsbais);
 
@@ -413,6 +425,13 @@ namespace MissionPlanner.GCSViews
                             QV.Tag = desc;
                         QV.desc = MainV2.comPort.MAV.cs.GetNameandUnit(desc);
 
+                        // fernando 18-09-2022 - alterando nome do controle quando igual a CH6OUT e ch7out 
+                        
+                        if (QV.desc == "ch6out")
+                            QV.desc = "Pulverizador";
+                        if (QV.desc == "ch7out")
+                            QV.desc = "Rotação";
+
                         // set databinding for value
                         QV.DataBindings.Clear();
                         try
@@ -421,7 +440,7 @@ namespace MissionPlanner.GCSViews
                                 Settings.Instance["quickView" + f], true);
                             b.Format += new ConvertEventHandler(BindingTypeToNumber);
                             b.Parse += new ConvertEventHandler(NumberToBindingType);
-
+                          
                             QV.DataBindings.Add(b);
                         }
                         catch (Exception ex)
@@ -752,6 +771,10 @@ namespace MissionPlanner.GCSViews
                 routes.Dispose();
             if (route != null)
                 route.Dispose();
+            if (routesPulverizando != null)
+                routesPulverizando.Dispose();
+            if (routePulverizando != null)
+                routePulverizando.Dispose();
             if (marker != null)
                 marker.Dispose();
             if (aviwriter != null)
@@ -3271,17 +3294,21 @@ namespace MissionPlanner.GCSViews
                             setMapBearing();
                         }
 
-                        if (route == null)
+                        if (route == null && routePulverizando == null)
                         {
                             route = new GMapRoute(trackPoints, "track");
                             routes.Routes.Add(route);
+
+                           // routePulverizando = new GMapRoute(trackPointsPulverizando, "pulverizando");
+                           // routesPulverizando.Routes.Add(routePulverizando);
+                           
                         }
 
                         PointLatLng currentloc = new PointLatLng(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng);
 
                         gMapControl1.HoldInvalidation = true;
 
-                        int numTrackLength = Settings.Instance.GetInt32("NUM_tracklength", 200);
+                        int numTrackLength = Settings.Instance.GetInt32("NUM_tracklength", 20000);
                         // maintain route history length
                         if (route.Points.Count > numTrackLength)
                         {
@@ -3292,7 +3319,29 @@ namespace MissionPlanner.GCSViews
                         // add new route point
                         if (MainV2.comPort.MAV.cs.lat != 0 && MainV2.comPort.MAV.cs.lng != 0)
                         {
-                            route.Points.Add(currentloc);
+
+                            //fernando 08-10-2022 alterar cor da linha
+                            if (MainV2.comPort.MAV.cs.ch6out > 0)
+                                {
+
+
+                                route.Stroke.Color = Color.Purple;
+                                route.Stroke.Width = 5;
+                                route.Points.Add(currentloc);
+                                pulverizandooverlay.Markers.Add(new GMapMarkerSprayer(new PointLatLngAlt(currentloc)));
+
+                            }
+                            else
+                                {
+
+                                route.Stroke.Color = Color.Purple;
+                                route.Stroke.Width = 5;
+                                route.Points.Add(currentloc);
+                            }
+
+                            //route.Points.Add(currentloc);
+                             
+                            
                         }
 
                         if (!this.IsHandleCreated)
@@ -4000,6 +4049,9 @@ namespace MissionPlanner.GCSViews
 
         private void quickView_DoubleClick(object sender, EventArgs e)
         {
+
+            //fernando - aqui abre a lista de status para escolher no Painel Rápido
+
             if (MainV2.DisplayConfiguration.lockQuickView)
                 return;
 
@@ -5767,6 +5819,26 @@ namespace MissionPlanner.GCSViews
         {
             tabControlactions.Multiline = !tabControlactions.Multiline;
             Settings.Instance["tabControlactions_Multiline"] = tabControlactions.Multiline.ToString();
+        }
+
+        private void quickView1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void CMB_setwp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSourceQuickTab_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

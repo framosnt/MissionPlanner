@@ -52,6 +52,8 @@ namespace MissionPlanner
         internal double _battery_voltage;
 
         internal double _battery_voltage2;
+        //fernando 08-10-2022 - inclusao de valor de nivel do tanque
+        internal string _tank_nivel;
 
         private float _ch3percent = -1;
         private float _climbrate;
@@ -660,6 +662,7 @@ namespace MissionPlanner
 
         [GroupText("RadioOut")] public float ch5out { get; set; }
 
+        //fernando 18-09-2022 - para trocar de nome do status
         [GroupText("RadioOut")] public float ch6out { get; set; }
 
         [GroupText("RadioOut")] public float ch7out { get; set; }
@@ -713,6 +716,10 @@ namespace MissionPlanner
         [GroupText("RadioOut")] public float ch31out { get; set; }
 
         [GroupText("RadioOut")] public float ch32out { get; set; }
+
+        //fernando 18-09-2022 - para trocar de nome do status
+        //[GroupText("RadioOut")] public float chfluxo { get; set; }
+        //[GroupText("RadioOut")] public float chrotacao { get; set; }
 
         [GroupText("ESC")] public float esc1_volt { get; set; }
         [GroupText("ESC")] public float esc1_curr { get; set; }
@@ -1286,7 +1293,11 @@ namespace MissionPlanner
         public double battery_usedmah9 { get; set; }
 
         [GroupText("Battery")]
-        [DisplayText("Bat2 Voltage (V)")]
+        //Fernando - 08-10-2022 - altera o valor da Bateria 2 para nivel de tanque
+       // [DisplayText("Bat2 Voltage (V)")]
+        [DisplayText("Nível Tanque")]
+
+
         public double battery_voltage2
         {
             get => _battery_voltage2;
@@ -1294,9 +1305,20 @@ namespace MissionPlanner
             {
                 if (_battery_voltage2 == 0) _battery_voltage2 = value;
                 _battery_voltage2 = value * 0.4f + _battery_voltage2 * 0.6f;
+                if (_battery_voltage2 > 15)
+                    tank_nivel = "CARREGADO";
+                else
+                    tank_nivel = "VAZIO";
             }
         }
 
+
+        public string tank_nivel
+        {
+            //Fernando - 08-10-2022 - inclui valor para nivel do tank 
+            get => _tank_nivel;
+            set { }
+        }
         [GroupText("Position")]
         public double HomeAlt
         {
@@ -1587,7 +1609,8 @@ namespace MissionPlanner
 
         [DisplayText("Sonar Voltage (Volt)")] public float sonarvoltage { get; set; }
 
-        [DisplayText("RangeFinder1 (cm)")] public uint rangefinder1 { get; set; }
+        //fernando 08-10-2022 - mudar rangeFinder1 para Radar Solo
+        [DisplayText("Radar Solo (cm)")] public uint rangefinder1 { get; set; }
 
         [DisplayText("RangeFinder2 (cm)")] public uint rangefinder2 { get; set; }
 
@@ -2771,7 +2794,16 @@ namespace MissionPlanner
                             {
                                 battery_usedmah2 = bats.current_consumed;
                                 battery_remaining2 = bats.battery_remaining;
-                                battery_voltage2 = temp_battery_voltage;
+                                //FERNANDO 08/10/2022 - ALTERANDO VALOR DO CAMPO BATT2
+                                //battery_voltage2 = temp_battery_voltage;
+                                if (temp_battery_voltage > 35)
+                                    //temp_battery_voltage
+                                    tank_nivel  = "CARREGADO";
+                                else tank_nivel = "VAZIO";
+                                //battery_voltage2 = tank_nivel;
+
+
+
                                 _current2 = bats.current_battery / 100.0f;
                                 if (bats.temperature != short.MaxValue)
                                     battery_temp2 = bats.temperature / 100.0;
@@ -3271,7 +3303,9 @@ namespace MissionPlanner
                                 ch3out = servoout.servo3_raw;
                                 ch4out = servoout.servo4_raw;
                                 ch5out = servoout.servo5_raw;
-                                ch6out = servoout.servo6_raw;
+                                //FERNANDO 18-09-2022 MUDANDO NOMES DO STATUS
+                                //valor Percentual para a Bomba de Pulverização ou Abertura de fluxo de sólido
+                                ch6out = ((servoout.servo6_raw-1000)/10);
                                 ch7out = servoout.servo7_raw;
                                 ch8out = servoout.servo8_raw;
                                 ch9out = servoout.servo9_raw;

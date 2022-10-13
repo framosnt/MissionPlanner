@@ -222,7 +222,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
 
             zedGraphControl1.GraphPane.AddCurve("Acro Collective", acro, Color.Yellow, SymbolType.None);
-
+            //fernando 18-09-2022 mudança de status
             double posx = map(MainV2.comPort.MAV.cs.ch6out, MainV2.comPort.MAV.param["H_COL_MIN"].Value,
                 MainV2.comPort.MAV.param["H_COL_MAX"].Value, 0, 100);
 

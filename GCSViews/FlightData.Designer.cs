@@ -34,13 +34,21 @@ namespace MissionPlanner.GCSViews
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabQuick = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
-            this.quickView6 = new MissionPlanner.Controls.QuickView();
+            this.tabBonsVoos = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelBonsVoos = new System.Windows.Forms.TableLayoutPanel();
+            this.quickView12 = new MissionPlanner.Controls.QuickView();
             this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
+            this.quickView11 = new MissionPlanner.Controls.QuickView();
+            this.quickView10 = new MissionPlanner.Controls.QuickView();
+            this.quickView9 = new MissionPlanner.Controls.QuickView();
+            this.quickView8 = new MissionPlanner.Controls.QuickView();
+            this.quickView7 = new MissionPlanner.Controls.QuickView();
+            this.tabQuick = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
+            this.quickView6 = new MissionPlanner.Controls.QuickView();
             this.quickView5 = new MissionPlanner.Controls.QuickView();
             this.quickView4 = new MissionPlanner.Controls.QuickView();
             this.quickView3 = new MissionPlanner.Controls.QuickView();
@@ -227,10 +235,12 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             this.tabControlactions.SuspendLayout();
             this.contextMenuStripactionstab.SuspendLayout();
-            this.tabQuick.SuspendLayout();
-            this.tableLayoutPanelQuick.SuspendLayout();
+            this.tabBonsVoos.SuspendLayout();
+            this.tableLayoutPanelBonsVoos.SuspendLayout();
             this.contextMenuStripQuickView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
+            this.tabQuick.SuspendLayout();
+            this.tableLayoutPanelQuick.SuspendLayout();
             this.tabActions.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPagemessages.SuspendLayout();
@@ -411,6 +421,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripHud
             // 
+            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
             this.setAspectRatioToolStripMenuItem,
@@ -528,6 +539,7 @@ namespace MissionPlanner.GCSViews
             // tabControlactions
             // 
             this.tabControlactions.ContextMenuStrip = this.contextMenuStripactionstab;
+            this.tabControlactions.Controls.Add(this.tabBonsVoos);
             this.tabControlactions.Controls.Add(this.tabQuick);
             this.tabControlactions.Controls.Add(this.tabActions);
             this.tabControlactions.Controls.Add(this.tabPagemessages);
@@ -549,6 +561,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripactionstab
             // 
+            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.multiLineToolStripMenuItem});
@@ -566,6 +579,123 @@ namespace MissionPlanner.GCSViews
             this.multiLineToolStripMenuItem.Name = "multiLineToolStripMenuItem";
             resources.ApplyResources(this.multiLineToolStripMenuItem, "multiLineToolStripMenuItem");
             this.multiLineToolStripMenuItem.Click += new System.EventHandler(this.multiLineToolStripMenuItem_Click);
+            // 
+            // tabBonsVoos
+            // 
+            this.tabBonsVoos.Controls.Add(this.tableLayoutPanelBonsVoos);
+            resources.ApplyResources(this.tabBonsVoos, "tabBonsVoos");
+            this.tabBonsVoos.Name = "tabBonsVoos";
+            this.tabBonsVoos.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanelBonsVoos
+            // 
+            resources.ApplyResources(this.tableLayoutPanelBonsVoos, "tableLayoutPanelBonsVoos");
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView12, 1, 2);
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView11, 0, 2);
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView10, 1, 1);
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView9, 0, 1);
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView8, 1, 0);
+            this.tableLayoutPanelBonsVoos.Controls.Add(this.quickView7, 0, 0);
+            this.tableLayoutPanelBonsVoos.Name = "tableLayoutPanelBonsVoos";
+            // 
+            // quickView12
+            // 
+            this.quickView12.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView12.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
+            this.quickView12.desc = "DistToMAV";
+            resources.ApplyResources(this.quickView12, "quickView12");
+            this.quickView12.Name = "quickView12";
+            this.quickView12.number = 0D;
+            this.quickView12.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.quickView12.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView12.numberformat = "0.00";
+            // 
+            // contextMenuStripQuickView
+            // 
+            this.contextMenuStripQuickView.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setViewCountToolStripMenuItem,
+            this.undockToolStripMenuItem});
+            this.contextMenuStripQuickView.Name = "contextMenuStripQuickView";
+            resources.ApplyResources(this.contextMenuStripQuickView, "contextMenuStripQuickView");
+            // 
+            // setViewCountToolStripMenuItem
+            // 
+            this.setViewCountToolStripMenuItem.Name = "setViewCountToolStripMenuItem";
+            resources.ApplyResources(this.setViewCountToolStripMenuItem, "setViewCountToolStripMenuItem");
+            this.setViewCountToolStripMenuItem.Click += new System.EventHandler(this.setViewCountToolStripMenuItem_Click);
+            // 
+            // undockToolStripMenuItem
+            // 
+            this.undockToolStripMenuItem.Name = "undockToolStripMenuItem";
+            resources.ApplyResources(this.undockToolStripMenuItem, "undockToolStripMenuItem");
+            this.undockToolStripMenuItem.Click += new System.EventHandler(this.undockDockToolStripMenuItem_Click);
+            // 
+            // bindingSourceQuickTab
+            // 
+            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSourceQuickTab.CurrentChanged += new System.EventHandler(this.bindingSourceQuickTab_CurrentChanged);
+            // 
+            // quickView11
+            // 
+            this.quickView11.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView11.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
+            this.quickView11.desc = "verticalspeed";
+            resources.ApplyResources(this.quickView11, "quickView11");
+            this.quickView11.Name = "quickView11";
+            this.quickView11.number = 0D;
+            this.quickView11.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(86)))));
+            this.quickView11.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView11.numberformat = "0.00";
+            // 
+            // quickView10
+            // 
+            this.quickView10.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView10.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
+            this.quickView10.desc = "yaw";
+            resources.ApplyResources(this.quickView10, "quickView10");
+            this.quickView10.Name = "quickView10";
+            this.quickView10.number = 0D;
+            this.quickView10.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(83)))));
+            this.quickView10.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView10.numberformat = "0.00";
+            // 
+            // quickView9
+            // 
+            this.quickView9.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView9.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
+            this.quickView9.desc = "wp_dist";
+            resources.ApplyResources(this.quickView9, "quickView9");
+            this.quickView9.Name = "quickView9";
+            this.quickView9.number = 0D;
+            this.quickView9.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
+            this.quickView9.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView9.numberformat = "0.00";
+            // 
+            // quickView8
+            // 
+            this.quickView8.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView8.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
+            this.quickView8.desc = "groundspeed";
+            resources.ApplyResources(this.quickView8, "quickView8");
+            this.quickView8.Name = "quickView8";
+            this.quickView8.number = 0D;
+            this.quickView8.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(132)))), ((int)(((byte)(46)))));
+            this.quickView8.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView8.numberformat = "0.00";
+            // 
+            // quickView7
+            // 
+            this.quickView7.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView7.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
+            this.quickView7.desc = "alt";
+            resources.ApplyResources(this.quickView7, "quickView7");
+            this.quickView7.Name = "quickView7";
+            this.quickView7.number = 0D;
+            this.quickView7.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(151)))), ((int)(((byte)(248)))));
+            this.quickView7.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView7.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.quickView7, resources.GetString("quickView7.ToolTip"));
             // 
             // tabQuick
             // 
@@ -598,30 +728,6 @@ namespace MissionPlanner.GCSViews
             this.quickView6.numberColorBackup = System.Drawing.Color.Empty;
             this.quickView6.numberformat = "0.00";
             this.quickView6.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // contextMenuStripQuickView
-            // 
-            this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setViewCountToolStripMenuItem,
-            this.undockToolStripMenuItem});
-            this.contextMenuStripQuickView.Name = "contextMenuStripQuickView";
-            resources.ApplyResources(this.contextMenuStripQuickView, "contextMenuStripQuickView");
-            // 
-            // setViewCountToolStripMenuItem
-            // 
-            this.setViewCountToolStripMenuItem.Name = "setViewCountToolStripMenuItem";
-            resources.ApplyResources(this.setViewCountToolStripMenuItem, "setViewCountToolStripMenuItem");
-            this.setViewCountToolStripMenuItem.Click += new System.EventHandler(this.setViewCountToolStripMenuItem_Click);
-            // 
-            // undockToolStripMenuItem
-            // 
-            this.undockToolStripMenuItem.Name = "undockToolStripMenuItem";
-            resources.ApplyResources(this.undockToolStripMenuItem, "undockToolStripMenuItem");
-            this.undockToolStripMenuItem.Click += new System.EventHandler(this.undockDockToolStripMenuItem_Click);
-            // 
-            // bindingSourceQuickTab
-            // 
-            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
             // 
             // quickView5
             // 
@@ -687,6 +793,7 @@ namespace MissionPlanner.GCSViews
             this.quickView1.numberColorBackup = System.Drawing.Color.Empty;
             this.quickView1.numberformat = "0.00";
             this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
+            this.quickView1.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.quickView1_PaintSurface);
             this.quickView1.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
             // 
             // tabActions
@@ -880,6 +987,7 @@ namespace MissionPlanner.GCSViews
             this.CMB_setwp.Items.AddRange(new object[] {
             resources.GetString("CMB_setwp.Items")});
             this.CMB_setwp.Name = "CMB_setwp";
+            this.CMB_setwp.SelectedIndexChanged += new System.EventHandler(this.CMB_setwp_SelectedIndexChanged);
             this.CMB_setwp.Click += new System.EventHandler(this.CMB_setwp_Click);
             // 
             // BUT_ARM
@@ -2182,6 +2290,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel2.Controls.Add(this.but_dflogtokml, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.BUT_loganalysis, 2, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // BUT_DFMavlink
             // 
@@ -2295,6 +2404,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripMap
             // 
+            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
@@ -2443,7 +2553,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2665,10 +2775,12 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             this.tabControlactions.ResumeLayout(false);
             this.contextMenuStripactionstab.ResumeLayout(false);
-            this.tabQuick.ResumeLayout(false);
-            this.tableLayoutPanelQuick.ResumeLayout(false);
+            this.tabBonsVoos.ResumeLayout(false);
+            this.tableLayoutPanelBonsVoos.ResumeLayout(false);
             this.contextMenuStripQuickView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
+            this.tabQuick.ResumeLayout(false);
+            this.tableLayoutPanelQuick.ResumeLayout(false);
             this.tabActions.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -2930,5 +3042,13 @@ namespace MissionPlanner.GCSViews
         private ToolStripMenuItem showIconsToolStripMenuItem;
         private ToolStripMenuItem multiLineToolStripMenuItem;
         private Controls.MyButton BUT_SendMSG;
+        private TabPage tabBonsVoos;
+        private TableLayoutPanel tableLayoutPanelBonsVoos;
+        private Controls.QuickView quickView12;
+        private Controls.QuickView quickView11;
+        private Controls.QuickView quickView10;
+        private Controls.QuickView quickView9;
+        private Controls.QuickView quickView8;
+        private Controls.QuickView quickView7;
     }
 }

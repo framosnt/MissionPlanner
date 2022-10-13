@@ -208,6 +208,8 @@ namespace MissionPlanner.GCSViews
             // 
             // chk_skipdownload
             // 
+            this.chk_skipdownload.Checked = true;
+            this.chk_skipdownload.CheckState = System.Windows.Forms.CheckState.Checked;
             resources.ApplyResources(this.chk_skipdownload, "chk_skipdownload");
             this.chk_skipdownload.Name = "chk_skipdownload";
             this.chk_skipdownload.UseVisualStyleBackColor = true;

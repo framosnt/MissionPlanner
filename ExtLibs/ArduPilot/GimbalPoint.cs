@@ -38,6 +38,7 @@ namespace MissionPlanner.Utilities
             if (channel == 5)
                 return (int) (float) comPort.MAV.cs.ch5out;
             if (channel == 6)
+                //fernando 18-09-2022 - mudando nome do status
                 return (int) (float) comPort.MAV.cs.ch6out;
             if (channel == 7)
                 return (int) (float) comPort.MAV.cs.ch7out;
