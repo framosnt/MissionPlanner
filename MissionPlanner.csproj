@@ -778,12 +778,8 @@
     <Compile Include="Controls\MovingBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\OpenGLtest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\OpenGLtest2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Controls\OpenGLtest.cs" />
+    <Compile Include="Controls\OpenGLtest2.cs" />
     <Compile Include="Controls\OSDVideo.cs">
       <SubType>Form</SubType>
     </Compile>
