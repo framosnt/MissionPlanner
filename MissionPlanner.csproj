@@ -33,9 +33,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>BonsVoosMP</ProductName>
+    <PublisherName>BonsVoos</PublisherName>
+    <SuiteName>BonsVoosMP</SuiteName>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -76,6 +81,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>BonsVoosMP</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="APMPlannerXplanes\**" />
@@ -1768,6 +1776,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.id-ID.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ja-JP.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
@@ -1777,6 +1786,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.pt.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ru-KZ.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
@@ -3476,12 +3486,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.ar.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.az-Latn-AZ.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.de-DE.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
@@ -3494,6 +3506,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.id-ID.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.it-IT.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
@@ -3509,15 +3522,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.pt.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.ru-KZ.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.tr.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.zh-Hans.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWCompass.zh-Hant.resx">
       <DependentUpon>ConfigHWCompass.cs</DependentUpon>
@@ -4633,6 +4649,7 @@
     <None Include="BonsVoosSpray\BonsVoos.pictureBox2.Image.bmp" />
     <Content Include="bonsvoosMP-ICON128.ico" />
     <Content Include="bonsvoosMP.ICO" />
+    <Content Include="custom.config.xml" />
     <Content Include="Drivers\CubeOrangePlus.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

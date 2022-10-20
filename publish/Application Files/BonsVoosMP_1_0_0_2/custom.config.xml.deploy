@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<_BAUD>115200</_BAUD>
+	<APMFirmware>ArduCopter2</APMFirmware>
+	<AutoConnect>
+		[
+		{
+		"Label": "Mavlink default port",
+		"Enabled": true,
+		"Port": 14550,
+		"Protocol": 1,
+		"Format": 0,
+		"Direction": 0,
+		"ConfigString": ""
+		},
+		{
+		"Label": "Mavlink alt port",
+		"Enabled": true,
+		"Port": 14551,
+		"Protocol": 1,
+		"Format": 0,
+		"Direction": 0,
+		"ConfigString": ""
+		},
+		{
+		"Label": "Mavlink sitl port",
+		"Enabled": false,
+		"Port": 5760,
+		"Protocol": 0,
+		"Format": 0,
+		"Direction": 1,
+		"ConfigString": "127.0.0.1"
+		},
+		{
+		"Label": "Video udp 5000 h264",
+		"Enabled": true,
+		"Port": 5000,
+		"Protocol": 1,
+		"Format": 1,
+		"Direction": 0,
+		"ConfigString": "udpsrc port=5000 buffer-size=90000 ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "Video udp 5100 h264",
+		"Enabled": true,
+		"Port": 5100,
+		"Protocol": 1,
+		"Format": 1,
+		"Direction": 0,
+		"ConfigString": "udpsrc port=5100 buffer-size=90000 ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "Video udp 5600 h264",
+		"Enabled": true,
+		"Port": 5600,
+		"Protocol": 1,
+		"Format": 1,
+		"Direction": 0,
+		"ConfigString": "udpsrc port=5600 buffer-size=90000 ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "Video udp 5601 h265",
+		"Enabled": true,
+		"Port": 5601,
+		"Protocol": 1,
+		"Format": 1,
+		"Direction": 0,
+		"ConfigString": "udpsrc port=5601 buffer-size=90000 ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "SkyViper",
+		"Enabled": false,
+		"Port": 554,
+		"Protocol": 0,
+		"Format": 1,
+		"Direction": 1,
+		"ConfigString": "rtspsrc location=rtsp://192.168.99.1/media/stream2 debug=false buffer-mode=1 latency=100 ntp-time-source=3 ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "HereLink Wifi",
+		"Enabled": false,
+		"Port": 8554,
+		"Protocol": 0,
+		"Format": 1,
+		"Direction": 1,
+		"ConfigString": "rtspsrc location=rtsp://192.168.43.1:8554/fpv_stream latency=41 udp-reconnect=1 timeout=0 do-retransmission=false ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "HereLink GCS",
+		"Enabled": false,
+		"Port": 8554,
+		"Protocol": 0,
+		"Format": 1,
+		"Direction": 1,
+		"ConfigString": "rtspsrc location=rtsp://192.168.0.10:8554/H264Video latency=41 udp-reconnect=1 timeout=0 do-retransmission=false ! application/x-rtp ! decodebin3 ! queue max-size-buffers=1 leaky=2 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false"
+		},
+		{
+		"Label": "Serial",
+		"Enabled": false,
+		"Port": 57600,
+		"Protocol": 2,
+		"Format": 0,
+		"Direction": 1,
+		"ConfigString": ""
+		}
+		]
+	</AutoConnect>
+	<comport />
+	<FlightSplitter>300</FlightSplitter>
+	<fw_check>18/10/2022</fw_check>
+	<groundColorToolStripMenuItem>False</groundColorToolStripMenuItem>
+	<guid>91299efc-6a6c-4674-b626-f9485846ad22</guid>
+	<kindex>2</kindex>
+	<kindexdate>18/10/2022</kindexdate>
+	<MainHeight>575</MainHeight>
+	<MainLocX>288</MainLocX>
+	<MainLocY>124</MainLocY>
+	<MainMaximised>Normal</MainMaximised>
+	<MainWidth>960</MainWidth>
+	<maplast_lat>0</maplast_lat>
+	<maplast_lng>0</maplast_lng>
+	<maplast_zoom>3</maplast_zoom>
+	<MapType>GoogleSatelliteMap</MapType>
+	<menu_autohide>false</menu_autohide>
+	<NUM_tracklength>2000</NUM_tracklength>
+	<quickView1>DistToHome</quickView1>
+	<quickView2>rangefinder1</quickView2>
+	<quickView3>battery_voltage</quickView3>
+	<quickView4>battery_voltage2</quickView4>
+	<quickView5>ch7out</quickView5>
+	<quickView6>ch6out</quickView6>
+	<speechaltenabled>False</speechaltenabled>
+	<speecharm>Motor Armado</speecharm>
+	<speecharmenabled>True</speecharmenabled>
+	<speechbattery>Atenção, Bateria com {batv} Voltis e {batp} porcento</speechbattery>
+	<speechbatteryenabled>True</speechbatteryenabled>
+	<speechbatterypercent>20</speechbatterypercent>
+	<speechbatteryvolt>20</speechbatteryvolt>
+	<speechcustom>Apontado para o  {wpn}, altitude {alt} metros e velocidade de solo {gsp} kilometros </speechcustom>
+	<speechcustomenabled>True</speechcustomenabled>
+	<speechdisarm>Motor desarmado</speechdisarm>
+	<speechenable>True</speechenable>
+	<speechmode>Modo de voo alterado para {mode}</speechmode>
+	<speechmodeenabled>True</speechmodeenabled>
+	<speechwaypoint>Apontado para o ponto de passagem  {wpn}</speechwaypoint>
+	<speechwaypointenabled>True</speechwaypointenabled>
+	<speedunits>kph</speedunits>
+	<TXT_DefaultAlt>8</TXT_DefaultAlt>
+	<TXT_homealt>697,4</TXT_homealt>
+	<TXT_homelat>-23,150189</TXT_homelat>
+	<TXT_homelng>-46,8817</TXT_homelng>
+	<TXT_loiterrad>45</TXT_loiterrad>
+	<TXT_WPRad>3,00</TXT_WPRad>
+	<terminaltheming>True</terminaltheming>
+	<theme>BurntKermit.mpsystheme</theme>
+	<Tuning_Graph_Selected>roll|pitch|nav_roll|nav_pitch|</Tuning_Graph_Selected>
+	<update_check>18/10/2022</update_check>
+</Config>

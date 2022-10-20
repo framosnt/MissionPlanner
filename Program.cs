@@ -175,8 +175,8 @@ namespace MissionPlanner
                 Utilities.Update.DoUpdate();
                 return;
             }
-
-            name = "Mission Planner";
+            //fernando 18-10-2022 - alteração do nome do programa
+            name = "BonsVoos MP";
 
             try
             {

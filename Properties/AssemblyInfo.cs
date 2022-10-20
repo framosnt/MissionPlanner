@@ -1,11 +1,12 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BonsVoosMP")]
-[assembly: AssemblyDescription("Bons Voos Version of Mission Planner ground control station for ardupilot")]
+[assembly: AssemblyDescription("Bons Voos Version of Mission Planner ground control station")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bons Voos")]
 [assembly: AssemblyProduct("BonsVoosMP")]
@@ -30,3 +31,4 @@ using System.Runtime.InteropServices;
 //
 [assembly: AssemblyVersion("1.3.*")]
 [assembly: AssemblyFileVersion("1.3.77.2")]
+[assembly: NeutralResourcesLanguage("pt-BR")]

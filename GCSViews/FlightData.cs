@@ -3320,7 +3320,7 @@ namespace MissionPlanner.GCSViews
                         if (MainV2.comPort.MAV.cs.lat != 0 && MainV2.comPort.MAV.cs.lng != 0)
                         {
 
-                            //fernando 08-10-2022 alterar cor da linha
+                            //fernando 08-10-2022 desenha marcas da pulverização quando a bomba estiver ligada.
                             if (MainV2.comPort.MAV.cs.ch6out > 0)
                                 {
 
