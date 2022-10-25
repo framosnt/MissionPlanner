@@ -564,6 +564,9 @@
     <None Update="checklistDefault.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="custom.config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

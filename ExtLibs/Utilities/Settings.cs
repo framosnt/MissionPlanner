@@ -83,7 +83,7 @@ namespace MissionPlanner.Utilities
             return config.ContainsKey(key);
         }
 
-        public string UserAgent { get; set; } = "MissionPlanner";
+        public string UserAgent { get; set; } = "BonsVoosMP";
         
         public string ComPort
         {
@@ -419,7 +419,7 @@ namespace MissionPlanner.Utilities
                                 {
                                     switch (xmlreader.Name)
                                     {
-                                        case "Config":
+                                        case "config":
                                             break;
                                         case "xml":
                                             break;
@@ -438,6 +438,7 @@ namespace MissionPlanner.Utilities
                             }
                         }
                     }
+  
             }
             catch
             {
@@ -445,7 +446,49 @@ namespace MissionPlanner.Utilities
             }
 
             if (!File.Exists(GetConfigFullPath()))
-                return;
+
+                //carregar o default fernando 25-10-2022 - escrever código para carregar valor padrão
+                // DistToHome
+
+            config["quickView1"] = "DistToHome";
+            config["quickView2"] = "rangefinder1";
+            config["quickView3"] = "battery_voltage";
+            config["quickView4"] = "battery_voltage2";
+            config["quickView5"] = "ch7out";
+            config["quickView6"] = "ch6out";
+            config["quickViewCols"] = "2";
+            config["quickViewRows"] = "3";
+            config["MainHeight"] = "548";
+            config["MainLocX"] = "-4";
+            config["MainLocY"] = "-4";
+            config["MainMaximised"] = "Maximizedconfig";
+            config["MainWidth"] = "991";
+            config["maplast_lat"] = "-22,5532585177358";
+            config["maplast_lng"] = "-42,9850260476074";
+            config["maplast_zoom"] = "18";
+            config["MapType"] = "GoogleSatelliteMap";
+            config["menu_autohide"] = "True";
+            config["language"] = "pt";
+            config["speechaltenabled"] = "False";
+            config["speecharm"] = "Motor Armado";
+            config["speecharmenabled"] = "True";
+            config["speechbattery"] = "Atenção, Bateria com {batv} Voltis e {batp} porcento";
+            config["speechbatteryenabled"] = "True";
+            config["speechbatterypercent"] = "20";
+            config["speechbatteryvolt"] = "20";
+            config["speechcustom"] = "Apontado para o  {wpn}, altitude {alt} metros e velocidade de solo {gsp} Quilômetros por hora";
+            config["speechcustomenabled"] = "True";
+            config["speechdisarm"] = "Motor desarmado";
+            config["speechenable"] = "True";
+            config["speechmode"] = "Modo de voo alterado para {mode}";
+            config["speechmodeenabled"] = "True";
+            config["speechwaypoint"] = "Apontado para o ponto {wpn}";
+            config["speechwaypointenabled"] = "True";
+            config["speedunits"] = "kph";
+
+            return;
+            
+
 
             try
             {

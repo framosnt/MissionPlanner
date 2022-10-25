@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Cameras>
   <Camera>
+		<name>NX MINI</name>
+		<flen>9</flen>
+		<imgh>3648</imgh>
+		<imgw>5472</imgw>
+		<senh>8.8</senh>
+		<senw>13.2</senw>
+  </Camera>
+  <Camera>
+		<name>Q130</name>
+		<flen>20</flen>
+		<imgh>12000</imgh>
+		<imgw>6000</imgw>
+		<senh>100</senh>
+		<senw>23.5</senw>
+  </Camera>
+  <Camera>
     <name>Nikon aw100</name>
     <flen>5</flen>
     <imgh>3456</imgh>
