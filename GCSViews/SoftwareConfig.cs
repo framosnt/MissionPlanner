@@ -205,5 +205,10 @@ namespace MissionPlanner.GCSViews
 
             backstageView.Close();
         }
+
+        private void backstageView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

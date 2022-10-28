@@ -165,6 +165,9 @@
   <data name="label6.Text" xml:space="preserve">
     <value>Plane</value>
   </data>
+  <data name="label6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
@@ -195,6 +198,9 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Rover</value>
   </data>
+  <data name="label5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
@@ -206,36 +212,6 @@
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 120</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 16</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Multirotor</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -255,6 +231,9 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Helicopter</value>
   </data>
+  <data name="label3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
@@ -265,7 +244,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="pictureBoxheli.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -697,6 +676,9 @@
   <data name="pictureBoxheli.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="pictureBoxheli.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;pictureBoxheli.Name" xml:space="preserve">
     <value>pictureBoxheli</value>
   </data>
@@ -707,7 +689,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxheli.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="pictureBoxquad.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1229,7 +1211,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxquad.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="pictureBoxrover.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1627,6 +1609,9 @@
   <data name="pictureBoxrover.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="pictureBoxrover.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;pictureBoxrover.Name" xml:space="preserve">
     <value>pictureBoxrover</value>
   </data>
@@ -1637,7 +1622,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxrover.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="pictureBoxplane.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1941,6 +1926,9 @@
   <data name="pictureBoxplane.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="pictureBoxplane.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;pictureBoxplane.Name" xml:space="preserve">
     <value>pictureBoxplane</value>
   </data>
@@ -1951,7 +1939,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxplane.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 12</value>
@@ -1973,6 +1961,36 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 18</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 16</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Pulverizador Bons Voos</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -2069,6 +2087,9 @@
   </data>
   <data name="chk_skipdownload.Text" xml:space="preserve">
     <value>Skip Download</value>
+  </data>
+  <data name="chk_skipdownload.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;chk_skipdownload.Name" xml:space="preserve">
     <value>chk_skipdownload</value>
@@ -2209,7 +2230,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;but_swarmseq.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="but_swarmlink.Location" type="System.Drawing.Point, System.Drawing">
     <value>104, 44</value>
@@ -2233,7 +2254,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;but_swarmlink.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chk_wipe.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2260,13 +2281,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;chk_wipe.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 20</value>
+    <value>399, 21</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 16</value>
@@ -2287,10 +2308,10 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txt_cmdline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 17</value>
+    <value>402, 39</value>
   </data>
   <data name="txt_cmdline.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 22</value>
@@ -2308,7 +2329,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txt_cmdline.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2335,7 +2356,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="cmb_model.Items" xml:space="preserve">
     <value />
@@ -2445,6 +2466,9 @@
   <data name="cmb_model.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="cmb_model.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;cmb_model.Name" xml:space="preserve">
     <value>cmb_model</value>
   </data>
@@ -2455,7 +2479,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;cmb_model.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2482,7 +2506,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="num_simspeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 18</value>
@@ -2503,7 +2527,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;num_simspeed.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 290</value>

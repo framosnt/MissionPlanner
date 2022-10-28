@@ -184,6 +184,7 @@ namespace MissionPlanner.GCSViews
 
         private async void pictureBoxquad_Click(object sender, EventArgs e)
         {
+            
             if (markeroverlay.Markers.Count == 0)
             {
                 CustomMessageBox.Show(Strings.Invalid_home_location);
@@ -613,6 +614,7 @@ namespace MissionPlanner.GCSViews
             }
 
             // override default model
+            cmb_model.Text = "quad";
             if (cmb_model.Text != "")
                 model = cmb_model.Text;
 

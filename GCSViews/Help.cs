@@ -54,7 +54,8 @@ namespace MissionPlanner.GCSViews
 
         private void Help_Load(object sender, EventArgs e)
         {
-            richTextBox1.Rtf = Resources.help_text;
+            //fernando 27-10-2022 - trocar o texto do help
+            //richTextBox1.Rtf = Resources.help_text;
             ThemeManager.ApplyThemeTo(richTextBox1);
         }
 
@@ -80,6 +81,11 @@ namespace MissionPlanner.GCSViews
             {
                 CustomMessageBox.Show(ex.ToString(), Strings.ERROR);
             }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

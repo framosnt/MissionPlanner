@@ -451,6 +451,7 @@ namespace MissionPlanner.Utilities
                 // DistToHome
 
             config["quickView1"] = "DistToHome";
+            config["quickView1"] = "DistToHome";
             config["quickView2"] = "rangefinder1";
             config["quickView3"] = "battery_voltage";
             config["quickView4"] = "battery_voltage2";
@@ -467,7 +468,7 @@ namespace MissionPlanner.Utilities
             config["maplast_lng"] = "-42,9850260476074";
             config["maplast_zoom"] = "18";
             config["MapType"] = "GoogleSatelliteMap";
-            config["menu_autohide"] = "True";
+            config["menu_autohide"] = "False";
             config["language"] = "pt";
             config["speechaltenabled"] = "False";
             config["speecharm"] = "Motor Armado";
@@ -485,6 +486,18 @@ namespace MissionPlanner.Utilities
             config["speechwaypoint"] = "Apontado para o ponto {wpn}";
             config["speechwaypointenabled"] = "True";
             config["speedunits"] = "kph";
+
+
+            //fernando 27-10-2022 - configuração default se nao existir config.xml
+            config["displayview"] = "{ 'displayRTKInject': false,   'displayGPSOrder': false,   'displayHWIDs': false,  'displayADSB': false,   'displayName': 1,   'displaySimulation': true,		'displayTerminal': false,		'displayDonate': false,		'displayHelp': false,		'displayAnenometer': false,		'displayQuickTab': true,		'displayPreFlightTab': true,		'displayAdvActionsTab': true,		'displaySimpleActionsTab': false,		'displayGaugesTab': false,		'displayStatusTab': true,		'displayServoTab': false,		'displayScriptsTab': false,		'displayTelemetryTab': true,		'displayDataflashTab': true,		'displayMessagesTab': true,		'displayRallyPointsMenu': true,		'displayGeoFenceMenu': true,		'displaySplineCircleAutoWp': false,		'displayTextAutoWp': true,		'displayCircleSurveyAutoWp': false,		'displayPoiMenu': false,		'displayTrackerHomeMenu': false,		'displayCheckHeightBox': false,		'displayPluginAutoWp': false,		'displayInstallFirmware': false,		'displayWizard': false,		'displayFrameType': false,		'displayAccelCalibration': true,		'displayCompassConfiguration': true,		'displayRadioCalibration': true,		'displayEscCalibration': false,		'displayFlightModes': true,		'displayFailSafe': true,		'displaySikRadio': false,		'displayBattMonitor': false,		'displayCAN': false,		'displayCompassMotorCalib': false,		'displayRangeFinder': true,		'displayAirSpeed': false,		'displayPx4Flow': false,		'displayOpticalFlow': false,		'displayOsd': false,		'displayCameraGimbal': false,		'displayMotorTest': false,		'displayBluetooth': false,		'displayParachute': false,		'displayEsp': false,		'displayAntennaTracker': false,		'displayBasicTuning': false,		'displayExtendedTuning': false,		'displayStandardParams': false,		'displayAdvancedParams': false,		'displayFullParamList': true,		'displayFullParamTree': false,		'displayParamCommitButton': false,		'displayBaudCMB': true,		'displaySerialPortCMB': true,		'standardFlightModesOnly': false,		'autoHideMenuForce': false,		'displayInitialParams': false,		'isAdvancedMode': false,		'displayServoOutput': false,		'displayJoystick': false,		'displayOSD': false,		'displayUserParam': false,		'displayPlannerSettings': false,		'displayFFTSetup': false,		'displayPreFlightTabEdit': true,		'displayPlannerLayout': true,		'lockQuickView': false}";
+            config["displayview"] = "{ 'displayRTKInject': false,   'displayGPSOrder': false,   'displayHWIDs': false,  'displayADSB': false,   'displayName': 1,   'displaySimulation': true,		'displayTerminal': false,		'displayDonate': false,		'displayHelp': false,		'displayAnenometer': false,		'displayQuickTab': true,		'displayPreFlightTab': true,		'displayAdvActionsTab': true,		'displaySimpleActionsTab': false,		'displayGaugesTab': false,		'displayStatusTab': true,		'displayServoTab': false,		'displayScriptsTab': false,		'displayTelemetryTab': true,		'displayDataflashTab': true,		'displayMessagesTab': true,		'displayRallyPointsMenu': true,		'displayGeoFenceMenu': true,		'displaySplineCircleAutoWp': true,		'displayTextAutoWp': true,		'displayCircleSurveyAutoWp': false,		'displayPoiMenu': true,		'displayTrackerHomeMenu': true,		'displayCheckHeightBox': true,		'displayPluginAutoWp': true,		'displayInstallFirmware': false,		'displayWizard': false,		'displayFrameType': false,		'displayAccelCalibration': true,		'displayCompassConfiguration': true,		'displayRadioCalibration': true,		'displayEscCalibration': false,		'displayFlightModes': true,		'displayFailSafe': true,		'displaySikRadio': false,		'displayBattMonitor': true,		'displayCAN': false,		'displayCompassMotorCalib': false,		'displayRangeFinder': true,		'displayAirSpeed': false,		'displayPx4Flow': false,		'displayOpticalFlow': false,		'displayOsd': false,		'displayCameraGimbal': true,		'displayMotorTest': false,		'displayBluetooth': false,		'displayParachute': false,		'displayEsp': false,		'displayAntennaTracker': false,		'displayBasicTuning': true,		'displayExtendedTuning': false,		'displayStandardParams': false,		'displayAdvancedParams': false,		'displayFullParamList': true,		'displayFullParamTree': true,		'displayParamCommitButton': true,		'displayBaudCMB': true,		'displaySerialPortCMB': true,		'standardFlightModesOnly': true,		'autoHideMenuForce': false,		'displayInitialParams': false,		'isAdvancedMode': false,		'displayServoOutput': false,		'displayJoystick': true,		'displayOSD': false,		'displayUserParam': false,		'displayPlannerSettings': true,		'displayFFTSetup': false,		'displayPreFlightTabEdit': true,		'displayPlannerLayout': true,		'lockQuickView': true}";
+
+
+            //ver default:
+            //MissionPlanner.Utilities.displa
+            //DisplayConfiguration.displayQuickTab=treu 
+
+
 
             return;
             

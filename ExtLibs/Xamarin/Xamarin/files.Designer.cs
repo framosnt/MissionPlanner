@@ -234,42 +234,6 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;Config&gt;
-        ///	&lt;_BAUD&gt;115200&lt;/_BAUD&gt;
-        ///	&lt;APMFirmware&gt;ArduCopter2&lt;/APMFirmware&gt;
-        ///	&lt;AutoConnect&gt;
-        ///		[
-        ///		{
-        ///		&quot;Label&quot;: &quot;Mavlink default port&quot;,
-        ///		&quot;Enabled&quot;: true,
-        ///		&quot;Port&quot;: 14550,
-        ///		&quot;Protocol&quot;: 1,
-        ///		&quot;Format&quot;: 0,
-        ///		&quot;Direction&quot;: 0,
-        ///		&quot;ConfigString&quot;: &quot;&quot;
-        ///		},
-        ///		{
-        ///		&quot;Label&quot;: &quot;Mavlink alt port&quot;,
-        ///		&quot;Enabled&quot;: true,
-        ///		&quot;Port&quot;: 14551,
-        ///		&quot;Protocol&quot;: 1,
-        ///		&quot;Format&quot;: 0,
-        ///		&quot;Direction&quot;: 0,
-        ///		&quot;ConfigString&quot;: &quot;&quot;
-        ///		},
-        ///		{
-        ///		&quot;Label&quot;: &quot;Mavlink sitl port&quot;,
-        ///		&quot;Enabled&quot;: false,
-        ///	 [o restante da cadeia de caracteres foi truncado]&quot;;.
-        /// </summary>
-        public static string customconfig {
-            get {
-                return ResourceManager.GetString("customconfig", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;?xml version=&quot;1.0&quot;?&gt;
         ///
         ///&lt;!-- TAGS ARE CASE SENSATIVE --&gt;

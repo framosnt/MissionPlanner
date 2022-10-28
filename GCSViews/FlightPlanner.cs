@@ -7964,5 +7964,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
     
         }
+
+        private void MainMap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

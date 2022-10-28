@@ -106,7 +106,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBoxheli);
             this.panel1.Controls.Add(this.pictureBoxquad);
@@ -229,6 +228,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.but_swarmrover);
             this.groupBox4.Controls.Add(this.but_swarmplane);
+            this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.but_swarmseq);
             this.groupBox4.Controls.Add(this.but_swarmlink);
             this.groupBox4.Controls.Add(this.chk_wipe);

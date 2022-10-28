@@ -200,7 +200,7 @@
             0});
             this.NUM_tracklength.Name = "NUM_tracklength";
             this.NUM_tracklength.Value = new decimal(new int[] {
-            200,
+            2000,
             0,
             0,
             0});

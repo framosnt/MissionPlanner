@@ -45,6 +45,14 @@ namespace MissionPlanner.GCSViews
         public static myGMAP mymap;
         public static bool threadrun;
         public SplitContainer MainHcopy;
+
+        // fernando 27-10-2022 - inclusão de controle para somente conectar em drone BONSVOOS
+        // quando padrão vai firmware mensagem igual "27/10/2022 16:28:55 : ArduCopter V4.2.3 (6a694642)"
+        // quando em bons voos firmware vai ser: "27/10/2022 16:34:46 : Bons Voos V4.1.4-f (beecca8d)"
+        
+        public bool isBonsVoos;
+        public double counterIsNotBonsVoos;
+
         //fernando 09-10-2022 - inclusão do Overlay para a pulverização
         internal static GMapOverlay pulverizandooverlay;
         internal static GMapOverlay geofence;
@@ -3893,6 +3901,37 @@ namespace MissionPlanner.GCSViews
                         message.Insert(0, x.Item1 + " : " + x.Item2 + "\r\n");
                     });
                     txt_messagebox.Text = message.ToString();
+                    //isBonsVoos = false;
+                    // fernando 27-10-2022 - verificação se recebeu código bonsvoos do firmware do drone.
+                    if (txt_messagebox.Text.Contains("Bons Voos V4")==false && isBonsVoos == false )
+                    {
+                        //caso não haja registro 
+                        //somar o contador até 30
+                        counterIsNotBonsVoos += counterIsNotBonsVoos + 1;
+                        isBonsVoos = false;
+
+                        if (counterIsNotBonsVoos >= 1)
+                        {
+                            //derruba a conexao com o drone:
+                            //MainV2.doDisconnect(MainV2.comPort); 
+
+
+                            //mensagem na tela e fecha a aplicação
+                            CustomMessageBox.Show("Este Aplicativo deve ser utilizado unicamente\r\nem drones da marca Bons Voos\r\nOu sua versão não é compatível.\r\n\r\nEntre em Contato com seu fornecedor.", "BonsVoosMP");
+                            //CustomMessageBox.MessageBoxButtons(MessageBoxButtons.OK, "teste teste teste teste");
+                            // finalizar o programa
+                            Application.Exit(); 
+                        }
+
+                    }
+                    if (txt_messagebox.Text.Contains("Bons Voos V4") && isBonsVoos == false) 
+                    {
+                        isBonsVoos = true ;
+                        //message.Insert(0, "Drone : Bons Voos\r\n");
+                        
+                        //message.Insert(0, MainV2.comPort.MAV.cs.messages.Item1 + " : Drone Bons Voos\r\n");
+                        //txt_messagebox.Text = message.ToString();
+                    }
 
                     messagecount = messagetime.toUnixTime();
                 }
@@ -5837,6 +5876,16 @@ namespace MissionPlanner.GCSViews
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_messagebox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
         {
 
         }
