@@ -30,10 +30,11 @@ namespace MissionPlanner.GCSViews
         //https://regex101.com/r/cH3kV3/2
         //https://regex101.com/r/cH3kV3/3
         Regex default_params_regex = new Regex(@"""([^""]+)""\s*:\s*\{\s*[^\{}]+""default_params_filename""\s*:\s*\[*""([^""]+)""\s*[^\}]*\}");
+        //fernando - 28-10-2022 - endereço dos arquivos BonsVoos
+        //Uri sitlmasterurl = new Uri("https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/");
+        Uri sitlmasterurl = new Uri("http://www.bonsvoos.com/install/SITL/");
 
-        Uri sitlmasterurl = new Uri("https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/");
-
-        Uri sitlcopterstableurl = new Uri("https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/CopterStable/");
+        Uri sitlcopterstableurl = new Uri("http://www.bonsvoos.com/install/SITL/");
         Uri sitlplanestableurl = new Uri("https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/PlaneStable/");
         Uri sitlroverstableurl = new Uri("https://firmware.ardupilot.org/Tools/MissionPlanner/sitl/RoverStable/");
 
@@ -359,7 +360,7 @@ namespace MissionPlanner.GCSViews
                 }
             }
 
-            if (!chk_skipdownload.Checked)
+            if (chk_skipdownload.Checked)
             {
                 // kill old session - so we can overwrite if needed
                 try
@@ -378,35 +379,41 @@ namespace MissionPlanner.GCSViews
                 }
 
                 var url = sitlmasterurl;
-                var result = CustomMessageBox.Show("Select the version you want to use?", "Select your version", CustomMessageBox.MessageBoxButtons.YesNo, CustomMessageBox.MessageBoxIcon.Question, "Latest(Dev)", "Stable");
+                //url = "http://www.bonsvoos.com/install/SITL/";
+                //var result = CustomMessageBox.Show("Select the version you want to use?", "Select your version", CustomMessageBox.MessageBoxButtons.YesNo, CustomMessageBox.MessageBoxIcon.Question, "Latest(Dev)", "Stable");
 
-                if(result == CustomMessageBox.DialogResult.Yes)
-                {
-                    // master by default
-                }
-                else if (result == CustomMessageBox.DialogResult.No)
-                {
-                    if (filename.ToLower().Contains("copter"))
-                        url = sitlcopterstableurl;
-                    if (filename.ToLower().Contains("rover"))
-                        url = sitlroverstableurl;
-                    if (filename.ToLower().Contains("plane"))
-                        url = sitlplanestableurl;
-                    if (filename.ToLower().Contains("heli"))
-                        url = sitlcopterstableurl;
-                } else
-                {
-                    return null;
-                }
+                //if(result == CustomMessageBox.DialogResult.Yes)
+                //{
+                //    // master by default
+                //}
+                //else if (result == CustomMessageBox.DialogResult.No)
+                //{
+                    //if (filename.ToLower().Contains("copter"))
+                    //    url = sitlcopterstableurl;
+                    //if (filename.ToLower().Contains("rover"))
+                    //    url = sitlroverstableurl;
+                    //if (filename.ToLower().Contains("plane"))
+                    //    url = sitlplanestableurl;
+                    //if (filename.ToLower().Contains("heli"))
+                    //    url = sitlcopterstableurl;
+                //} else
+                //{
+                //    return null;
+                //}
 
                 Uri fullurl = new Uri(url, filename);
 
-                var load = Common.LoadingBox("Downloading", "Downloading sitl software");
+                var load = Common.LoadingBox("BonsVoosMP", "Bons Voos MP - Baixando Simulador ...");
 
                 var t1 = Download.getFilefromNetAsync(fullurl.ToString(),
                     sitldirectory + Path.GetFileNameWithoutExtension(filename) + ".exe");
 
                 load.Refresh();
+
+          
+
+                
+
 
                 var files = new string[] { "cygatomic-1.dll",
                     "cyggcc_s-1.dll",
@@ -414,7 +421,8 @@ namespace MissionPlanner.GCSViews
                     "cygquadmath-0.dll",
                     "cygssp-0.dll",
                     "cygstdc++-6.dll",
-                    "cygwin1.dll"
+                    "cygwin1.dll",
+                    "copter.parm"
                 };
 
                 // dependancys
@@ -422,7 +430,15 @@ namespace MissionPlanner.GCSViews
                 Parallel.ForEach(files, new ParallelOptions() { MaxDegreeOfParallelism = 2 }, (a, b) =>
                 {
                     var depurl = new Uri(url, a);
-                    var t2 = Download.getFilefromNet(depurl.ToString(), sitldirectory + depurl.Segments[depurl.Segments.Length - 1]);
+                    if (a == "copter.parm")
+                    {
+                        var t2 = Download.getFilefromNet(depurl.ToString(), sitldirectory + "default_params\\" + depurl.Segments[depurl.Segments.Length - 1]);
+                    }
+                    else
+                    {
+                        var t2 = Download.getFilefromNet(depurl.ToString(), sitldirectory  + depurl.Segments[depurl.Segments.Length - 1]);
+                    }
+                    
                 });
 
                 await t1;

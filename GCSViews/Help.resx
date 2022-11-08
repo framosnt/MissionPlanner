@@ -133,7 +133,17 @@
     <value>0</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value />
+    <value>Esta versão é de uso exclusivos do drone de pulverização agrícola da Bons Voos.
+
+Para contato com o fabricante, entre em contato por email:
+sac@bonsvoos.com.br
+
+
+site:
+www.bonsvoos.com.br
+
+whatsapp atendimento:
++5511912133633</value>
   </data>
   <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
     <value>richTextBox1</value>
@@ -164,6 +174,9 @@
   </data>
   <data name="CHK_showconsole.Text" xml:space="preserve">
     <value>Show Console Window (restart)</value>
+  </data>
+  <data name="CHK_showconsole.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CHK_showconsole.Name" xml:space="preserve">
     <value>CHK_showconsole</value>

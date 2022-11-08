@@ -616,7 +616,7 @@
     <value>88</value>
   </data>
   <data name="BUT_SendMSG.Text" xml:space="preserve">
-    <value>Message</value>
+    <value>Joystick</value>
   </data>
   <data name="BUT_SendMSG.ToolTip" xml:space="preserve">
     <value>Send message to be saved in vehicle log</value>
@@ -694,7 +694,7 @@
     <value>modifyandSetLoiterRad</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -778,7 +778,7 @@
     <value>60</value>
   </data>
   <data name="BUTactiondo.Text" xml:space="preserve">
-    <value>Do Action</value>
+    <value>Executar</value>
   </data>
   <data name="BUTactiondo.ToolTip" xml:space="preserve">
     <value>Preform the action ot the left</value>
@@ -812,6 +812,9 @@
   </data>
   <data name="BUT_resumemis.Text" xml:space="preserve">
     <value>Resume Mission</value>
+  </data>
+  <data name="BUT_resumemis.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;BUT_resumemis.Name" xml:space="preserve">
     <value>BUT_resumemis</value>
@@ -853,7 +856,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -889,7 +892,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1009,7 +1012,7 @@
     <value>77</value>
   </data>
   <data name="BUT_joystick.Text" xml:space="preserve">
-    <value>Joystick</value>
+    <value>Guided</value>
   </data>
   <data name="BUT_joystick.ToolTip" xml:space="preserve">
     <value>Setup and enable your joystick</value>
@@ -1582,7 +1585,7 @@
     <value>checkListControl1</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PreFlight.CheckListControl, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.PreFlight.CheckListControl, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Parent" xml:space="preserve">
     <value>tabPagePreFlight</value>
@@ -3044,7 +3047,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3065,7 +3068,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3086,7 +3089,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3107,7 +3110,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3128,7 +3131,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3149,7 +3152,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3170,7 +3173,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3191,7 +3194,7 @@
     <value>servoOptions8</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3212,7 +3215,7 @@
     <value>servoOptions9</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3233,7 +3236,7 @@
     <value>servoOptions10</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3254,7 +3257,7 @@
     <value>servoOptions11</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3275,7 +3278,7 @@
     <value>servoOptions12</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3296,7 +3299,7 @@
     <value>relayOptions1</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3317,7 +3320,7 @@
     <value>relayOptions2</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3338,7 +3341,7 @@
     <value>relayOptions3</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3359,7 +3362,7 @@
     <value>relayOptions4</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3380,7 +3383,7 @@
     <value>relayOptions5</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3401,7 +3404,7 @@
     <value>relayOptions6</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -5042,7 +5045,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, BonsVoosMP, Version=1.3.8335.30269, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, BonsVoosMP, Version=1.3.8346.15151, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -5630,7 +5633,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>146</value>
+    <value>25</value>
   </metadata>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>

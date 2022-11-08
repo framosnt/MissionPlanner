@@ -35,12 +35,12 @@ namespace MissionPlanner.GCSViews
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBoxheli = new MissionPlanner.Controls.PictureBoxMouseOver();
             this.pictureBoxquad = new MissionPlanner.Controls.PictureBoxMouseOver();
             this.pictureBoxrover = new MissionPlanner.Controls.PictureBoxMouseOver();
             this.pictureBoxplane = new MissionPlanner.Controls.PictureBoxMouseOver();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -59,6 +59,7 @@ namespace MissionPlanner.GCSViews
             this.cmb_model = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.num_simspeed = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxheli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxquad)).BeginInit();
@@ -104,6 +105,7 @@ namespace MissionPlanner.GCSViews
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -122,11 +124,6 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // label3
             // 
@@ -176,6 +173,11 @@ namespace MissionPlanner.GCSViews
             this.pictureBoxplane.TabStop = false;
             this.pictureBoxplane.Tag = "plane";
             this.pictureBoxplane.Click += new System.EventHandler(this.pictureBoxplane_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // groupBox1
             // 
@@ -350,6 +352,11 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
             // SITL
             // 
             this.Controls.Add(this.groupBox4);
@@ -406,5 +413,6 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.CheckBox chk_skipdownload;
         private MyButton but_swarmrover;
         private MyButton but_swarmplane;
+        private System.Windows.Forms.Label label9;
     }
 }

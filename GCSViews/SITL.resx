@@ -147,6 +147,36 @@
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 118</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 16</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Executar o Simulador</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -178,7 +208,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -211,7 +241,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,7 +274,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pictureBoxheli.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -689,7 +719,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxheli.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="pictureBoxquad.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1211,7 +1241,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxquad.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pictureBoxrover.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1622,7 +1652,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxrover.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pictureBoxplane.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1939,7 +1969,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxplane.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 12</value>

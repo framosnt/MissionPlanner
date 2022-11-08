@@ -126,8 +126,10 @@ namespace MissionPlanner.GCSViews
 
                 if (MainV2.DisplayConfiguration.displayFullParamList)
                 {
-                    if(!MainV2.comPort.BaseStream.IsOpen || gotAllParams)
-                        AddBackstageViewPage(typeof(ConfigRawParams), Strings.FullParameterList, null, true);
+                    //fernando  28-10-2022 - correção da chamada de fullparameter:
+                    if(MainV2.comPort.BaseStream.IsOpen || gotAllParams)
+                        //AddBackstageViewPage(typeof(ConfigRawParams), Strings.FullParameterList,  null,  true);
+                    AddBackstageViewPage(typeof(ConfigRawParams), Strings.FullParameterList );
                 }
                 if (MainV2.DisplayConfiguration.displayFullParamTree && !Program.MONO)
                 {

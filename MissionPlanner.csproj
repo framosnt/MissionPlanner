@@ -37,7 +37,7 @@
     <ProductName>BonsVoosMP</ProductName>
     <PublisherName>BonsVoos</PublisherName>
     <SuiteName>BonsVoosMP</SuiteName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -4667,6 +4667,7 @@
     <None Include="Resources\BonsVoos-DronesPulverizadores2.png" />
     <None Include="Resources\Sprayer1.png" />
     <None Include="Resources\sprayer2.png" />
+    <None Include="Resources\arducopter.exe" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

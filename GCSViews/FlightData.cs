@@ -1033,6 +1033,9 @@ namespace MissionPlanner.GCSViews
 
             if (MainV2.comPort.MAV.camerapoints != null)
                 MainV2.comPort.MAV.camerapoints.Clear();
+            
+            if (pulverizandooverlay != null)
+                pulverizandooverlay.Clear();   
         }
 
         void but_Click(object sender, EventArgs e)
@@ -1176,27 +1179,39 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_joystick_Click(object sender, EventArgs e)
         {
-            new JoystickSetup().ShowUserControl();
+            try
+            {
+                ((Control)sender).Enabled = false;
+                MainV2.comPort.setMode("Guided");
+            }
+            catch
+            {
+                CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+            }
+
+            ((Control)sender).Enabled = true;
         }
 
 
         private void BUT_SendMSG_Click(object sender, EventArgs e)
         {
-            if (!MainV2.comPort.BaseStream.IsOpen)
-                return;
 
-            // Send a message
-            try
-            {
-                string txt = "";
-                if (DialogResult.Cancel == InputBox.Show("Enter Message", "Enter Message to be logged", ref txt))
-                    return;
-                MainV2.comPort.send_text(5, txt);
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
-            }
+            new JoystickSetup().ShowUserControl();
+            //if (!MainV2.comPort.BaseStream.IsOpen)
+            //    return;
+
+            //// Send a message
+            //try
+            //{
+            //    string txt = "";
+            //    if (DialogResult.Cancel == InputBox.Show("Enter Message", "Enter Message to be logged", ref txt))
+            //        return;
+            //    MainV2.comPort.send_text(5, txt);
+            //}
+            //catch
+            //{
+            //    CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR);
+            //}
         }
 
         private string tlogdir = Settings.Instance.LogDir;
@@ -5353,7 +5368,7 @@ namespace MissionPlanner.GCSViews
         private void flyToCoordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var location = "";
-            InputBox.Show("Enter Fly To Coords", "Please enter the coords 'lat;long;alt' or 'lat;long'", ref location);
+            InputBox.Show("Entre com as coordenadas para voar", "Informe coordenadas 'lat;long;alt' or 'lat;long'", ref location);
 
             var split = location.Split(';');
 
@@ -5414,7 +5429,7 @@ namespace MissionPlanner.GCSViews
         private void poiatcoordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var location = "";
-            InputBox.Show("Enter POI Coords", "Please enter the coords 'lat;long;alt' or 'lat;long'", ref location);
+            InputBox.Show("Entre com a coordenadas do POI", "Informe as coordenadas 'lat;long;alt' or 'lat;long'", ref location);
 
             var split = location.Split(';');
 
@@ -5532,7 +5547,7 @@ namespace MissionPlanner.GCSViews
             
             if (!int.TryParse(CellCount, out iCellCount))
             {
-                CustomMessageBox.Show("Bad Radius");
+                CustomMessageBox.Show("Diâmetro Errado !");
                 return;
             }
             Settings.Instance["HUD_batterycellcount"] = iCellCount.ToString();
@@ -5886,6 +5901,11 @@ namespace MissionPlanner.GCSViews
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quickView2_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
         {
 
         }
