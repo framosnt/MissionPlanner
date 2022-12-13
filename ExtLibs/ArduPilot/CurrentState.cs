@@ -54,6 +54,7 @@ namespace MissionPlanner
         internal double _battery_voltage2;
         //fernando 08-10-2022 - inclusao de valor de nivel do tanque
         internal string _tank_nivel;
+        internal float _ch6out;
 
         private float _ch3percent = -1;
         private float _climbrate;
@@ -662,11 +663,25 @@ namespace MissionPlanner
 
         [GroupText("RadioOut")] public float ch5out { get; set; }
 
-        //fernando 18-09-2022 - para trocar de nome do status
-        [GroupText("RadioOut")] public float ch6out { get; set; }
+        //fernando 11-12-2022 - para trocar de nome do status - CONTINUAR AQUI
+        [GroupText("RadioOut")]
+        [DisplayText("Pulverizando")]
+        public float ch6out
+        {
+            get => _ch6out;
+            set
+            {
+               
+                _ch6out = value;
+            }
+        }
+        //fernando
+        //public float ch6out { get; set; }
 
-        [GroupText("RadioOut")] public float ch7out { get; set; }
 
+        [GroupText("RadioOut")]
+        [DisplayText("GiroSolido")]
+        public float ch7out { get; set; }
         [GroupText("RadioOut")] public float ch8out { get; set; }
 
         [GroupText("RadioOut")] public float ch9out { get; set; }
@@ -1069,6 +1084,8 @@ namespace MissionPlanner
             {
                 if (_battery_voltage == 0) _battery_voltage = value;
                 _battery_voltage = value * 0.4f + _battery_voltage * 0.6f;
+              
+                    
             }
         }
 
@@ -1296,21 +1313,54 @@ namespace MissionPlanner
         //Fernando - 08-10-2022 - altera o valor da Bateria 2 para nivel de tanque
        // [DisplayText("Bat2 Voltage (V)")]
         [DisplayText("Nível Tanque")]
-
-
         public double battery_voltage2
         {
             get => _battery_voltage2;
             set
             {
                 if (_battery_voltage2 == 0) _battery_voltage2 = value;
-                _battery_voltage2 = value * 0.4f + _battery_voltage2 * 0.6f;
-                if (_battery_voltage2 > 15)
+                _battery_voltage2 = value; // * 0.4f + _battery_voltage2 * 0.6f;
+
+                if (_battery_voltage2 > 10)
+                {
                     tank_nivel = "CARREGADO";
+                    _battery_voltage2 = 100;
+                }
+
+
                 else
+                {
                     tank_nivel = "VAZIO";
+                    _battery_voltage2 = 0;
+
+                }
+
+
             }
         }
+
+        //public double battery_voltage2
+        //{
+        //    get => _battery_voltage2;
+        //    set
+        //    {
+        //        if (_battery_voltage2 == 0) _battery_voltage2 = value;
+        //        _battery_voltage2 = value * 0.4f + _battery_voltage2 * 0.6f;
+        //        if (_battery_voltage2 > 10)
+        //        {
+        //            tank_nivel = "CARREGADO";
+        //            _battery_voltage2 = 100;
+        //        }
+
+
+        //        else
+        //        {
+        //            tank_nivel = "VAZIO";
+        //            _battery_voltage2 = 0;
+
+        //        }
+        //    }
+        //}
 
 
         public string tank_nivel
@@ -2795,12 +2845,12 @@ namespace MissionPlanner
                                 battery_usedmah2 = bats.current_consumed;
                                 battery_remaining2 = bats.battery_remaining;
                                 //FERNANDO 08/10/2022 - ALTERANDO VALOR DO CAMPO BATT2
-                                //battery_voltage2 = temp_battery_voltage;
-                                if (temp_battery_voltage > 35)
-                                    //temp_battery_voltage
-                                    tank_nivel  = "CARREGADO";
-                                else tank_nivel = "VAZIO";
-                                //battery_voltage2 = tank_nivel;
+                                battery_voltage2 = temp_battery_voltage;
+                                //if (temp_battery_voltage > 35)
+                                //    //temp_battery_voltage
+                                //    tank_nivel  = "CARREGADO";
+                                //else tank_nivel = "VAZIO";
+                                ////battery_voltage2 = tank_nivel;
 
 
 
